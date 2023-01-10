@@ -129,6 +129,12 @@ Place community somewhere out on the West coast. **Note*: Apologize for the arro
 These buses will pick and drop passengers who do not necessarily live in the healing valleys themselves. But either take 
 the buses for the purposes of seeking therapy, recreational activities, leisure, socializing, work e.t.c.
 ![](img/Screenshot_20230101-211755.png) 
+
+- Birds-eye view of one of the developments
+![](img/Screenshot_20230101-211840.png)
+
+
+
 I imagine these locations to be mixed real estate facilities. Whereby humans and robots collaborate in order to bring hope and healing for veterans, first responders, healthcare workers from all over the world. I would absolutely love feedback and I seek to collaborate with you on this project. With gratitude
 
 The idea is that of a mixed-real estate complex. 
