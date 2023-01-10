@@ -45,7 +45,7 @@ veterans valley isn't necessarily PTS focused. But a team of humans and machines
 to further enable designs for effectively treating PTS.  
 
 Next, there is particular project out of USC-ICT (Institute of Creative Technologies) called 'Bravemind.' This project has 
-been in development for a number of years and here is the ![link 
+been in development for a number of years and here is the [link 
 here](https://ict.usc.edu/research/projects/bravemind-virtual-reality-exposure-therapy)
 
 Again, I do not have any affiliation with USC or any other institution. Also, I cannot say that I actively keep update with 
