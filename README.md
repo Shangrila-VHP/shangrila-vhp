@@ -133,7 +133,28 @@ the buses for the purposes of seeking therapy, recreational activities, leisure,
 - Birds-eye view of one of the developments
 ![](img/Screenshot_20230101-211840.png)
 
+- Healthcare, recreational, research facilities and also office spaces
+![](img/Screenshot_20230101-211852.png)
 
+- Drive through one of the neighbourhoods
+![](img/Screenshot_20230101-211911.png)
+
+- Backyard one of the main facilities. Where there will be clinical and other therapeutic services. Outdoor events and 
+parties could be held in this backyard. (Weddings, graduation ceremonies e.t.c)
+![](img/Screenshot_20230101-200410.png)
+
+- Another view of the backyard " " with a pond. You could also play mini golf here or just sit by the pond and enjoy the 
+sunset. 
+![](img/Screenshot_20230101-200427.png)
+
+- I forget what was the prompt that I provided here. But this could be the drive/walk to a place where you could go for 
+quality and nutritious foods. As well, maybe maintain one facility where quality and nutritious foods are prepared by 
+robots mostly. 
+![](img/Screenshot_20230101-211819.png)
+
+- Final in this series of images is a collage. I cannot remember the prompt that I provided. But looks like there are some 
+fields in some of the images the AI (Artificial Intelligence) generated. 
+![](img/Screenshot_20230101-211808.png)
 
 I imagine these locations to be mixed real estate facilities. Whereby humans and robots collaborate in order to bring hope and healing for veterans, first responders, healthcare workers from all over the world. I would absolutely love feedback and I seek to collaborate with you on this project. With gratitude
 
