@@ -78,8 +78,7 @@ Their purpose is to spur economic growth and job creation in low-income communit
 > being said, there are tax incentives offered by the IRS and I (personally) starting thinking of investment funds as a 
 > vehicle in order to power the development. But as of right now I have not been able to make a lot of progress here. In 
 > short, there could be a variety of different facilties in different neighbourhoods. Rural, urban and remote. As well, 
-> means and ways of enabling the healing/care-giving/clinical services that will be required. 
-One of 
+> means and ways of enabling the healing/care-giving/clinical services that will be required. One of 
 > the things they talk about in the OZ investors (private/not public) rooms is that sometimes there are properties that are
 
 Coming back to the Opportunity Zones and Opportunity Funds program(s). From my uneducated perspective, these 
