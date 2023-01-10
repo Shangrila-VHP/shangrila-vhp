@@ -60,17 +60,27 @@ hosted by a for-profit organization called EazyDoIt Inc.
 *OZ investors **is a private organization** that offers training and consultancy* on a (**public**) tax incentive offered by the US Government via the IRS (Internal Revenue Service). **Note**: Mentioning an institution or 
 individual does not equal endorsement. [Link to OZ investment Club - Private institution via 
 Clubhouse](https://www.clubhouse.com/join/the-opportunity-zone/InI7VJqN/MEpEBaKV?utm_medium=ch_invite&utm_campaign=ITmGcjtS96JIfy4zlSmIkw-131391) 
-and [Link to one of OZ investment's website](https://www.opportunityzoneclub.com/) Also, I know 
+and [Link to one of OZ investment's website](https://www.opportunityzoneclub.com/)
 
 ## IRS's Opportunity Zones and Opportunity Funds
-So OZ investors (private entity) 
-This program is called 'Opportuniy Zones' and according to the IRS website (link below):
+The actual tax-incentive offered by the IRS is called 'Opportuniy Zones' and according to the IRS website (link below):
 
 'Opportunity Zones are an economic development tool that allows people to invest in distressed areas in the United States.
 
 Their purpose is to spur economic growth and job creation in low-income communities while providing tax benefits to investors.'
 
-https://www.irs.gov/credits-deductions/businesses/opportunity-zones
+[Link to IRS's Opportunity Zone(s) page](https://www.irs.gov/credits-deductions/businesses/opportunity-zones)
+
+> However, I must highlight that Shangrila Veterans Healing Places need not be enabled in distressed communities. On one 
+> hand, communities could certainly benefit from the focused and disciplined attitude of veterans and that a rigorous 
+> military training would enable. These facilities could be enabled in some of the best neighborhoods. In fact, it is 
+> imagined that some of these very locations would in blossom into an amazing and wonderful cluster of communities. That 
+> being said, there are tax incentives offered by the IRS and I (personally) starting thinking of investment funds as a 
+> vehicle in order to power the development. But as of right now I have not been able to make a lot of progress here. In 
+> short, there could be a variety of different facilties in different neighbourhoods. Rural, urban and remote. As well, 
+> means and ways of enabling the healing/care-giving/clinical services that will be required. 
+One of 
+> the things they talk about in the OZ investors (private/not public) rooms is that sometimes there are properties that are
 
 That's within United States and that's only one program. I have other ideas in order to provision physical facilities safely
 and yet inexpensively. Particularly seeing that 3d-printing organizations like ICON 3D have successfully collaborated with 
