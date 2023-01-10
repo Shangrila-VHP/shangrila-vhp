@@ -1,6 +1,11 @@
 # Introduction
 Shangrila Veterans (and first responders) Healing Places is a place where service members can live, play and heal. There 
-are communities that are specifically designed in order to enable hope and healing for the worldwide veterans community.
+are communities that are specifically designed in order to enable hope and healing for the worldwide veterans community. 
+
+The idea is being shared leveraging principles from the open-source community. However proper and on-going care and 
+consultation will be necessary in order to implement the idea in a way that brings hope and healing, while respecting and 
+protecting individual privacy during all the times. The focus is on care. I guess, the the places themselves could be 
+renamed as '**care valley**'s or '**valleys of care**.'
 
 ![copy path via github directly](img/Shangrila-vhp-main-idea-v1-1.png)
 <!-- Will keep these other options. Or should I. Hmm.
