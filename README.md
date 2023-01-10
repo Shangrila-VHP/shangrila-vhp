@@ -157,6 +157,21 @@ robots mostly.
 fields in some of the images the AI (Artificial Intelligence) generated. 
 ![](img/Screenshot_20230101-211808.png)
 
-I imagine these locations to be mixed real estate facilities. Whereby humans and robots collaborate in order to bring hope and healing for veterans, first responders, healthcare workers from all over the world. I would absolutely love feedback and I seek to collaborate with you on this project. With gratitude
+Overall, I imagine these locations to be mixed real estate facilities for enabling hope and healing.
+Whereby humans and robots would collaborate in order to bring hope and healing for veterans, first responders, healthcare 
+workers from all over the world. I haven't had a chance to develop the care-giving robots side of things. But I'd love to 
+somehow collaborate with [Awakening Health](https://awakening.health/) and USC ICT (link shared previously)
 
-The idea is that of a mixed-real estate complex. 
+#Let's Collaborate
+I would **absolutely love feedback** and I seek to collaborate with you on this project. It is my hope that this project 
+could be undertaken by the veteran community themselves. It would be amazing to see secure, structurally stable, 
+intelligently designed architecture take roots. A community that learns from it's experiences and evolves. A community 
+where there is no judgement and we lead with an open hand. A community of 'hope and healing.'
+
+## Next steps and if you'd like to join.
+- Suggest that you join the project space [here on Github](https://github.com/Shangrila-VHP)
+- Also, you may want to connect with me on Linkedin and **make sure** to include a message in your request that you seek to 
+collaborate. As I do not log onto Github very often. Here's a [link to my 
+profile.](https://www.linkedin.com/in/adeelkhan1/) 
+
+With gratitude.
