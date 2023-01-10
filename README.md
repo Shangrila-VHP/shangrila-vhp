@@ -113,6 +113,17 @@ few images:
 operating in this space. There are now dozens (if not more) companies active here on a world-wide basis.
 
 ### Applied imagination
+During the holiday (2022) season, I started tinkering with [OpenAI's ChaptGPT](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwje4fqGobz8AhW5EFkFHQQeCfgQFnoECAkQAQ&url=https%3A%2F%2Fopenai.com%2Fblog%2Fchatgpt%2F&usg=AOvVaw07ciM_LkSe6efpFVXLmYhu)
+This development is getting a fair bit of buzz. Personally, I was tryng to get it to write code for me for Blender, FreeCAD 
+and a number of other open-source tools. 
+
+The images below were **not generated with OpenAI** (none of their services). The images below were generated via a 
+website from Japan. I forget the name right now. As I ended up cropping these images and choosing to over-write the files 
+vs saving a copy.
+
+- Looking at the mountains in the distance, this first image here could be of a drive up to a Shangrila Veterans Healing 
+Place community somewhere out on the West coast. 
+![](img/Screenshot_20230101-211831.png)
 
 I imagine these locations to be mixed real estate facilities. Whereby humans and robots collaborate in order to bring hope and healing for veterans, first responders, healthcare workers from all over the world. I would absolutely love feedback and I seek to collaborate with you on this project. With gratitude
 
