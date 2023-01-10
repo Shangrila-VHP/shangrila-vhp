@@ -3,12 +3,17 @@ Shangrila Veterans (and first responders) Healing Places is a place where servic
 are communities that are specifically designed in order to enable hope and healing for the worldwide veterans community.
 
 ![copy path via github directly](img/Shangrila-vhp-main-idea-v1-1.png)
+<!-- Will keep these other options. Or should I. Hmm.
 ![Image that captures the main idea](/img/Shangrila-vhp-main-idea-v1-1.png)
 ![Same w unc path](https://github.com/Shangrila-VHP/shangrila-vhp/blob/main/img/Shangrila-vhp-main-idea-v1-1.png)
+-->
+
+<!--
 Try inside a p tag
 <p>
  <img src="/img/Shangrila-vhp-main-idea-v1-1.png" width="220" height="240" />
 </p>
+-->
 
 
 # Hope
