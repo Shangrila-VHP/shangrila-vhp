@@ -42,7 +42,7 @@ As a bit of a background, I have been intrigued with specific projects out of US
 how new and existing technologies are being deployed in order to bring hope and healing into the lives of veterans. There 
 are specific technologies developed at USC for treating PTSD (Post Traumatic Stress). That being said, the scope of the 
 veterans valley isn't necessarily PTS focused. But a team of humans and machines must definitely be incentivized in order 
-to further enable designs for effectively treating PTS.  
+to further enable designs for effectively treating PTS.
 
 Next, there is particular project out of USC-ICT (Institute of Creative Technologies) called 'Bravemind.' This project has 
 been in development for a number of years and here is the [link 
@@ -54,7 +54,10 @@ the news and developments related to Bravemind and other projects.
 Next and last year, I installed an app called Clubhouse. The quality of the algorithms for this app in particular has a lot to
 be desired for. That being said, there are a few really awesome places on Clubhouse (rooms inside clubs). One of the rooms is 
 hosted by a for-profit organization called EazyDoIt Inc. This is a private organization that offers training and consultancy on 
-a tax incentive offered by the US Government via the IRS (Internal Revenue Service). 
+a tax incentive offered by the US Government via the IRS (Internal Revenue Service). **Note**: Mentioning an institution or 
+individual does not equal endorsement. [Link to OZ investment Club - Private institution via 
+Clubhouse](https://www.clubhouse.com/join/the-opportunity-zone/InI7VJqN/MEpEBaKV?utm_medium=ch_invite&utm_campaign=ITmGcjtS96JIfy4zlSmIkw-131391) 
+[Link to one of OZ investment's website](https://www.opportunityzoneclub.com/)
 
 This program is called 'Opportuniy Zones' and according to the IRS website (link below):
 
