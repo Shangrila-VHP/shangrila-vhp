@@ -122,7 +122,8 @@ website from Japan. I forget the name right now. As I ended up cropping these im
 vs saving a copy.
 
 - Looking at the mountains in the distance, this first image here could be of a drive up to a Shangrila Veterans Healing 
-Place community somewhere out on the West coast. **Note*: Apologize for the arrows in the pictures. Clicking on these arrows is not going to do anything!
+Place community somewhere out on the West coast. **Note*: Apologize for the **arrows** and **like** buttons in the pictures. **Clicking on them is not going to do anything**
+!
 ![](img/Screenshot_20230101-211831.png)
 
 - Next image is of a wide open space, where hydrogen powered/self-driving buses (with attendants on-board) are parked. 
