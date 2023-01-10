@@ -122,9 +122,13 @@ website from Japan. I forget the name right now. As I ended up cropping these im
 vs saving a copy.
 
 - Looking at the mountains in the distance, this first image here could be of a drive up to a Shangrila Veterans Healing 
-Place community somewhere out on the West coast. 
+Place community somewhere out on the West coast. **Note*: Apologize for the arrows in the pictures. Clicking on these arrows is not going to do anything!
 ![](img/Screenshot_20230101-211831.png)
 
+- Next image is of a wide open space, where hydrogen powered/self-driving buses (with attendants on-board) are parked. 
+These buses will pick and drop passengers who do not necessarily live in the healing valleys themselves. But either take 
+the buses for the purposes of seeking therapy, recreational activities, leisure, socializing, work e.t.c.
+![](img/Screenshot_20230101-211755.png) 
 I imagine these locations to be mixed real estate facilities. Whereby humans and robots collaborate in order to bring hope and healing for veterans, first responders, healthcare workers from all over the world. I would absolutely love feedback and I seek to collaborate with you on this project. With gratitude
 
 The idea is that of a mixed-real estate complex. 
