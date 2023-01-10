@@ -38,6 +38,7 @@ I was volunteering my time for a US based non-profit (in a unofficial capacity).
 personally I am a civilian and I have not been in contact with any government or military (and other associated) 
 agency/agencies as of yet.
 
+## USC ICT
 As a bit of a background, I have been intrigued with specific projects out of USC (University of Southern California). And
 how new and existing technologies are being deployed in order to bring hope and healing into the lives of veterans. There 
 are specific technologies developed at USC for treating PTSD (Post Traumatic Stress). That being said, the scope of the 
@@ -51,14 +52,18 @@ here](https://ict.usc.edu/research/projects/bravemind-virtual-reality-exposure-t
 Again, I do not have any affiliation with USC or any other institution. Also, I cannot say that I actively keep update with 
 the news and developments related to Bravemind and other projects. 
 
+## OZ Investors (Private entity)
 Next and last year, I installed an app called Clubhouse. The quality of the algorithms for this app in particular has a lot to
 be desired for. That being said, there are a few really awesome places on Clubhouse (rooms inside clubs). One of the rooms is 
-hosted by a for-profit organization called EazyDoIt Inc. This is a private organization that offers training and consultancy on 
-a tax incentive offered by the US Government via the IRS (Internal Revenue Service). **Note**: Mentioning an institution or 
+hosted by a for-profit organization called EazyDoIt Inc. 
+
+*OZ investors **is a private organization** that offers training and consultancy* on a (**public**) tax incentive offered by the US Government via the IRS (Internal Revenue Service). **Note**: Mentioning an institution or 
 individual does not equal endorsement. [Link to OZ investment Club - Private institution via 
 Clubhouse](https://www.clubhouse.com/join/the-opportunity-zone/InI7VJqN/MEpEBaKV?utm_medium=ch_invite&utm_campaign=ITmGcjtS96JIfy4zlSmIkw-131391) 
-[Link to one of OZ investment's website](https://www.opportunityzoneclub.com/)
+and [Link to one of OZ investment's website](https://www.opportunityzoneclub.com/) Also, I know 
 
+## IRS's Opportunity Zones and Opportunity Funds
+So OZ investors (private entity) 
 This program is called 'Opportuniy Zones' and according to the IRS website (link below):
 
 'Opportunity Zones are an economic development tool that allows people to invest in distressed areas in the United States.
