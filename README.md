@@ -82,13 +82,38 @@ Their purpose is to spur economic growth and job creation in low-income communit
 One of 
 > the things they talk about in the OZ investors (private/not public) rooms is that sometimes there are properties that are
 
-That's within United States and that's only one program. I have other ideas in order to provision physical facilities safely
-and yet inexpensively. Particularly seeing that 3d-printing organizations like ICON 3D have successfully collaborated with 
-the US Marines in the past. Source link below (also includes an accompanying video and a few images):
+Coming back to the Opportunity Zones and Opportunity Funds program(s). From my uneducated perspective, these 
+incentive structures offered by the IRS have the best of intentions and the thinking behind such a program (to me) seems 
+very healthy. The thing to realize is that as good as this program is/could be, this is one of the many possible 
+incentives that could be offered by various governments and other institutions around the world.
 
-https://3dprintingindustry.com/news/u-s-marines-use-icon-3d-printing-to-create-concrete-structures-at-camp-pendleton-174200/
+# P.I.E: Plan | Implement | Evaluate
+## Core considerations
+From my very limited background as a civilian, I would think that the needs within the veteran community are unique. As 
+well, there will probably be safety and security related considerations to be had. As you probably do not want to have 
+clusters of real-estate, where security is not thought through and that such developments have a very high density of 
+veterans. **Such a design could be a target for individuals and groups who wish to cause harm. Particularly if the details 
+related to the developments are public for the whole world to see.** Next, the medical and other needs of the community 
+also need to be thought through in advance. Whether it's to design spaces keeping in mind the physiology and psychological 
+setbacks. Won't be jumping into solution mode, but maybe such towns/communities do not need as many cars. The landscape is 
+designed keeping wheelchairs and also folks using prostethics making use of really wide and super safe side-walks. Other 
+set of designs could be enabled in order to enable work for veterans who are transitioning from military life to civilian 
+life. As well, different designs and processes would be thought through in order to help solve a variety of problems. 
 
--- Back around 20:10 ish. Will upload the images and see how they can be pulled into this README.  
+## Construction of such facilities
+Personally, I like to keep a surface level overview of what is/has been going on in the additive-manufacturing space. So 
+having done this for more than a decade now (plus/minus), I have some ideas in order to provision physical facilities 
+safely and yet inexpensively. Particularly seeing that 3d-printing organizations like ICON 3D have successfully 
+collaborated with the US Marines in the recent past. Source link is below and it contains an accompanying video and a 
+few images:
+
+[ICON 
+3d](https://3dprintingindustry.com/news/u-s-marines-use-icon-3d-printing-to-create-concrete-structures-at-camp-pendleton-174200/)
+
+[ICON 3d - website](https://www.iconbuild.com/), [Wasp - Italy](https://www.3dwasp.com/) are the names of two startups 
+operating in this space. There are now dozens (if not more) companies active here on a world-wide basis.
+
+### Applied imagination
 
 I imagine these locations to be mixed real estate facilities. Whereby humans and robots collaborate in order to bring hope and healing for veterans, first responders, healthcare workers from all over the world. I would absolutely love feedback and I seek to collaborate with you on this project. With gratitude
 
