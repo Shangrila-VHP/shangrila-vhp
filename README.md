@@ -182,7 +182,7 @@ A veterans healing facility built <redacted>. With an swimming pool, Covered out
  Prompt 03: 
  Same but for a Canadian site: a veterans healing facility built in <redacted>. Two images during the winter and 2 during the summer spring. Covered outdoor yoga facilities, community gardens, tennis courts, places for relaxation with hammock, lots of greenery around and flowers, houses made out of mud and hyperabode that are good for the climate, please place a few boxabl casitas there also, electric buses and veterans doing yoga with a coach
  
- Here are some of the images that the AI generated. Note: Maybe without more credits, it makes sense to get the AI to generate more images inside each tile. So the prompt for Canadian sites may be more useful. At least till more credits can be secured.
+ Here are some of the images that the AI generated. Note: Maybe without more credits, it makes sense to get the AI to generate more images inside each tile. So the prompt for Canadian sites may be more useful. At least till more credits can be secured. Also, sometimes the AI mixes and merges the prompts, as it merged a bus and a building together. So maybe more specific prompts are to be provided.
  
 ![](img/04-19-2023-Bing-CAN-ON_01.jpeg)
 ![](img/04-19-2023-Bing-CAN-ON_02.jpeg)
