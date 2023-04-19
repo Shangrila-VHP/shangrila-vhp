@@ -158,6 +158,38 @@ robots mostly.
 fields in some of the images the AI (Artificial Intelligence) generated. 
 ![](img/Screenshot_20230101-211808.png)
 
+#### 04-19-2023 Tinkering with Bing image generator. 
+Dall-e from OpenAI requires credits from the get go. With the Bing image generator, I get up to 25 requests for free. So I am putting it to good use today. 
+
+Prompt 01:
+A veterans healing facility build (should have said built) over a ranch in <redacted>. With swimming pool, outdoor yoga facilities, tennis courts, houses made out of mud and hyperabode and adobe earth, electric buses and veterans with their coaches
+
+ Here are the images that the AI (Bing image generator powered by Dall-E by OpenAI) generated:
+ ![](img/04-19-2023-Bing-US-CA_01.jpeg)
+ ![](img/04-19-2023-Bing-US-CA_02.jpeg) 
+ ![](img/04-19-2023-Bing-US-CA_03.jpeg)
+ ![](img/04-19-2023-Bing-US-CA_04.jpeg)
+ 
+ Prompt 02: 
+A veterans healing facility built <redacted>. With an swimming pool, Covered outdoor yoga facilities, community gardens, tennis courts, places for relaxation with hammock, lots of greenery around and flowers, houses made out of mud and hyperabode that are good for the climate, please place a few boxabl casitas there also and adobe earth, electric buses and veterans doing yoga with two coaches (Edited to protect privacy)
+ 
+ Here are the images that the AI generated:
+![](img/04-19-2023-Bing-US-WI_01.jpeg)
+![](img/04-19-2023-Bing-US-WI_02.jpeg)
+![](img/04-19-2023-Bing-US-WI_03.jpeg)
+![](img/04-19-2023-Bing-US-WI_04.jpeg)
+ 
+ Prompt 03: 
+ Same but for a Canadian site: a veterans healing facility built in <redacted>. Two images during the winter and 2 during the summer spring. Covered outdoor yoga facilities, community gardens, tennis courts, places for relaxation with hammock, lots of greenery around and flowers, houses made out of mud and hyperabode that are good for the climate, please place a few boxabl casitas there also, electric buses and veterans doing yoga with a coach
+ 
+ Here are some of the images that the AI generated. Note: Maybe without more credits, it makes sense to get the AI to generate more images inside each tile. So the prompt for Canadian sites may be more useful. At least till more credits can be secured.
+ 
+![](img/04-19-2023-Bing-CAN-ON_01.jpeg)
+![](img/04-19-2023-Bing-CAN-ON_02.jpeg)
+![](img/04-19-2023-Bing-CAN-ON_03.jpeg)
+![](img/04-19-2023-Bing-CAN-ON_04.jpeg)
+ 
+
 Overall, I imagine these locations to be mixed real estate facilities for enabling hope and healing.
 Whereby humans and robots would collaborate in order to bring hope and healing for veterans, first responders, healthcare 
 workers from all over the world. I haven't had a chance to develop the care-giving robots side of things. But I'd love to 
