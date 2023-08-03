@@ -5,7 +5,7 @@ are communities that are specifically designed in order to enable hope and heali
 
 The idea is being shared leveraging principles from the open-source community. However proper and on-going care and 
 consultation (see below) will be necessary in order to implement the idea in a way that brings hope and healing, while respecting and 
-protecting individual privacy during all the times. The focus is on care. I guess, the the places themselves could be 
+protecting individual privacy during all the times. The focus is on care. The physical locations, themselves could be 
 renamed as '**care valleys**' or '**valleys of care**.'
 
 There will be initial and then on-going consulations with clinicians, other medical/evidence based practitioners. But also 
