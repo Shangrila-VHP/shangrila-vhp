@@ -208,3 +208,7 @@ collaborate. As I do not log onto Github very often. Here's a [link to my
 profile.](https://www.linkedin.com/in/adeelkhan1/) 
 
 With gratitude.
+
+# Updates
+## Tinkering with Floorplanner dot Com back in September 2023
+[Link via Youtube](https://youtu.be/VSZ-Q_O5Ja4?si=1xPU2xHxz4kR86Nn)
