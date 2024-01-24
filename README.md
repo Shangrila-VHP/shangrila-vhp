@@ -246,5 +246,5 @@ This is a concept that I have been thinking about. This isn't exactly a tiny hou
 For the model itself, I used paper, glue sticks, a little bit of elastic, exacto knife and scissors. And a pen for drawing e.t.c
 ![](img/20240123_055031.jpg)
 ![](img/20240123_055045.jpg)
-![](img/20240123_055044.jpg)
+![](img/20240123_055054.jpg)
 
