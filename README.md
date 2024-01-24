@@ -227,6 +227,7 @@ The prompts that I provided were very basic. As well, these images were generate
 ![](img/01-24-2024-Adobe-Firefly-Earthship-Inspired-026.jpg)
 
 ### Then via an online Tool that I found called Maket AI
+![](img/01-24-2024-Sample-Floor-Plan-via-Maket-AI-00.jpg)
 ![](img/01-24-2024-Sample-Floor-Plan-via-Maket-AI-01.jpg)
 ![](img/01-24-2024-Sample-Floor-Plan-via-Maket-AI-02.jpg)
 ![](img/01-24-2024-Sample-Floor-Plan-via-Maket-AI-03.jpg)
@@ -236,4 +237,4 @@ The prompts that I provided were very basic. As well, these images were generate
 ![](img/01-24-2024-Sample-Floor-Plan-via-Maket-AI-07.jpg)
 ![](img/01-24-2024-Sample-Floor-Plan-via-Maket-AI-08.jpg)
 ![](img/01-24-2024-Sample-Floor-Plan-via-Maket-AI-09.jpg)
-![](img/01-24-2024-Sample-Floor-Plan-via-Maket-AI-10.jpg)
+
