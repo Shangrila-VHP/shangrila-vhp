@@ -216,6 +216,7 @@ The computer I had been using was older and hence the video is choppy
 
 ## Updates from 01-24-2024
 Generated a few renders via some of the apps I was tinkering with. 
+
 ### First, via Adobe Firefly generative AI
 The prompts that I provided were very basic. As well, these images were generated using generative AI that has been trained on a wide variety of dataset. There are errors that are showing up. Hence, on the next iteration it will be worthwhile to provide a detailed and richer set of prompt to see the difference for the ourput.
 ![](img/01-24-2024-Adobe-Firefly-Earthship-Inspired-021.jpg)
@@ -225,4 +226,14 @@ The prompts that I provided were very basic. As well, these images were generate
 ![](img/01-24-2024-Adobe-Firefly-Earthship-Inspired-025.jpg)
 ![](img/01-24-2024-Adobe-Firefly-Earthship-Inspired-026.jpg)
 
-###
+### Then via an online Tool that I found called Maket AI
+![](img/01-24-2024-Sample-Floor-Plan-via-Maket-AI-01.jpg)
+![](img/01-24-2024-Sample-Floor-Plan-via-Maket-AI-02.jpg)
+![](img/01-24-2024-Sample-Floor-Plan-via-Maket-AI-03.jpg)
+![](img/01-24-2024-Sample-Floor-Plan-via-Maket-AI-04.jpg)
+![](img/01-24-2024-Sample-Floor-Plan-via-Maket-AI-05.jpg)
+![](img/01-24-2024-Sample-Floor-Plan-via-Maket-AI-06.jpg)
+![](img/01-24-2024-Sample-Floor-Plan-via-Maket-AI-07.jpg)
+![](img/01-24-2024-Sample-Floor-Plan-via-Maket-AI-08.jpg)
+![](img/01-24-2024-Sample-Floor-Plan-via-Maket-AI-09.jpg)
+![](img/01-24-2024-Sample-Floor-Plan-via-Maket-AI-10.jpg)
