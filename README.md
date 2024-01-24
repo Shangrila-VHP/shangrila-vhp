@@ -218,7 +218,7 @@ The computer I had been using was older and hence the video is choppy
 Generated a few renders via some of the apps I was tinkering with. 
 
 ### First, via Adobe Firefly generative AI
-The prompts that I provided were very basic. As well, these images were generated using generative AI that has been trained on a wide variety of dataset. There are errors that are showing up. Hence, on the next iteration it will be worthwhile to provide a detailed and richer set of prompt to see the difference for the ourput.
+The prompts that I provided were very basic. As well, these images were generated using generative AI that has been trained on a wide variety of dataset. There are errors that are showing up. Hence, on the next iteration it will be worthwhile to provide a detailed and richer set of prompt to see the difference for the output. That being said, considering that it took me 1.5 hours plus to get going on Floor Plannet dot com (on a slower machine), the fact that AIs can generate content with a simple prompt in seconds is a truly remarkable achievement for humans and machines!
 ![](img/01-24-2024-Adobe-Firefly-Earthship-Inspired-021.jpg)
 ![](img/01-24-2024-Adobe-Firefly-Earthship-Inspired-022.jpg)
 ![](img/01-24-2024-Adobe-Firefly-Earthship-Inspired-023.jpg)
@@ -227,6 +227,7 @@ The prompts that I provided were very basic. As well, these images were generate
 ![](img/01-24-2024-Adobe-Firefly-Earthship-Inspired-026.jpg)
 
 ### Then via an online Tool that I found called Maket AI
+These are images generated for the purpose of testing out these apps and for demo only. Not expecting cars parked in garages in all residences.
 ![](img/01-24-2024-Sample-Floor-Plan-via-Maket-AI-00.jpg)
 ![](img/01-24-2024-Sample-Floor-Plan-via-Maket-AI-01.jpg)
 ![](img/01-24-2024-Sample-Floor-Plan-via-Maket-AI-02.jpg)
