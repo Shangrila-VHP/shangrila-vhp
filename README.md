@@ -217,10 +217,12 @@ The computer I had been using was older and hence the video is choppy
 ## Updates from 01-24-2024
 Generated a few renders via some of the apps I was tinkering with. 
 ### First, via Adobe Firefly generative AI
-The prompts that I provided were very basic. So it will be worthwhile to provide a detailed and richer set of prompts
+The prompts that I provided were very basic. As well, these images were generated using generative AI that has been trained on a wide variety of dataset. There are errors that are showing up. Hence, on the next iteration it will be worthwhile to provide a detailed and richer set of prompt to see the difference for the ourput.
 ![](img/01-24-2024-Adobe-Firefly-Earthship-Inspired-021.jpg)
 ![](img/01-24-2024-Adobe-Firefly-Earthship-Inspired-022.jpg)
 ![](img/01-24-2024-Adobe-Firefly-Earthship-Inspired-023.jpg)
 ![](img/01-24-2024-Adobe-Firefly-Earthship-Inspired-024.jpg)
 ![](img/01-24-2024-Adobe-Firefly-Earthship-Inspired-025.jpg)
 ![](img/01-24-2024-Adobe-Firefly-Earthship-Inspired-026.jpg)
+
+###
