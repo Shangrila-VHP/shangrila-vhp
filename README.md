@@ -239,3 +239,12 @@ These are images generated for the purpose of testing out these apps and for dem
 ![](img/01-24-2024-Sample-Floor-Plan-via-Maket-AI-08.jpg)
 ![](img/01-24-2024-Sample-Floor-Plan-via-Maket-AI-09.jpg)
 
+### Earlier on, I made a model out of cardboard
+Please excuse the grease that seeped through the cardboard and onto the paper. Originally this was the box in which fried food was placed. Captain Planet.
+This is a concept that I have been thinking about. This isn't exactly a tiny house. If this development was built to scale, then you could have multiple rooms inside of this dwelling. The roof would be covered with earth and doing so will help save a lot of money for heating and cooling. In addition to, it has large sun-roofs for natural light and aeration. It also has panels on either side that can be raised like garage doors. Solar panels can be placed on top of these panels. 
+
+For the model itself, I used paper, glue sticks, a little bit of elastic, exacto knife and scissors. And a pen for drawing e.t.c
+![](img/20240123_055031.jpg)
+![](img/20240123_055045.jpg)
+![](img/20240123_055044.jpg)
+
