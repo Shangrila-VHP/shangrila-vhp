@@ -1,17 +1,28 @@
 # Introduction
 
-Shangrila Veterans (and first responders) Healing Places is a place where service members can live, play and heal. There 
-are communities that are specifically designed in order to enable hope and healing for the worldwide veterans community. 
+---
 
-The idea is being shared leveraging principles from the open-source community. However proper and on-going care and 
-consultation (see below) will be necessary in order to implement the idea in a way that brings hope and healing, while respecting and 
-protecting individual privacy during all the times. The focus is on care. The physical locations, themselves could be 
-renamed as '**care valleys**' or '**valleys of care**.'
+**Shangrila Veterans Healing Places**: Creating and encouraging the creation of Safe Havens for Veterans
 
-There will be initial and then on-going consulations with clinicians, other medical/evidence based practitioners. But also 
-urban designers, 
-architects (particularly architecture focused on enabling healthier communities and settings), sociologists, policy makers 
-e.t.c
+At **Shangrila Veterans Healing Places**, our mission is to provide safe and secure environments where veterans can find hope and healing. We believe that every veteran deserves a stable and comfortable place to call home. Effectively working towards eliminating homelessless across the worldwide veterans and firt-responder populations.
+
+Our approach involves collaborating with governments and advocating for sustainable solutions to veteran homelessness. Here are our key principles:
+
+1. **Prioritizing Veteran Homelessness**: We make ending veteran homelessness a top priority. By focusing on this critical issue, we aim to ensure that no veteran is left without a safe place to live.
+
+2. **Evidence-Based Housing First Approach**: We advocate for evidence-based strategies that prioritize housing as the first step. By providing stable housing, we create a foundation for veterans to rebuild their lives.
+
+3. **Reaching Underserved Veterans**: Our efforts extend to all veterans, especially those who may be overlooked or underserved. We work to ensure that no one falls through the cracks.
+
+4. **Increasing Access to Affordable Housing**: We collaborate with governments to increase the supply of affordable housing options. Safe and secure housing is essential for veterans' well-being. In our own labs, we are working on designs focused on enabling tiny-housing and other means of enabling housing structures that are safe/inclement weather proof. Where the focus is on community well-being and development and work towards enabling designs that lead to increasing good health.
+
+5. **Quality Support Services**: Alongside housing, we emphasize the delivery of support services. Evidence based counseling, substance use treatment, and other wrap-around services play a crucial role in veterans' recovery.
+
+6. **Preventing Homelessness**: Our goal is not only to address existing homelessness but also to prevent it. By creating sustainable solutions, we aim to break the cycle of homelessness among veterans. Pull someone up and equip them so that the individuals can help solve problems around the world.
+
+Together, we can build a future where every veteran has a safe and stable place to call home. The focus is on piloting this project across Canada, then scaling it across the Western alliance and core allies and going from there.
+
+---
 
 ![copy path via github directly](img/Shangrila-vhp-main-idea-v1-1.png)
 <!-- Will keep these other options. Or should I. Hmm.
