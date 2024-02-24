@@ -39,10 +39,11 @@ Try inside a p tag
 
 
 # Hope
-With proper approvals and protocols (safety, security, evidence based practice) being followed, this idea could evolve in a 
-variety of ways.The initial set of meditations focus on enabling such a reality in a mixed real-estate sense across the 
-United States and Canada. Mixed real-estate means that there will be facilities for healing of different types. But also 
-places where veterans and their families could live and work. Where veterans and also civilians could find meaningful work. 
+
+At Shangrila Veterans Healing Places, our mission is twofold. We not only provide secure environments for veterans but also advocate for governments, institutions and private donors to engage actively and do more. By working together, we can ensure that everyone thrives in safe and supportive spaces.
+
+The mid to longer term focus is towards helping enable, mixed real-estate. Geographies, where here will be facilities for healing of different types. But also 
+places where veterans and their families could live and work. Where veterans and also civilians could find meaningful work. We want the individuals and families to have the means to own the real-estate, so that they are the ones who benefit and as the price appreciates.
 
 # Background
 Shangrila Veterans (and first responders) is an idea that I thought of around the end of 2022. I initially got this idea while
