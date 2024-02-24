@@ -42,7 +42,7 @@ Try inside a p tag
 
 At Shangrila Veterans Healing Places, our mission is twofold. We not only provide secure environments for veterans but also advocate for governments, institutions and private donors to engage actively and do more. By working together, we can ensure that everyone thrives in safe and supportive spaces.
 
-The mid to longer term focus is towards helping enable, mixed real-estate. Geographies, where here will be facilities for healing of different types. But also 
+The mid to longer term focus is towards helping enable, mixed real-estate. Geographies, where there will be facilities for healing of different types. But also 
 places where veterans and their families could live and work. Where veterans and also civilians could find meaningful work. We want the individuals and families to have the means to own the real-estate, so that they are the ones who benefit and as the price appreciates.
 
 # Background
