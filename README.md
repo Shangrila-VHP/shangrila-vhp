@@ -20,7 +20,7 @@ Our approach involves collaborating with governments and advocating for sustaina
 
 6. **Preventing Homelessness**: Our goal is not only to address existing homelessness but also to prevent it. By creating sustainable solutions, we aim to break the cycle of homelessness among veterans. Pull someone up and equip them so that the individuals can help solve problems around the world.
 
-Together, we can build a future where every veteran has a safe and stable place to call home. The focus is on piloting this project across Canada, then scaling it across the Western alliance and core allies and going from there.
+Together, we can build a future where every veteran has a safe and stable place to call home. The focus is on piloting this project across Canada and the United States, then scaling it across the Western alliance and core allies and going from there.
 
 ---
 
