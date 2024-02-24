@@ -4,7 +4,7 @@
 
 **Shangrila Veterans Healing Places**: Creating and encouraging the creation of Safe Havens for Veterans
 
-At **Shangrila Veterans Healing Places**, our mission is to provide safe and secure environments where veterans can find hope and healing. We believe that every veteran deserves a stable and comfortable place to call home. Effectively working towards eliminating homelessless across the worldwide veterans and firt-responder populations.
+At **Shangrila Veterans Healing Places**, our mission is to provide safe and secure environments where veterans can find hope and healing. We believe that every veteran deserves a stable and comfortable place to call home. Effectively working towards eliminating homelessless across the worldwide veterans and first-responder populations.
 
 Our approach involves collaborating with governments and advocating for sustainable solutions to veteran homelessness. Here are our key principles:
 
