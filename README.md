@@ -8,6 +8,8 @@
 
 At **Shangrila Veterans Healing Places**, the primary mission is to provide safe and secure environments where veterans and single-parents. can find hope and healing, assisted by evidence based practitioners. A stable and comfortable place that can greatly assist in the healing process. The intention is to scale Shangrila-VHP in successive phases.
 
+There will most likely be different communities. Based upon a variety of factors.
+
 [Note: Front view of one of the buildings.]
 ![](img/03-10-2024-Render-CoPilot-Hooyah-Main-05.jpg)
 
