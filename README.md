@@ -40,6 +40,18 @@ Here are our key principles and starting with Phase 01:
 [Note: This facility has been imagined for cities and towns where real-estate is pricier. That's why they are close together. Ideally you want the facilities to be at a distance from each other in order to ensure privacy]
 ![](img/03-10-2024-Render-CoPilot-Hooyah-Main-04.jpg)
 
+[Note: Front view of one of the buildings.]
+![](img/03-10-2024-Render-CoPilot-Hooyah-Main-05.jpg)
+
+[Note: Nice day in Spring. Air is crisp]
+![](img/03-10-2024-Render-CoPilot-Hooyah-Main-06.jpg)
+
+[Note: The facilities are spacious and have a lot of sun-light coming inside. They are mostly powered by solar-panels and have diesel as a backup. Unless, there is the means to be able to connect to hydro provided by the utilities. Here a friend is about to arrive as the resident is wrapping up their reading/chores on the patio]
+![](img/03-10-2024-Render-CoPilot-Hooyah-Main-07.jpg)
+
+[Note: A single unit with a family visit and a pet can also be seen. The unit has a StarWars esque feel. Which is not intentional. The units will most probably look different for successive versions and models]
+![](img/03-10-2024-Render-CoPilot-Hooyah-Main-08.jpg)
+
 Together, we can build a future where every human (starting with veterans and first-responders) has a safe and stable place to call home. The focus is on piloting this project across Canada and the United States, then scaling it across the Western alliance and core allies and going from there. Provided the Governments do not have a concern with the sharing of the designs, the designs could also be licensed in the future at a price point that is very fair and affordable. 
 
 ---
