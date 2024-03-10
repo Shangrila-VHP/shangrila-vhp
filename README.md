@@ -33,6 +33,8 @@ Here are our key principles and starting with Phase 01:
 5. **Quality Support Services**: Alongside housing, we emphasize the delivery of support services. Evidence based counseling, substance use treatment, and other wrap-around services play a crucial role in veterans' recovery. I (Adeel Khan) am not sure how the substance use treatment and couseling for other significant issues is going to work. So I will be consulting with trained evidence based practitioners and social workers about this.
 
 6. **Preventing Homelessness**: Our goal is not only to address existing homelessness but also to prevent it. By creating sustainable solutions, we aim to break the cycle of homelessness among veterans and then the wider civilian population. Pull someone up and equip them so that the individuals can help solve problems around the world. The overall, worldwide need for sustainable housing is immense. Some 1.6 Billion individual on the planet still do not have adequate shelter. The longer term vision is to go to space and manufacture the resource in space, in order to help enable thriving communities back on Earth.
+   
+![](img/03-10-2024-Render-CoPilot-Hooyah-Main-03.jpg)
 
 Together, we can build a future where every human (starting with veterans and first-responders) has a safe and stable place to call home. The focus is on piloting this project across Canada and the United States, then scaling it across the Western alliance and core allies and going from there. Provided the Governments do not have a concern with the sharing of the designs, the designs could also be licensed in the future at a price point that is very fair and affordable. 
 
