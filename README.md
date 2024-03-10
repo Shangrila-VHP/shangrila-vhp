@@ -8,6 +8,7 @@
 
 At **Shangrila Veterans Healing Places**, the primary mission is to provide safe and secure environments where veterans can find hope and healing, assisted by evidence based practitioners. Every veteran in every single country, deserves a stable and comfortable place where they can heal. The intention is to scale Shangrila-VHP in successive phases.
 
+[Note: Front view of one of the buildings.]
 ![](img/03-10-2024-Render-CoPilot-Hooyah-Main-05.jpg)
 
 1. Phase 01: An objective and key results (OKR) set for eliminating homeless in the veteran community. Working with VA and NATO and allies.
@@ -39,9 +40,6 @@ Here are our key principles and starting with Phase 01:
 
 [Note: This facility has been imagined for cities and towns where real-estate is pricier. That's why they are close together. Ideally you want the facilities to be at a distance from each other in order to ensure privacy]
 ![](img/03-10-2024-Render-CoPilot-Hooyah-Main-04.jpg)
-
-[Note: Front view of one of the buildings.]
-![](img/03-10-2024-Render-CoPilot-Hooyah-Main-05.jpg)
 
 [Note: Nice day in Spring. Air is crisp]
 ![](img/03-10-2024-Render-CoPilot-Hooyah-Main-06.jpg)
