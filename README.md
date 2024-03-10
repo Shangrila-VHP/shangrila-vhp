@@ -1,3 +1,5 @@
+![](img/03-10-2024-Render-CoPilot-Hooyah-Main-01.jpg)
+
 # Introduction
 
 ---
