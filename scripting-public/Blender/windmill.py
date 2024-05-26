@@ -38,20 +38,17 @@ rod.parent = rotator
 
 # Create four planes for the propellers and parent them to the rotator
 for i in range(4):
-    bpy.ops.mesh.primitive_plane_add(size=2, enter_editmode=False, align='WORLD', location=(0, 0, 3))
+    bpy.ops.mesh.primitive_plane_add(size=2, enter_editmode=False, align='WORLD', location=(0, 0, 1.25 + i * 0.5))  # Adjust the Z location to be inside the cylinder
     propeller = bpy.context.object
     propeller.scale.x = 0.1  # Make the propellers long and thin
     propeller.scale.y = 3
-    #05-26-2024: 18:26:00 Modifying this atm
-    propeller.rotation_euler = (0, i * 3.14159 / 2, i * 3.14159 / 2)  # Rotate propellers to be evenly spaced around the rotator
-    propeller.rotation_euler[1] = 3.14159 / 8  # Tilt the propellers at an angle to the wind
+    propeller.rotation_euler = (3.14159 / 2, 0, i * 3.14159 / 2)  # Rotate propellers to be perpendicular to the X-axis and evenly spaced around the rotator
     propeller.parent = rotator
 
-#05-26-2024: 18:26:00 Modifying this atm
-# Convert the plane to a mesh and give it some thickness
-bpy.ops.object.mode_set(mode='EDIT')
-bpy.ops.mesh.extrude_region_move(TRANSFORM_OT_translate={"value":(0, 0, 0.1)})
-bpy.ops.object.mode_set(mode='OBJECT')
+    # Convert the plane to a mesh and give it some thickness
+    bpy.ops.object.mode_set(mode='EDIT')
+    bpy.ops.mesh.extrude_region_move(TRANSFORM_OT_translate={"value":(0, 0, 0.1)})
+    bpy.ops.object.mode_set(mode='OBJECT')
 
 # Animate the rotator to rotate
 rotator.rotation_mode = 'XYZ'
