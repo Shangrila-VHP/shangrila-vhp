@@ -15,11 +15,14 @@ body = bpy.context.object
 # Create an empty object at the top of the body
 bpy.ops.object.empty_add(type='PLAIN_AXES', location=(0, 0, 2))
 rotator = bpy.context.object
+rotator.hide_viewport = True  # Hide the rotator in the viewport
+rotator.hide_render = True  # Hide the rotator in the final render
 
 # Create four planes for the propellers and parent them to the rotator
 for i in range(4):
-    bpy.ops.mesh.primitive_plane_add(size=1, enter_editmode=False, align='WORLD', location=(0, 0, 2))
+    bpy.ops.mesh.primitive_plane_add(size=2, enter_editmode=False, align='WORLD', location=(0, 0, 2))
     propeller = bpy.context.object
+    propeller.scale.x = 3
     propeller.rotation_euler = (0, 0, i * 3.14159 / 2)
     propeller.parent = rotator
 
