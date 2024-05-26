@@ -81,7 +81,7 @@ for i in range(4):
     protective_mesh = bpy.context.object
 
     # 05-26-2024: *This line hides the Mesh!*
-    #protective_mesh.hide_viewport = True
+    # protective_mesh.hide_viewport = True
 
     protective_mesh.scale.x = 1.1  # Make the protective mesh slightly larger than the windmill
     protective_mesh.scale.y = 1.1
