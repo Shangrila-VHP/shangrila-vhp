@@ -42,9 +42,16 @@ for i in range(4):
     propeller = bpy.context.object
     propeller.scale.x = 0.1  # Make the propellers long and thin
     propeller.scale.y = 3
-    propeller.rotation_euler = (0, 0, i * 3.14159 / 2)  # Rotate propellers to face the viewer
+    #05-26-2024: 18:26:00 Modifying this atm
+    propeller.rotation_euler = (0, i * 3.14159 / 2, i * 3.14159 / 2)  # Rotate propellers to be evenly spaced around the rotator
     propeller.rotation_euler[1] = 3.14159 / 8  # Tilt the propellers at an angle to the wind
     propeller.parent = rotator
+
+#05-26-2024: 18:26:00 Modifying this atm
+# Convert the plane to a mesh and give it some thickness
+bpy.ops.object.mode_set(mode='EDIT')
+bpy.ops.mesh.extrude_region_move(TRANSFORM_OT_translate={"value":(0, 0, 0.1)})
+bpy.ops.object.mode_set(mode='OBJECT')
 
 # Animate the rotator to rotate
 rotator.rotation_mode = 'XYZ'
