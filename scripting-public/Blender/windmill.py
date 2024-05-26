@@ -6,7 +6,7 @@ bpy.ops.object.select_by_type(type='MESH')
 bpy.ops.object.delete()
 
 # Create the body of the windmill
-bpy.ops.mesh.primitive_cylinder_add(radius=1, depth=4, location=(0, 0, 1))
+bpy.ops.mesh.primitive_cylinder_add(radius=0.4, depth=6, location=(0, 0, 1))
 body = bpy.context.object
 
 # Create a cube to represent the hollowed-out area
