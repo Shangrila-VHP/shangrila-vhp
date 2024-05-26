@@ -79,6 +79,10 @@ for i in range(4):
     # Create a protective mesh around the windmill
     bpy.ops.mesh.primitive_cylinder_add(radius=2.5, depth=10, location=(0, 0, 5))  # Adjust the depth to cover the whole windmill
     protective_mesh = bpy.context.object
+
+    # 05-26-2024: *This line hides the Mesh!*
+    #protective_mesh.hide_viewport = True
+
     protective_mesh.scale.x = 1.1  # Make the protective mesh slightly larger than the windmill
     protective_mesh.scale.y = 1.1
     protective_mesh.scale.z = 2  # Stretch the protective mesh along the Z-axis
@@ -94,16 +98,15 @@ for i in range(4):
     wireframe_modifier.use_even_offset = True
     wireframe_modifier.use_relative_offset = False
     wireframe_modifier.use_boundary = True
-
+    
+    # Animate the rotator to rotate
+    rotator.rotation_mode = 'QUATERNION'
+    for i in range(250):  # for 250 frames
+        rotator.rotation_euler = (0, 0, i * 3.14159 / 30)  # rotate 12 degrees per frame
+        rotator.keyframe_insert(data_path="rotation_euler", frame=i, index=2)
 
 # Animate the rotator to rotate
 rotator.rotation_mode = 'XYZ'
 for i in range(250):  # for 250 frames
-    rotator.rotation_euler = (0, 0, i * 3.14159 / 60)  # rotate 6 degrees per frame
-    rotator.keyframe_insert(data_path="rotation_euler", frame=i, index=2)
-
-# Animate the rotator to rotate
-rotator.rotation_mode = 'XYZ'
-for i in range(250):  # for 250 frames
-    rotator.rotation_euler = (0, 0, i * 3.14159 / 60)  # rotate 6 degrees per frame
+    rotator.rotation_euler = (0, 0, i * 3.14159 / 30)  # rotate 12 degrees per frame
     rotator.keyframe_insert(data_path="rotation_euler", frame=i, index=2)
