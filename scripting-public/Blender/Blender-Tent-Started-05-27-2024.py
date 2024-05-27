@@ -58,8 +58,17 @@ bm.free()
 # Move the tent to the desired location
 obj.location = bpy.context.scene.cursor.location
 
-# Insert the code to create the cog and wheel here
+# Create a new bmesh object
+bm = bmesh.new()
+bm.from_mesh(mesh)
 
+# Create an inset on each face of the tent
+faces = [f for f in bm.faces if f.normal.z > 0]  # Select the top faces
+bmesh.ops.inset_individual(bm, faces=faces, thickness=0.1, depth=0.1)
+
+# Update the mesh with the new data
+bm.to_mesh(mesh)
+bm.free()
 # Create a cog
 cog_mesh = bpy.data.meshes.new('cog_mesh')
 cog_obj = bpy.data.objects.new('Cog', cog_mesh)
