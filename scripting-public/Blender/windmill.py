@@ -46,7 +46,10 @@ rotator.hide_viewport = True  # Hide the rotator in the viewport
 rotator.hide_render = True  # Hide the rotator in the final render
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 43dab65 (Update windmill.py)
 # Create a cone for the cap of the windmill and parent it to the rotator
 bpy.ops.mesh.primitive_cone_add(vertices=16, radius1=1.2, depth=1, location=(0, 0, 4.5))
 cap = bpy.context.object
@@ -73,10 +76,13 @@ for i in range(4):
     bpy.ops.mesh.primitive_torus_add(location=(0, 0, 2 + i * 0.5), rotation=(3.14159 / 2, 0, i * 3.14159 / 2))  # Adjust the Z location to be inside the cylinder and rotate the torus to be parallel to the Z-axis
     curved_blade = bpy.context.object
 <<<<<<< HEAD
+<<<<<<< HEAD
     curved_blade.scale.x = 0.75  # Make the curved blades broad and thin
     curved_blade.scale.y = 3
     curved_blade.scale.z = 0.1  # Make the curved blades flat
 =======
+=======
+>>>>>>> parent of 43dab65 (Update windmill.py)
     curved_blade.scale.x = 0.2  # Make the curved blades broad and thin
     curved_blade.scale.y = 2
     curved_blade.scale.z = 0.1  # Make the curved blades flat
