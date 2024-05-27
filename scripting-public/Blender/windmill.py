@@ -47,7 +47,10 @@ rotator.hide_render = True  # Hide the rotator in the final render
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of 43dab65 (Update windmill.py)
 =======
 >>>>>>> parent of 43dab65 (Update windmill.py)
 # Create a cone for the cap of the windmill and parent it to the rotator
@@ -77,10 +80,13 @@ for i in range(4):
     curved_blade = bpy.context.object
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     curved_blade.scale.x = 0.75  # Make the curved blades broad and thin
     curved_blade.scale.y = 3
     curved_blade.scale.z = 0.1  # Make the curved blades flat
 =======
+=======
+>>>>>>> parent of 43dab65 (Update windmill.py)
 =======
 >>>>>>> parent of 43dab65 (Update windmill.py)
     curved_blade.scale.x = 0.2  # Make the curved blades broad and thin
