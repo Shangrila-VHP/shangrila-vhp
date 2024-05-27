@@ -25,6 +25,14 @@ for v in bm.verts:
         else:
             v.co.y -= 1
 
+# Create a flap as a new face
+flap_verts = [v for v in bm.verts if v.co.y < 0 and v.co.z > 0]
+bm.faces.new(flap_verts)
+
+# Rotate the flap
+flap_edge = next(e for e in bm.edges if set(e.verts) == set(flap_verts))
+bmesh.ops.rotate(bm, cent=flap_edge.verts[0].co, matrix=bpy.context.scene.cursor.matrix, verts=flap_verts)
+
 # Update the mesh with the new data
 bm.to_mesh(mesh)
 bm.free()
