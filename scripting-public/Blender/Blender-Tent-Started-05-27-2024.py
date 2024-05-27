@@ -59,3 +59,29 @@ bm.free()
 
 # Move the tent to the desired location
 obj.location = bpy.context.scene.cursor.location
+
+# Insert the code to create the cog and wheel here
+
+# Create a cog
+cog_mesh = bpy.data.meshes.new('cog_mesh')
+cog_obj = bpy.data.objects.new('Cog', cog_mesh)
+scene.collection.objects.link(cog_obj)
+bpy.context.view_layer.objects.active = cog_obj
+cog_obj.select_set(True)
+bm = bmesh.new()
+bmesh.ops.create_cone(bm, cap_ends=True, cap_tris=False, segments=12, diameter1=0.2, diameter2=0.2, depth=0.05)
+bm.to_mesh(cog_mesh)
+bm.free()
+cog_obj.location = bpy.context.scene.cursor.location + Vector((1, 0, 0.5))  # Position the cog next to the door
+
+# Create a wheel
+wheel_mesh = bpy.data.meshes.new('wheel_mesh')
+wheel_obj = bpy.data.objects.new('Wheel', wheel_mesh)
+scene.collection.objects.link(wheel_obj)
+bpy.context.view_layer.objects.active = wheel_obj
+wheel_obj.select_set(True)
+bm = bmesh.new()
+bmesh.ops.create_circle(bm, cap_ends=True, cap_tris=False, segments=24, radius=0.3)
+bm.to_mesh(wheel_mesh)
+bm.free()
+wheel_obj.location = bpy.context.scene.cursor.location + Vector((1.2, 0, 0.5))  # Position the wheel next to the cog
