@@ -17,10 +17,13 @@ obj.select_set(True)
 bm = bmesh.new()
 bmesh.ops.create_cube(bm, size=2)
 
-# Move one of the top vertices to create the tent shape
+# Move two of the top vertices to create the tent shape
 for v in bm.verts:
     if v.co.z > 0:
-        v.co.y = 0
+        if v.co.y > 0:
+            v.co.y += 1
+        else:
+            v.co.y -= 1
 
 # Update the mesh with the new data
 bm.to_mesh(mesh)
