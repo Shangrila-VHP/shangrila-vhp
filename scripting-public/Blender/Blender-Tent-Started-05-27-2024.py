@@ -37,7 +37,7 @@ flap_edge = flap_face.edges[0]  # Use the first edge of the flap face
 bmesh.ops.rotate(bm, cent=flap_edge.verts[0].co, matrix=bpy.context.scene.cursor.matrix, verts=flap_verts)
 
 # Create a door as a new face
-door_verts = [v for v in bm.verts if v.co.y < 0]
+door_verts = [v for v in bm.verts if v.co.x > 0 and v.co.z < 1]
 if len(door_verts) >= 4:
     door_face = bm.faces.new(door_verts)
     bm.faces.remove(door_face)  # Remove the face to create an opening
