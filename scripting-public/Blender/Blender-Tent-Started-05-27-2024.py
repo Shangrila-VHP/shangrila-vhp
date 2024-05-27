@@ -1,5 +1,7 @@
 import bpy
 import bmesh
+#mathutil needs to be imported in Blender's Python API
+from mathutils import Vector
 
 # Create a new mesh object with a single vertex
 mesh = bpy.data.meshes.new('tent_mesh')
