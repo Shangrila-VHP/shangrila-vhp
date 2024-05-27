@@ -95,6 +95,7 @@ for i in range(4):
     # Existing code
 >>>>>>> parent of 43dab65 (Update windmill.py)
     curved_blade.parent = rotator
+<<<<<<< HEAD
 
 # Create a protective mesh around the windmill
 bpy.ops.mesh.primitive_cylinder_add(radius=2.5, depth=10, location=(0, 0, 5))  # Adjust the depth to cover the whole windmill
@@ -121,9 +122,38 @@ wireframe_modifier.thickness = 0.02  # Adjust the thickness of the wireframe
 wireframe_modifier.use_even_offset = True
 wireframe_modifier.use_relative_offset = False
 wireframe_modifier.use_boundary = True
+=======
+    
+    # New code
+    # Create a protective mesh around the windmill
+    bpy.ops.mesh.primitive_cylinder_add(radius=2.5, depth=10, location=(0, 0, 5))  # Adjust the depth to cover the whole windmill
+    protective_mesh = bpy.context.object
+    protective_mesh.scale.x = 1.1  # Make the protective mesh slightly larger than the windmill
+    protective_mesh.scale.y = 1.1
+    protective_mesh.scale.z = 2  # Stretch the protective mesh along the Z-axis
+    
+    # Convert the cylinder to a mesh and give it some thickness
+    bpy.ops.object.mode_set(mode='EDIT')
+    bpy.ops.mesh.extrude_region_move(TRANSFORM_OT_translate={"value":(0, 0, 0.1)})
+    bpy.ops.object.mode_set(mode='OBJECT')
+    
+    # Create a wireframe modifier to make the protective mesh look like a cage
+    wireframe_modifier = protective_mesh.modifiers.new(name="Wireframe", type='WIREFRAME')
+    wireframe_modifier.thickness = 0.02  # Adjust the thickness of the wireframe
+    wireframe_modifier.use_even_offset = True
+    wireframe_modifier.use_relative_offset = False
+    wireframe_modifier.use_boundary = True
+
+>>>>>>> parent of cea3587 (Update windmill.py)
 
 # Animate the rotator to rotate
 rotator.rotation_mode = 'XYZ'
 for i in range(250):  # for 250 frames
-    rotator.rotation_euler = (0, 0, i * 3.14159 / 30)  # rotate 12 degrees per frame
+    rotator.rotation_euler = (0, 0, i * 3.14159 / 60)  # rotate 6 degrees per frame
+    rotator.keyframe_insert(data_path="rotation_euler", frame=i, index=2)
+
+# Animate the rotator to rotate
+rotator.rotation_mode = 'XYZ'
+for i in range(250):  # for 250 frames
+    rotator.rotation_euler = (0, 0, i * 3.14159 / 60)  # rotate 6 degrees per frame
     rotator.keyframe_insert(data_path="rotation_euler", frame=i, index=2)
