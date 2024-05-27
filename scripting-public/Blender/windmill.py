@@ -25,9 +25,6 @@ bpy.ops.object.select_all(action='DESELECT')
 cube.select_set(True)
 bpy.ops.object.delete()
 
-# Create a cylinder for the body of the windmill
-bpy.ops.mesh.primitive_cylinder_add(radius=1, depth=4, location=(0, 0, 2))
-
 # Create an empty object at the top of the body
 bpy.ops.object.empty_add(type='PLAIN_AXES', location=(0, 0, 2))
 rotator = bpy.context.object
@@ -39,24 +36,20 @@ bpy.ops.mesh.primitive_cylinder_add(radius=0.1, depth=1, location=(0, 0, 2.5))
 rod = bpy.context.object
 rod.parent = rotator
 
+# Create a cylinder for the body of the windmill
+bpy.ops.mesh.primitive_cylinder_add(radius=1, depth=4, location=(0, 0, 2))
+
 # Create an empty object at the top of the body to serve as the rotator
 bpy.ops.object.empty_add(type='PLAIN_AXES', location=(0, 0, 4))
 rotator = bpy.context.object
 rotator.hide_viewport = True  # Hide the rotator in the viewport
 rotator.hide_render = True  # Hide the rotator in the final render
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> parent of 43dab65 (Update windmill.py)
-=======
->>>>>>> parent of 43dab65 (Update windmill.py)
+#05-26-2024: Commenting this out as we do not need the cone at the top.
 # Create a cone for the cap of the windmill and parent it to the rotator
-bpy.ops.mesh.primitive_cone_add(vertices=16, radius1=1.2, depth=1, location=(0, 0, 4.5))
-cap = bpy.context.object
-cap.parent = rotator
+# bpy.ops.mesh.primitive_cone_add(vertices=16, radius1=1.2, depth=1, location=(0, 0, 4.5))
+#cap = bpy.context.object
+#cap.parent = rotator
 
 # Create four planes for the blades and parent them to the rotator
 for i in range(4):
@@ -73,61 +66,24 @@ for i in range(4):
     bpy.ops.object.mode_set(mode='OBJECT')
 
 # New code
->>>>>>> parent of 43dab65 (Update windmill.py)
 # Create four toruses for the curved blades and parent them to the rotator
 for i in range(4):
     bpy.ops.mesh.primitive_torus_add(location=(0, 0, 2 + i * 0.5), rotation=(3.14159 / 2, 0, i * 3.14159 / 2))  # Adjust the Z location to be inside the cylinder and rotate the torus to be parallel to the Z-axis
     curved_blade = bpy.context.object
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-    curved_blade.scale.x = 0.75  # Make the curved blades broad and thin
-    curved_blade.scale.y = 3
-    curved_blade.scale.z = 0.1  # Make the curved blades flat
-=======
-=======
->>>>>>> parent of 43dab65 (Update windmill.py)
-=======
->>>>>>> parent of 43dab65 (Update windmill.py)
-    curved_blade.scale.x = 0.2  # Make the curved blades broad and thin
-    curved_blade.scale.y = 2
-    curved_blade.scale.z = 0.1  # Make the curved blades flat
+    curved_blade.scale.x = 0.5  # Make the curved blades broad and thin
+    curved_blade.scale.y = 5
+    curved_blade.scale.z = 0.3  # Make the curved blades flat
     # Existing code
->>>>>>> parent of 43dab65 (Update windmill.py)
     curved_blade.parent = rotator
-<<<<<<< HEAD
-
-# Create a protective mesh around the windmill
-bpy.ops.mesh.primitive_cylinder_add(radius=2.5, depth=10, location=(0, 0, 5))  # Adjust the depth to cover the whole windmill
-protective_mesh = bpy.context.object
-protective_mesh.hide_viewport = True
-protective_mesh.scale.x = 1.1  # Make the protective mesh slightly larger than the windmill
-protective_mesh.scale.y = 1.1
-protective_mesh.scale.z = 2  # Stretch the protective mesh along the Z-axis
-
-# Convert the cylinder to a mesh and give it some thickness
-bpy.context.view_layer.objects.active = protective_mesh
-protective_mesh.select_set(True)
-bpy.ops.object.mode_set(mode='EDIT')
-bpy.ops.mesh.select_all(action='SELECT')
-try:
-    bpy.ops.mesh.extrude_region_move(TRANSFORM_OT_translate={"value":(0, 0, 0.1)})
-except RuntimeError:
-    print("Extrusion failed. Make sure the mesh is properly selected.")
-bpy.ops.object.mode_set(mode='OBJECT')
-
-# Create a wireframe modifier to make the protective mesh look like a cage
-wireframe_modifier = protective_mesh.modifiers.new(name="Wireframe", type='WIREFRAME')
-wireframe_modifier.thickness = 0.02  # Adjust the thickness of the wireframe
-wireframe_modifier.use_even_offset = True
-wireframe_modifier.use_relative_offset = False
-wireframe_modifier.use_boundary = True
-=======
     
     # New code
     # Create a protective mesh around the windmill
     bpy.ops.mesh.primitive_cylinder_add(radius=2.5, depth=10, location=(0, 0, 5))  # Adjust the depth to cover the whole windmill
     protective_mesh = bpy.context.object
+
+    # 05-26-2024: *This line hides the Mesh!*
+    # protective_mesh.hide_viewport = True
+
     protective_mesh.scale.x = 1.1  # Make the protective mesh slightly larger than the windmill
     protective_mesh.scale.y = 1.1
     protective_mesh.scale.z = 2  # Stretch the protective mesh along the Z-axis
@@ -143,17 +99,15 @@ wireframe_modifier.use_boundary = True
     wireframe_modifier.use_even_offset = True
     wireframe_modifier.use_relative_offset = False
     wireframe_modifier.use_boundary = True
-
->>>>>>> parent of cea3587 (Update windmill.py)
-
-# Animate the rotator to rotate
-rotator.rotation_mode = 'XYZ'
-for i in range(250):  # for 250 frames
-    rotator.rotation_euler = (0, 0, i * 3.14159 / 60)  # rotate 6 degrees per frame
-    rotator.keyframe_insert(data_path="rotation_euler", frame=i, index=2)
+    
+    # Animate the rotator to rotate
+    rotator.rotation_mode = 'QUATERNION'
+    for i in range(250):  # for 250 frames
+        rotator.rotation_euler = (0, 0, i * 3.14159 / 30)  # rotate 12 degrees per frame
+        rotator.keyframe_insert(data_path="rotation_euler", frame=i, index=2)
 
 # Animate the rotator to rotate
 rotator.rotation_mode = 'XYZ'
 for i in range(250):  # for 250 frames
-    rotator.rotation_euler = (0, 0, i * 3.14159 / 60)  # rotate 6 degrees per frame
+    rotator.rotation_euler = (0, 0, i * 3.14159 / 30)  # rotate 12 degrees per frame
     rotator.keyframe_insert(data_path="rotation_euler", frame=i, index=2)
