@@ -36,13 +36,22 @@ else:
 flap_edge = flap_face.edges[0]  # Use the first edge of the flap face
 bmesh.ops.rotate(bm, cent=flap_edge.verts[0].co, matrix=bpy.context.scene.cursor.matrix, verts=flap_verts)
 
-# Create a door as a new face
-door_verts = [v for v in bm.verts if v.co.x > 0 and v.co.z < 1]
-if len(door_verts) >= 4:
-    door_face = bm.faces.new(door_verts)
-    bm.faces.remove(door_face)  # Remove the face to create an opening
+# Create a door as two new faces
+door_verts_left = [v for v in bm.verts if v.co.x > 0 and v.co.z < 1 and v.co.y < 0]
+door_verts_right = [v for v in bm.verts if v.co.x > 0 and v.co.z < 1 and v.co.y > 0]
+
+if len(door_verts_left) >= 4 and len(door_verts_right) >= 4:
+    door_face_left = bm.faces.new(door_verts_left)
+    door_face_right = bm.faces.new(door_verts_right)
+    bm.faces.remove(door_face_left)  # Remove the left face to create an opening
+    bm.faces.remove(door_face_right)  # Remove the right face to create an opening
 else:
     print("Not enough vertices to create a door.")
+
+# Create a rectangular door by moving some vertices upwards
+rectangular_door_verts = [v for v in bm.verts if v.co.x > 0 and v.co.z < 0.5]
+for v in rectangular_door_verts:
+    v.co.z += 0.5
 
 # Update the mesh with the new data
 bm.to_mesh(mesh)
