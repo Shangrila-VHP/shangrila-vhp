@@ -5,8 +5,8 @@ bpy.ops.object.select_all(action='DESELECT')
 bpy.ops.object.select_by_type(type='MESH')
 bpy.ops.object.delete()
 
-# Create the body of the windmill
-bpy.ops.mesh.primitive_cylinder_add(radius=0.4, depth=6, location=(0, 0, 1))
+# Create the base of the windmill. 
+bpy.ops.mesh.primitive_cylinder_add(radius=3, depth=2, location=(0, 0, 1))
 body = bpy.context.object
 
 # Create a cube to represent the hollowed-out area
@@ -31,13 +31,13 @@ rotator = bpy.context.object
 rotator.hide_viewport = True  # Hide the rotator in the viewport
 rotator.hide_render = True  # Hide the rotator in the final render
 
-# Create a cylinder to serve as the rod
-bpy.ops.mesh.primitive_cylinder_add(radius=0.1, depth=1, location=(0, 0, 2.5))
+# Create a cylinder to serve as the rod that is directly attached to the blade
+bpy.ops.mesh.primitive_cylinder_add(radius=0.2, depth=17, location=(0, 0, 2.5))
 rod = bpy.context.object
 rod.parent = rotator
 
-# Create a cylinder for the body of the windmill
-bpy.ops.mesh.primitive_cylinder_add(radius=1, depth=4, location=(0, 0, 2))
+# Create a cylinder for the body of the windmill. This will go right above the base.
+bpy.ops.mesh.primitive_cylinder_add(radius=0.1, depth=2, location=(0, 0, 2))
 
 # Create an empty object at the top of the body to serve as the rotator
 bpy.ops.object.empty_add(type='PLAIN_AXES', location=(0, 0, 4))
@@ -76,16 +76,17 @@ for i in range(4):
     # Existing code
     curved_blade.parent = rotator
     
-    # New code
+     #05-25-2024: *This line hides the Mesh!* Edit back. 21:09 
     # Create a protective mesh around the windmill
     bpy.ops.mesh.primitive_cylinder_add(radius=3, depth=10, location=(0, 0, 5))  # Adjust the depth to cover the whole windmill
     protective_mesh = bpy.context.object
 
     # 05-26-2024: *This line hides the Mesh!*
     # protective_mesh.hide_viewport = True
+    # Kinda redundant?
 
-    protective_mesh.scale.x = 1.1  # Make the protective mesh slightly larger than the windmill
-    protective_mesh.scale.y = 1.1
+    protective_mesh.scale.x = 1.3  # Make the protective mesh slightly larger than the windmill
+    protective_mesh.scale.y = 1.3
     protective_mesh.scale.z = 1.83  # Stretch the protective mesh along the Z-axis
     
     # Convert the cylinder to a mesh and give it some thickness
