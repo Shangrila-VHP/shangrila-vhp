@@ -38,8 +38,9 @@ bmesh.ops.rotate(bm, cent=flap_edge.verts[0].co, matrix=bpy.context.scene.cursor
 
 # Create a door as a new face
 door_verts = [v for v in bm.verts if v.co.y < 0]
-if len(door_verts) >= 3:
+if len(door_verts) >= 4:
     door_face = bm.faces.new(door_verts)
+    bm.faces.remove(door_face)  # Remove the face to create an opening
 else:
     print("Not enough vertices to create a door.")
 
