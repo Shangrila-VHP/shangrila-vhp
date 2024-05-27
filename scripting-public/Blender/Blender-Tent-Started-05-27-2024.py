@@ -69,6 +69,54 @@ bmesh.ops.inset_individual(bm, faces=faces, thickness=0.1, depth=0.1)
 # Update the mesh with the new data
 bm.to_mesh(mesh)
 bm.free()
+
+# Move the tent to the desired location
+obj.location = bpy.context.scene.cursor.location
+
+# Here is where you can place the code to duplicate the tent and create an opening
+# Duplicate the tent
+bpy.ops.object.select_all(action='DESELECT')
+obj.select_set(True)
+bpy.ops.object.duplicate()
+
+# Get the duplicated object
+dup_obj = bpy.context.selected_objects[0]
+
+# Set the location of the duplicated object
+offset = Vector((5, 0, 0))  # Adjust the offset as needed
+dup_obj.location = obj.location + offset
+
+# Create a new bmesh object
+bm = bmesh.new()
+bm.from_mesh(dup_obj.data)
+
+# Create a panel as a new face
+panel_verts = [v for v in bm.verts if v.co.x > 0 and v.co.z < 1]
+if len(panel_verts) >= 4:
+    panel_face = bm.faces.new(panel_verts)
+    bm.faces.remove(panel_face)  # Remove the face to create an opening
+else:
+    print("Not enough vertices to create a panel.")
+
+# Update the mesh with the new data
+bm.to_mesh(dup_obj.data)
+bm.free()
+
+# Continue with the rest of your code
+# Create a new bmesh object
+bm = bmesh.new()
+bm.from_mesh(mesh)
+
+# Create an inset on each face of the tent
+faces = [f for f in bm.faces if f.normal.z > 0]  # Select the top faces
+bmesh.ops.inset_individual(bm, faces=faces, thickness=0.1, depth=0.1)
+
+# Update the mesh with the new data
+bm.to_mesh(mesh)
+bm.free()
+
+# Create a cog
+...
 # Create a cog
 cog_mesh = bpy.data.meshes.new('cog_mesh')
 cog_obj = bpy.data.objects.new('Cog', cog_mesh)
