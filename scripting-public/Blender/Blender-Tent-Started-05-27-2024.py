@@ -2,7 +2,7 @@ import bpy
 import bmesh
 from mathutils import Vector
 
-def create_tent(name, location):
+def create_tent(name, location, size=2, flap_verts_count=3, door_verts_count=4, inset_thickness=0.1, inset_depth=0):
     # Create a new mesh object with a single vertex
     mesh = bpy.data.meshes.new(name + '_mesh')
     obj = bpy.data.objects.new(name, mesh)
@@ -17,7 +17,7 @@ def create_tent(name, location):
 
     # Create a bmesh object and add a cube to it
     bm = bmesh.new()
-    bmesh.ops.create_cube(bm, size=2)
+    bmesh.ops.create_cube(bm, size=size)
 
     # Move two of the top vertices to create the tent shape
     for v in bm.verts:
@@ -29,7 +29,7 @@ def create_tent(name, location):
 
     # Create a flap as a new face
     flap_verts = [v for v in bm.verts if v.co.z > 0]
-    if len(flap_verts) >= 3:
+    if len(flap_verts) >= flap_verts_count:
         flap_face = bm.faces.new(flap_verts)
     else:
         print("Not enough vertices to create a flap.")
@@ -40,7 +40,7 @@ def create_tent(name, location):
 
     # Create a door as two new faces
     door_verts = [v for v in bm.verts if v.co.x > 0 and v.co.z < 1]
-    if len(door_verts) >= 4:
+    if len(door_verts) >= door_verts_count:
         door_face = bm.faces.new(door_verts)
         bm.faces.remove(door_face)  # Remove the face to create an opening
     else:
@@ -64,7 +64,7 @@ def create_tent(name, location):
 
     # Create an inset on each face of the tent
     faces = [f for f in bm.faces if f.normal.z > 0]  # Select the top faces
-    bmesh.ops.inset_individual(bm, faces=faces, thickness=0.1, depth=0)
+    bmesh.ops.inset_individual(bm, faces=faces, thickness=inset_thickness, depth=inset_depth)
 
     # Update the mesh with the new data
     bm.to_mesh(mesh)
@@ -75,6 +75,6 @@ def create_tent(name, location):
 # Create  five tents
 tent1 = create_tent('Tent1', bpy.context.scene.cursor.location)
 tent2 = create_tent('Tent2', bpy.context.scene.cursor.location + Vector((5, 0, 0)))
-tent3 = create_tent('Tent3', bpy.context.scene.cursor.location + Vector((20, 0, 6)))
-tent4 = create_tent('Tent4', bpy.context.scene.cursor.location + Vector((30, 0, 12)))
-tent5 = create_tent('Tent5', bpy.context.scene.cursor.location + Vector((40, 0, 18)))
+tent3 = create_tent('Tent3', bpy.context.scene.cursor.location + Vector((10, 0, 0)))
+tent4 = create_tent('Tent4', bpy.context.scene.cursor.location + Vector((15, 0, 0)))
+tent5 = create_tent('Tent5', bpy.context.scene.cursor.location + Vector((20, 0, 0)))
