@@ -39,14 +39,10 @@ flap_edge = flap_face.edges[0]  # Use the first edge of the flap face
 bmesh.ops.rotate(bm, cent=flap_edge.verts[0].co, matrix=bpy.context.scene.cursor.matrix, verts=flap_verts)
 
 # Create a door as two new faces
-door_verts_left = [v for v in bm.verts if v.co.x > 0 and v.co.z < 1 and v.co.y < 0]
-door_verts_right = [v for v in bm.verts if v.co.x > 0 and v.co.z < 1 and v.co.y > 0]
-
-if len(door_verts_left) >= 4 and len(door_verts_right) >= 4:
-    door_face_left = bm.faces.new(door_verts_left)
-    door_face_right = bm.faces.new(door_verts_right)
-    bm.faces.remove(door_face_left)  # Remove the left face to create an opening
-    bm.faces.remove(door_face_right)  # Remove the right face to create an opening
+door_verts = [v for v in bm.verts if v.co.x > 0 and v.co.z < 1]
+if len(door_verts) >= 4:
+    door_face = bm.faces.new(door_verts)
+    bm.faces.remove(door_face)  # Remove the face to create an opening
 else:
     print("Not enough vertices to create a door.")
 
@@ -87,3 +83,30 @@ bmesh.ops.create_circle(bm, cap_ends=True, cap_tris=False, segments=24, radius=0
 bm.to_mesh(wheel_mesh)
 bm.free()
 wheel_obj.location = bpy.context.scene.cursor.location + Vector((1.2, 0, 0.5))  # Position the wheel next to the cog
+
+#Try and get the door to work
+
+# Set the initial rotation of the cog and wheel
+cog_obj.rotation_euler = (0, 0, 0)
+wheel_obj.rotation_euler = (0, 0, 0)
+
+# Set the initial location of the door
+#Commenting this out (below) based on suggestion
+#door_obj.location = (0, 0, 0)
+
+# Insert keyframes for the initial state at frame 0
+cog_obj.keyframe_insert(data_path="rotation_euler", frame=0)
+wheel_obj.keyframe_insert(data_path="rotation_euler", frame=0)
+#Commenting this out (below) based on suggestion
+#door_obj.keyframe_insert(data_path="location", frame=0)
+
+# Rotate the cog and wheel by 90 degrees over 100 frames
+cog_obj.rotation_euler = (0, 0, 90)
+wheel_obj.rotation_euler = (0, 0, 90)
+cog_obj.keyframe_insert(data_path="rotation_euler", frame=100)
+wheel_obj.keyframe_insert(data_path="rotation_euler", frame=100)
+
+# Move the door up by 2 units over 100 frames
+#Commenting this out (below) based on suggestion
+#door_obj.location = (0, 0, 2)
+#door_obj.keyframe_insert(data_path="location", frame=100)
