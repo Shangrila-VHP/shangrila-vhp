@@ -94,11 +94,11 @@ def create_tent(name, location, size=2, flap_verts_count=3, door_verts_count=4, 
     return obj
 
 # Create  five tents
-tent1 = create_tent('Tent1', (-35, 5, 0), size=1, inset_thickness=1, inset_depth=0.4)
-tent2 = create_tent('Tent2', bpy.context.scene.cursor.location + Vector((-25, 20, 0)))
-tent3 = create_tent('Tent3', bpy.context.scene.cursor.location + Vector((-20, 20, 0)))
-tent4 = create_tent('Tent4', bpy.context.scene.cursor.location + Vector((-15, 20, 0)))
-tent5 = create_tent('Tent5', bpy.context.scene.cursor.location + Vector((-10, 20, 0)))
+tent1 = create_tent('Tent1', (-25, 0, 0), size=1, inset_thickness=0.2, inset_depth=0.2)
+tent2 = create_tent('Tent2', bpy.context.scene.cursor.location + Vector((-5, 5, 0)))
+tent3 = create_tent('Tent3', bpy.context.scene.cursor.location + Vector((-10, 5, 0)))
+tent4 = create_tent('Tent4', bpy.context.scene.cursor.location + Vector((-15, 5, 0)))
+tent5 = create_tent('Tent5', bpy.context.scene.cursor.location + Vector((-20, 5, 0)))
 
 #End of the original script for a better tent city powered by clean energy.
 
