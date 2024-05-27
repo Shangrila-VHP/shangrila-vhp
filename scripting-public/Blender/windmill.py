@@ -45,13 +45,43 @@ rotator = bpy.context.object
 rotator.hide_viewport = True  # Hide the rotator in the viewport
 rotator.hide_render = True  # Hide the rotator in the final render
 
+<<<<<<< HEAD
+=======
+# Create a cone for the cap of the windmill and parent it to the rotator
+bpy.ops.mesh.primitive_cone_add(vertices=16, radius1=1.2, depth=1, location=(0, 0, 4.5))
+cap = bpy.context.object
+cap.parent = rotator
+
+# Create four planes for the blades and parent them to the rotator
+for i in range(4):
+    bpy.ops.mesh.primitive_plane_add(size=2, enter_editmode=False, align='WORLD', location=(0, 0, 2 + i * 0.5))  # Adjust the Z location to be inside the cylinder
+    blade = bpy.context.object
+    blade.scale.x = 0.2  # Make the blades broad and thin
+    blade.scale.y = 2
+    blade.rotation_euler = (3.14159 / 2, 0, i * 3.14159 / 2)  # Rotate blades to be parallel to the Z-axis and evenly spaced around the rotator
+    blade.parent = rotator
+
+    # Convert the plane to a mesh and give it some thickness
+    bpy.ops.object.mode_set(mode='EDIT')
+    bpy.ops.mesh.extrude_region_move(TRANSFORM_OT_translate={"value":(0, 0, 0.1)})
+    bpy.ops.object.mode_set(mode='OBJECT')
+
+# New code
+>>>>>>> parent of 43dab65 (Update windmill.py)
 # Create four toruses for the curved blades and parent them to the rotator
 for i in range(4):
     bpy.ops.mesh.primitive_torus_add(location=(0, 0, 2 + i * 0.5), rotation=(3.14159 / 2, 0, i * 3.14159 / 2))  # Adjust the Z location to be inside the cylinder and rotate the torus to be parallel to the Z-axis
     curved_blade = bpy.context.object
+<<<<<<< HEAD
     curved_blade.scale.x = 0.75  # Make the curved blades broad and thin
     curved_blade.scale.y = 3
     curved_blade.scale.z = 0.1  # Make the curved blades flat
+=======
+    curved_blade.scale.x = 0.2  # Make the curved blades broad and thin
+    curved_blade.scale.y = 2
+    curved_blade.scale.z = 0.1  # Make the curved blades flat
+    # Existing code
+>>>>>>> parent of 43dab65 (Update windmill.py)
     curved_blade.parent = rotator
 
 # Create a protective mesh around the windmill
