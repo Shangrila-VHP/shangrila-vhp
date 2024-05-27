@@ -9,13 +9,12 @@
 [Note: Front view of one of the buildings.]
 ![](img/03-10-2024-Render-CoPilot-Hooyah-Main-05.jpg)
 
-1. Phase 01: An objective and key results (OKR) set for eliminating homeless in the veteran community. Working with VA and NATO and allies.
-2. Phase 01-a: On-going support and incremental innovation.
-3. Phase 01-b: Handing the operations over to individual Veteran Affairs
-4. Phase 02: Helping eliminate homelessness in the single parents category.
-5. Phase 03: By the beginning of Phase 03, there should be enough learning, in order to enable the construction and scaling of sustainable communities all over the world. It has yet to be determined and too early to tell, if climate resiliency is also going to be part of the scope.
+1. Phase 01: An objective and key results (OKR) based goals to end veteran homelessness with VA, NATO, and allies.
+2. Phase 01-a: Provide ongoing support and innovation & handing the operations over to individual Veteran Affairs.
+4. Phase 01-b: In parallel, helping eliminate homelessness in the single parents category. (Completely separate locations managed by completely different staff)
+5. Phase 02: Use our learnings to build sustainable communities globally. Infrastructure and designs that will work in the face of climate change and possibly rapid climate change also.
 
-Coming back to Phase 01. Shangrila-VHP is going to be actively involved in the construction of the facilities. As every single touch-point and interaction matters. The clients and also the residents must have a secure/superb/superior living experience. Our approach also involves advocacy and collaborating with governments for enabling sustainable solutions to help turn homelessness and enable designs where the individual is on a path to become a phenomenal contributor back to society. Sometimes life gets challenging and we need a caring/compassionate environment where we can heal our bodies and our minds. 
+Shangrila-VHP will be hands-on in building facilities, ensuring every interaction is meaningful and contributes to a superior living experience. We advocate and work with governments to create lasting solutions for homelessness, guiding individuals towards making a positive impact on society. We believe in the healing power of a supportive environment.
 
 ![](img/03-10-2024-Render-CoPilot-Hooyah-Main-02.jpg)
 
