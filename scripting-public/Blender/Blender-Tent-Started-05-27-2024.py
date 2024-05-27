@@ -83,8 +83,9 @@ def create_tent(name, location, size=2, flap_verts_count=3, door_verts_count=4, 
     return obj
 
 # Create  five tents
-tent1 = create_tent('Tent1', bpy.context.scene.cursor.location)
+tent1 = create_tent('Tent1', (0, 0, 0), size=1, inset_thickness=0.2, inset_depth=0.2)
 tent2 = create_tent('Tent2', bpy.context.scene.cursor.location + Vector((5, 0, 0)))
 tent3 = create_tent('Tent3', bpy.context.scene.cursor.location + Vector((10, 0, 0)))
 tent4 = create_tent('Tent4', bpy.context.scene.cursor.location + Vector((15, 0, 0)))
 tent5 = create_tent('Tent5', bpy.context.scene.cursor.location + Vector((20, 0, 0)))
+
