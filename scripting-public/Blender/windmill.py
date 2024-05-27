@@ -45,12 +45,6 @@ rotator = bpy.context.object
 rotator.hide_viewport = True  # Hide the rotator in the viewport
 rotator.hide_render = True  # Hide the rotator in the final render
 
-#05-26-2024: Commenting this out as we do not need the cone at the top.
-# Create a cone for the cap of the windmill and parent it to the rotator
-bpy.ops.mesh.primitive_cone_add(vertices=2000, radius1=1.2, depth=1, location=(0, 0, 4.5))
-cap = bpy.context.object
-cap.parent = rotator
-
 # Create four planes for the blades and parent them to the rotator
 for i in range(4):
     bpy.ops.mesh.primitive_plane_add(size=2, enter_editmode=False, align='WORLD', location=(0, 0, 2 + i * 0.5))  # Adjust the Z location to be inside the cylinder
@@ -78,8 +72,8 @@ for i in range(4):
     
      #05-25-2024: *This line hides the Mesh!* Edit back. 21:09 
     # Create a protective mesh around the windmill
-    # bpy.ops.mesh.primitive_cylinder_add(radius=3, depth=10, location=(0, 0, 5))  # Adjust the depth to cover the whole windmill
-    # protective_mesh = bpy.context.object
+    bpy.ops.mesh.primitive_cylinder_add(radius=3, depth=10, location=(0, 0, 5))  # Adjust the depth to cover the whole windmill
+    protective_mesh = bpy.context.object
 
     # 05-26-2024: *This line hides the Mesh!*
     # protective_mesh.hide_viewport = True
