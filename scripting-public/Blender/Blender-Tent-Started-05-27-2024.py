@@ -69,7 +69,7 @@ scene.collection.objects.link(cog_obj)
 bpy.context.view_layer.objects.active = cog_obj
 cog_obj.select_set(True)
 bm = bmesh.new()
-bmesh.ops.create_cone(bm, cap_ends=True, cap_tris=False, segments=12, diameter1=0.2, diameter2=0.2, depth=0.05)
+bmesh.ops.create_cone(bm, cap_ends=True, cap_tris=False, segments=12, radius1=0.1, radius2=0.1, depth=0.05)
 bm.to_mesh(cog_mesh)
 bm.free()
 cog_obj.location = bpy.context.scene.cursor.location + Vector((1, 0, 0.5))  # Position the cog next to the door
