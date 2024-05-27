@@ -4,11 +4,7 @@
 
 ---
 
-**Shangrila Veterans Healing Places**: Creating and encouraging the creation of Safe Havens. Starting with veterans and single-parents.
-
-At **Shangrila Veterans Healing Places**, the primary mission is to provide safe and secure environments where veterans and single-parents. can find hope and healing, assisted by evidence based practitioners. A stable and comfortable place that can greatly assist in the healing process. The intention is to scale Shangrila-VHP in successive phases.
-
-There will most likely be different communities. Based upon a variety of factors.
+**Shangrila Veterans Healing Places**: Creating affordable housing and intentional communities for veterans and single-parents, guided by evidence-based practices. Our goal: Scalable expansion in successive phases, to eventually solve afforable housing around the world in partnership with our sister organizations.
 
 [Note: Front view of one of the buildings.]
 ![](img/03-10-2024-Render-CoPilot-Hooyah-Main-05.jpg)
