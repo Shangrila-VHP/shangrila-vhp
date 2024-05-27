@@ -70,7 +70,7 @@ for i in range(4):
 for i in range(4):
     bpy.ops.mesh.primitive_torus_add(location=(0, 0, 2 + i * 0.5), rotation=(3.14159 / 2, 0, i * 3.14159 / 2))  # Adjust the Z location to be inside the cylinder and rotate the torus to be parallel to the Z-axis
     curved_blade = bpy.context.object
-    curved_blade.scale.x = 0.5  # Make the curved blades broad and thin
+    curved_blade.scale.x = 0.7  # Make the curved blades broad and thin
     curved_blade.scale.y = 5
     curved_blade.scale.z = 0.3  # Make the curved blades flat
     # Existing code
