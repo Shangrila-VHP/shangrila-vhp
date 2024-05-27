@@ -1,5 +1,9 @@
 import bpy
 import bmesh
+import sys
+sys.path.append('C:\\Users\\user\\Documents\\GitHub\\shangrila-vhp\\scripting-public\\')
+import Blender-Windmill-Started-05-26-2024.py
+
 from mathutils import Vector
 
 def create_tent(name, location, size=2, flap_verts_count=3, door_verts_count=4, inset_thickness=0.1, inset_depth=0):
