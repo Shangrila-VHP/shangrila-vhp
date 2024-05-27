@@ -26,19 +26,22 @@ for v in bm.verts:
             v.co.y -= 1
 
 # Create a flap as a new face
-flap_verts = [v for v in bm.verts if v.co.z > 0 and v.co.y < 0]
+flap_verts = [v for v in bm.verts if v.co.z > 0]
 if len(flap_verts) >= 3:
     flap_face = bm.faces.new(flap_verts)
 else:
     print("Not enough vertices to create a flap.")
-    
+
 # Rotate the flap
 flap_edge = flap_face.edges[0]  # Use the first edge of the flap face
 bmesh.ops.rotate(bm, cent=flap_edge.verts[0].co, matrix=bpy.context.scene.cursor.matrix, verts=flap_verts)
 
 # Create a door as a new face
-door_verts = [v for v in bm.verts if v.co.y < 0 and v.co.z < 1]
-door_face = bm.faces.new(door_verts)
+door_verts = [v for v in bm.verts if v.co.y < 0]
+if len(door_verts) >= 3:
+    door_face = bm.faces.new(door_verts)
+else:
+    print("Not enough vertices to create a door.")
 
 # Update the mesh with the new data
 bm.to_mesh(mesh)
