@@ -18,14 +18,24 @@ def create_tent(name, location, size=2, flap_verts_count=3, door_verts_count=4, 
     # Create a bmesh object and add a cube to it
     bm = bmesh.new()
     bmesh.ops.create_cube(bm, size=size)
-
     # Move two of the top vertices to create the tent shape
+    base_z_coords = []  # List to store the z-coordinates of the base vertices
     for v in bm.verts:
         if v.co.z > 0:
             if v.co.y > 0:
                 v.co.y += 1
             else:
                 v.co.y -= 1
+        else:
+            base_z_coords.append(v.co.z)  # Add the z-coordinate to the list
+
+    # Calculate the average z-coordinate of the base vertices
+    average_base_z = sum(base_z_coords) / len(base_z_coords)
+
+    # Set the z-coordinate of all base vertices to the average
+    for v in bm.verts:
+        if v.co.z <= 0:
+            v.co.z = average_base_z  # Make the base flat
 
     # Create a flap as a new face
     flap_verts = [v for v in bm.verts if v.co.z > 0]
