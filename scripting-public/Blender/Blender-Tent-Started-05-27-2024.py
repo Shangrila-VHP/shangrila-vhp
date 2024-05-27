@@ -2,7 +2,7 @@ import bpy
 import bmesh
 import sys
 sys.path.append('C:\\Users\\user\\Documents\\GitHub\\shangrila-vhp\\scripting-public\\')
-import Blender-Windmill-Started-05-26-2024.py
+import Blender-Windmill-Started-5-26-2024.py
 
 from mathutils import Vector
 
