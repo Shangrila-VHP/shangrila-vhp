@@ -70,15 +70,15 @@ for i in range(4):
 for i in range(4):
     bpy.ops.mesh.primitive_torus_add(location=(0, 0, 2 + i * 0.5), rotation=(3.14159 / 2, 0, i * 3.14159 / 2))  # Adjust the Z location to be inside the cylinder and rotate the torus to be parallel to the Z-axis
     curved_blade = bpy.context.object
-    curved_blade.scale.x = 0.7  # Make the curved blades broad and thin
+    curved_blade.scale.x = 1.2  # Make the curved blades broad and thin
     curved_blade.scale.y = 5
-    curved_blade.scale.z = 0.3  # Make the curved blades flat
+    curved_blade.scale.z = 0.2  # Make the curved blades flat
     # Existing code
     curved_blade.parent = rotator
     
     # New code
     # Create a protective mesh around the windmill
-    bpy.ops.mesh.primitive_cylinder_add(radius=2.5, depth=10, location=(0, 0, 5))  # Adjust the depth to cover the whole windmill
+    bpy.ops.mesh.primitive_cylinder_add(radius=3, depth=10, location=(0, 0, 5))  # Adjust the depth to cover the whole windmill
     protective_mesh = bpy.context.object
 
     # 05-26-2024: *This line hides the Mesh!*
@@ -86,7 +86,7 @@ for i in range(4):
 
     protective_mesh.scale.x = 1.1  # Make the protective mesh slightly larger than the windmill
     protective_mesh.scale.y = 1.1
-    protective_mesh.scale.z = 2  # Stretch the protective mesh along the Z-axis
+    protective_mesh.scale.z = 1.83  # Stretch the protective mesh along the Z-axis
     
     # Convert the cylinder to a mesh and give it some thickness
     bpy.ops.object.mode_set(mode='EDIT')
