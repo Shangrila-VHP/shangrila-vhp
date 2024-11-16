@@ -2,7 +2,7 @@ import FreeCAD, Part, Arch
 from FreeCAD import Base
 
 # Create a new document
-doc = FreeCAD.newDocument("HouseWithFixedRoofAndTrees")
+doc = FreeCAD.newDocument("House")
 
 # Define functions to create walls, doors, and windows
 def makeWall(length, height, width, placement=None):
