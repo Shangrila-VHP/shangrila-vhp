@@ -2,7 +2,7 @@ import FreeCAD, Part
 from FreeCAD import Base
 
 # Create a new cube with size 10
-cube = Part.makeBox(10, 10, 10)
+cube = Part.makeBox(20, 30, 25)
 
 # Add it to the document
 doc = FreeCAD.activeDocument()
@@ -15,7 +15,7 @@ import FreeCAD, Part
 from FreeCAD import Base
 
 # Create a new cube with size 10
-cube = Part.makeBox(10, 10, 10)
+cube = Part.makeBox(15, 13, 18)
 
 # Add it to the document
 doc = FreeCAD.activeDocument()
