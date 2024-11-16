@@ -12,7 +12,9 @@ def makeWall(length, height, width, placement=None):
     return wall
 
 def makeDoor(width, height, placement=None):
-    door = Arch.makeDoor(width=width, height=height)
+    door = Arch.makeBuildingPart()
+    door.Label = "Door"
+    door.addObject(Arch.makeWall(length=width, height=height, width=100))
     if placement:
         door.Placement = placement
     return door
@@ -39,7 +41,7 @@ window3 = makeWindow(width=1000, height=1500, placement=Base.Placement(Base.Vect
 window4 = makeWindow(width=1000, height=1500, placement=Base.Placement(Base.Vector(8000, 10000, 1000), Base.Rotation(Base.Vector(0, 0, 1), 180)))
 
 # Create the roof
-roof = Arch.makeRoof([wall1, wall2, wall3, wall4], height=2000)
+roof = Arch.makeRoof([wall1, wall2, wall3, wall4])
 
 # Create the chimney
 chimney = Part.makeBox(500, 500, 2000, Base.Vector(8000, 8000, 3000))
@@ -50,9 +52,9 @@ chimney_obj.Shape = chimney
 brick_texture = FreeCAD.ActiveDocument.addObject("App::MaterialObject", "BrickTexture")
 brick_texture.Material = {
     "Name": "Brick",
-    "DiffuseColor": (0.8, 0.1, 0.1),
-    "AmbientColor": (0.8, 0.1, 0.1),
-    "SpecularColor": (0.5, 0.5, 0.5),
+    "DiffuseColor": [(0.8, 0.1, 0.1)],
+    "AmbientColor": [(0.8, 0.1, 0.1)],
+    "SpecularColor": [(0.5, 0.5, 0.5)],
     "Shininess": 0.1,
     "Transparency": 0,
     "Reflectivity": 0.1
