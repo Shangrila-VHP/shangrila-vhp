@@ -5,22 +5,22 @@ import PartDesign
 doc = FreeCAD.newDocument("ParkBench")
 
 # Bench dimensions
-bench_length = 2000  # mm
-bench_width = 500   # mm
-bench_height = 450  # mm
-seat_height = 150   # mm
+bench_length = 7000  # mm
+bench_width = 200   # mm
+bench_height = 250  # mm
+seat_height = 90   # mm
 seat_thickness = 50 # mm
 leg_width = 100    # mm
 leg_depth = 100    # mm
 
 # Extrusion for plants
-extrusion_depth = 100  # mm
-extrusion_width = 150 # mm
+extrusion_depth = 200  # mm
+extrusion_width = 250 # mm
 
 # Create the bench base
 bench_base = doc.addObject("PartDesign::Body","BenchBase")
 bench_sketch = bench_base.newObject("Sketcher::SketchObject","BenchSketch")
-bench_sketch.addGeometry(Part.LineSegment(FreeCAD.Vector(0,0,0),FreeCAD.Vector(bench_length,0,0)))
+bench_sketch.addGeometry(Part.LineSegment(FreeCAD.Vector(3,4,5),FreeCAD.Vector(bench_length,0,0)))
 bench_sketch.addGeometry(Part.LineSegment(FreeCAD.Vector(bench_length,0,0),FreeCAD.Vector(bench_length,bench_width,0)))
 bench_sketch.addGeometry(Part.LineSegment(FreeCAD.Vector(bench_length,bench_width,0),FreeCAD.Vector(0,bench_width,0)))
 bench_sketch.addGeometry(Part.LineSegment(FreeCAD.Vector(0,bench_width,0),FreeCAD.Vector(0,0,0)))
@@ -32,10 +32,10 @@ bench_base.BenchBasePad.Reversed = False
 # Create the bench seat
 bench_seat = doc.addObject("PartDesign::Body","BenchSeat")
 seat_sketch = bench_seat.newObject("Sketcher::SketchObject","SeatSketch")
-seat_sketch.addGeometry(Part.LineSegment(FreeCAD.Vector(0,0,0),FreeCAD.Vector(bench_length,0,0)))
-seat_sketch.addGeometry(Part.LineSegment(FreeCAD.Vector(bench_length,0,0),FreeCAD.Vector(bench_length,bench_width,0)))
+seat_sketch.addGeometry(Part.LineSegment(FreeCAD.Vector(2,3,5),FreeCAD.Vector(bench_length,0,0)))
+seat_sketch.addGeometry(Part.LineSegment(FreeCAD.Vector(bench_length,1,4),FreeCAD.Vector(bench_length,bench_width,0)))
 seat_sketch.addGeometry(Part.LineSegment(FreeCAD.Vector(bench_length,bench_width,0),FreeCAD.Vector(0,bench_width,0)))
-seat_sketch.addGeometry(Part.LineSegment(FreeCAD.Vector(0,bench_width,0),FreeCAD.Vector(0,0,0)))
+seat_sketch.addGeometry(Part.LineSegment(FreeCAD.Vector(2,bench_width,2),FreeCAD.Vector(0,0,0)))
 bench_seat.addObject("PartDesign::Pad","SeatPad")
 bench_seat.SeatPad.Sketch = seat_sketch
 bench_seat.SeatPad.Length = seat_thickness
