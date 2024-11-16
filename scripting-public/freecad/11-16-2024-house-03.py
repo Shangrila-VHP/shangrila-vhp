@@ -60,14 +60,14 @@ tree_trunk_height = 4
 tree_foliage_radius = 2
 tree_foliage_height = 3
 tree_spacing = 6  # Increased spacing between trees
-tree_positions = [i * tree_spacing for i in range(-3, 1)]  # Updated positions for trees
+tree_positions = [i * tree_spacing for i in range(-4, -1)]  # Updated positions for trees
 
 # Create trees on the left
 for i, x in enumerate(tree_positions):
-    trunk = create_cylinder(tree_trunk_radius, tree_trunk_height, x, -5, 0, f"TreeTrunkLeft{i+1}", (0.5, 0.25, 0.0))
+    trunk = create_cylinder(tree_trunk_radius, tree_trunk_height, x, -10, 0, f"TreeTrunkLeft{i+1}", (0.5, 0.25, 0.0))
     foliage = doc.addObject("Part::Sphere", f"TreeFoliageLeft{i+1}")
     foliage.Radius = tree_foliage_radius
-    foliage.Placement.Base = App.Vector(x, -5, tree_trunk_height)  # On top of the trunk
+    foliage.Placement.Base = App.Vector(x, -10, tree_trunk_height)  # On top of the trunk
     foliage.ViewObject.ShapeColor = (0.0, 0.5, 0.0)  # Green foliage
 
 # Create trees on the right
