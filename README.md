@@ -287,3 +287,11 @@ For the model itself, I used paper, glue sticks, a little bit of elastic, exacto
 ![](img/20240123_055045.jpg)
 ![](img/20240123_055054.jpg)
 
+# Zen Garden Addition
+
+We are excited to announce the addition of a zen garden to our project. The zen garden is designed to provide a peaceful and meditative space for residents. It includes elements such as sand, rocks, and a small tree, creating a serene environment adjacent to the house model.
+
+The zen garden is a beautiful addition that enhances the overall aesthetic and tranquility of the living space. It offers a place for reflection and relaxation, contributing to the well-being of the residents.
+
+We believe that the zen garden will be a valuable feature for our community, promoting mindfulness and a sense of calm.
+
