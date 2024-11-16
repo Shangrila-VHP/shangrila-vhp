@@ -1,0 +1,49 @@
+import FreeCAD as App
+import Part
+
+# Create a new FreeCAD document
+doc = App.newDocument("House")
+
+# Function to create a box
+def create_box(length, width, height, x, y, z, name):
+    box = App.ActiveDocument.addObject("Part::Box", name)
+    box.Length = length
+    box.Width = width
+    box.Height = height
+    box.Placement.Base = App.Vector(x, y, z)
+    return box
+
+# Create the main structure of the house
+house = create_box(20, 10, 10, 0, 0, 0, "House")
+house.ViewObject.ShapeColor = (1.0, 0.2, 0.2)  # Red bricks color
+
+# Create the roof
+roof = App.ActiveDocument.addObject("Part::Cone", "Roof")
+roof.Radius1 = 0
+roof.Radius2 = 12
+roof.Height = 6
+roof.Placement.Base = App.Vector(10, 5, 10)  # Centered on the house top
+roof.Placement.Rotation.Angle = 0
+roof.ViewObject.ShapeColor = (0.4, 0.2, 0.0)  # Brown roof color
+
+# Create the door
+door = create_box(2, 0.2, 4, 9, -0.1, 0, "Door")
+door.ViewObject.ShapeColor = (0.6, 0.3, 0.0)  # Wood door color
+
+# Create windows
+window1 = create_box(2, 0.2, 2, 3, -0.1, 5, "Window1")
+window1.ViewObject.ShapeColor = (0.7, 0.9, 1.0)  # Glass color
+window2 = create_box(2, 0.2, 2, 15, -0.1, 5, "Window2")
+window2.ViewObject.ShapeColor = (0.7, 0.9, 1.0)  # Glass color
+
+# Create the chimney
+chimney = create_box(2, 2, 6, 15, 7, 10, "Chimney")
+chimney.ViewObject.ShapeColor = (0.8, 0.1, 0.1)  # Red chimney color
+
+# Recompute the document to apply changes
+doc.recompute()
+
+# Save the file locally (optional)
+# App.ActiveDocument.saveAs("house.fcstd")
+
+print("House creation complete! Open in FreeCAD to view the model.")
