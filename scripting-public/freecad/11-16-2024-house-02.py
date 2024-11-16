@@ -2,7 +2,7 @@ import FreeCAD, Part, Arch
 from FreeCAD import Base
 
 # Create a new document
-doc = FreeCAD.newDocument("House")
+doc = FreeCAD.newDocument("HouseWithFixedRoofAndTrees")
 
 # Define functions to create walls, doors, and windows
 def makeWall(length, height, width, placement=None):
@@ -12,13 +12,17 @@ def makeWall(length, height, width, placement=None):
     return wall
 
 def makeDoor(width, height, placement=None):
-    door = Arch.makeDoor(width=width, height=height)
+    door = Arch.makeBuildingPart()
+    door.Label = "Door"
+    door.addObject(Arch.makeWall(length=width, height=height, width=100))
     if placement:
         door.Placement = placement
     return door
 
 def makeWindow(width, height, placement=None):
-    window = Arch.makeWindow(width=width, height=height)
+    window = Arch.makeWindowPreset("Simple")
+    window.Width = width
+    window.Height = height
     if placement:
         window.Placement = placement
     return window
@@ -39,7 +43,7 @@ window3 = makeWindow(width=1000, height=1500, placement=Base.Placement(Base.Vect
 window4 = makeWindow(width=1000, height=1500, placement=Base.Placement(Base.Vector(8000, 10000, 1000), Base.Rotation(Base.Vector(0, 0, 1), 180)))
 
 # Create the roof
-roof = Arch.makeRoof([wall1, wall2, wall3, wall4], height=2000)
+roof = Arch.makeRoof([wall1, wall2, wall3, wall4])
 
 # Create the chimney
 chimney = Part.makeBox(500, 500, 2000, Base.Vector(8000, 8000, 3000))
