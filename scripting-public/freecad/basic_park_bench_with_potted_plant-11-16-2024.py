@@ -17,7 +17,6 @@ leg_depth = 100    # mm
 extrusion_depth = 100  # mm
 extrusion_width = 150 # mm
 
-
 # Create the bench base
 bench_base = doc.addObject("PartDesign::Body","BenchBase")
 bench_sketch = bench_base.newObject("Sketcher::SketchObject","BenchSketch")
@@ -43,7 +42,7 @@ bench_seat.SeatPad.Length = seat_thickness
 bench_seat.SeatPad.Placement = FreeCAD.Placement(FreeCAD.Vector(0,0,bench_height - seat_thickness), FreeCAD.Rotation(0,0,0))
 
 
-#Extrusion for Plants
+# Extrusion for Plants
 extrusion_sketch = bench_base.newObject("Sketcher::SketchObject", "ExtrusionSketch")
 extrusion_sketch.addGeometry(Part.LineSegment(FreeCAD.Vector(bench_length/4, bench_width, 0), FreeCAD.Vector(bench_length/4 + extrusion_width, bench_width, 0)))
 extrusion_sketch.addGeometry(Part.LineSegment(FreeCAD.Vector(bench_length/4 + extrusion_width, bench_width, 0), FreeCAD.Vector(bench_length/4 + extrusion_width, bench_width + extrusion_depth, 0)))
@@ -55,9 +54,15 @@ bench_base.ExtrusionPad.Length = 100
 bench_base.ExtrusionPad.Reversed = False
 
 
-
-# Add legs (simplified) - needs improvement for realism
-# ... (Add code to create legs here, similar to the bench base and seat)
+# Add legs (simplified)
+leg_height = bench_height - seat_thickness
+leg_spacing = bench_length / 3
+for i in range(2):
+    leg = doc.addObject("Part::Box", f"Leg{i+1}")
+    leg.Length = leg_depth
+    leg.Width = leg_width
+    leg.Height = leg_height
+    leg.Placement = FreeCAD.Placement(FreeCAD.Vector(leg_spacing * i, 0, 0), FreeCAD.Rotation(0,0,0))
 
 
 #Add Potted Plants (simplified cylinders)
@@ -70,5 +75,6 @@ for i in range(plant_num):
     plant_pot.Radius = plant_pot_radius
     plant_pot.Height = plant_pot_height
     plant_pot.Placement = FreeCAD.Placement(FreeCAD.Vector(bench_length/4 + extrusion_width/2, bench_width + extrusion_depth/2 + i * (plant_pot_height + 20), bench_height/2), FreeCAD.Rotation(0,0,0))
+
 
 doc.recompute()
