@@ -10,12 +10,16 @@ The question is, who is your real family & why. The other question is, ask what 
 
 **Shangrila-VHP - Veterans Healing Places**: 
 * * * From the day it is officially initiated. The purpose of this vehicle is to:
-    * Advocate for and actively innovative towards helping address quality housing for veterans across the OTAN command and allies.
-    * To address and eliminate homelessness in the veterans, first-responder and front-line staff community within 6 months.
+    * To address and help eliminate homelessness in the veterans, first-responder and front-line staff community as soon as possible. Improving overall quality, care during all the times.
+    * The endeavour will then evolve to solve afforable housing around the world in partnership with the sister organizations. [Aerospace side of things](https://asi.surge.sh/) & [Global Healthcare side of things](https://auh.surge.sh/)
+   
+    
     * To enable the structure whereby there is an increasing higher focus/obsession towards service the audience/client.
-    * To prosper worldwide, equipping other startups to adopt our model. Towards helping educate and for creating affordable housing.
-    * Vision: Scalable expansion in successive phases, to eventually solve afforable housing around the world in partnership with our sister organizations.
+    * To then, prosper worldwide. Equipping other startups to adopt our model by licensing the road-map development for the ethical framework, technological development. Taking not only a never do no harm approach. But to take steps towards equipping and enabling hope and healing. Geared towards restoring human dignity and educating each other on how to enable the means whereby all the folks around the world can enjoy affordable housing.
+    * Vision: Scalable expansion in successive phases, to eventually 
     * My wish is that the day this project is officially initiated is today. In the sense that by July of 2025, homeless is a thing of the past for front-line staff and also single parents like myself.
+       * That being said, it can be cold or hot. Depending on the location. As long as the funding is obtained from good/rational/ethical sources & there is the means to enable oversight on part of the governments. By re-tooling existing factories and shops, the vision to house all veterans can be achived in a single day.
+       * So the question now is, what is acceptable. Is it acceptable for a veteran to sleep outside in the cold. An individual who sacrificed so much to protect me and you from harm.  
     * Here is a preliminary budget that I created back in February of the year 2023. [First attempt at budgeting - link](https://docs.google.com/spreadsheets/d/1UCKKH7VVqoafzyE_3Dc9-L4a1Vtmi-4Hmhda887AsPc/edit?usp=sharing)
      *  I am constantly working on innovations to help lower the capital expenditure that will go towards the creation of the facilities. With careful timing, I can already see a time when a $5000 house will be available for anyone on the planet. In a manner that living in the house will be very good for the overall health of the inhabitants. As well, the structure will shielded from earth-quakes, floods, fire, inclement weather (maybe Tsunamis - but not yet!). I will be sharing the meditations specific to these innovations. Mostly sitting as screenshots on my external drive. Would be great to have some help here!
    
