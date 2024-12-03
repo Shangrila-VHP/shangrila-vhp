@@ -8,11 +8,14 @@
 * * * From the day it is officially initiated. The purpose of this vehicle is to:
     * Advocate for and actively innovative towards helping address quality housing for veterans across the OTAN command and allies.
     * To address and eliminate homelessness in the veterans, first-responder and front-line staff community within 6 months.
+    * To enable the structure whereby there is an increasing higher focus/obsession towards service the audience/client.
     * To prosper worldwide, equipping other startups to adopt our model. Towards helping educate and for creating affordable housing.
     * Vision: Scalable expansion in successive phases, to eventually solve afforable housing around the world in partnership with our sister organizations.
     * My wish is that the day this project is officially initiated is today. In the sense that by July of 2025, homeless is a thing of the past for front-line staff and also single parents like myself.
     * Here is a preliminary budget that I created back in February of the year 2023. [First attempt at budgeting - link](https://docs.google.com/spreadsheets/d/1UCKKH7VVqoafzyE_3Dc9-L4a1Vtmi-4Hmhda887AsPc/edit?usp=sharing)
-     *  I am constantly working on innovations to help lower the capital expenditure that will go towards the creation of the facilities. With careful timing, I can already see a time when a $5000 house will be available for anyone on the planet. In a manner that living in the house will be very good for the overall health of the inhabitants. As well, the structure will shielded from earth-quakes, floods, fire, inclement weather (maybe Tsunamis - but not yet!). I will be sharing the meditations specific to these innovations. Mostly sitting as screenshots on my external drive. Would be great to have some help here! 
+     *  I am constantly working on innovations to help lower the capital expenditure that will go towards the creation of the facilities. With careful timing, I can already see a time when a $5000 house will be available for anyone on the planet. In a manner that living in the house will be very good for the overall health of the inhabitants. As well, the structure will shielded from earth-quakes, floods, fire, inclement weather (maybe Tsunamis - but not yet!). I will be sharing the meditations specific to these innovations. Mostly sitting as screenshots on my external drive. Would be great to have some help here!
+   
+>"Support your veteran community by being an active listener and not passing judgement." - S. Bloom (Jan 25, 2022)
 
 [Note: Front view of one of the buildings.]
 ![](img/03-10-2024-Render-CoPilot-Hooyah-Main-05.jpg)
@@ -59,7 +62,7 @@ Together, we can build a future where every human (starting with veterans and fi
 
 ---
 
-![copy path via github directly](img/Shangrila-vhp-main-idea-v1-1.png)
+![copy path via github directly](img/Shangrila-vhp-main-idea-v123.jpg)
 <!-- Will keep these other options. Or should I. Hmm.
 ![Image that captures the main idea](/img/Shangrila-vhp-main-idea-v1-1.png)
 ![Same w unc path](https://github.com/Shangrila-VHP/shangrila-vhp/blob/main/img/Shangrila-vhp-main-idea-v1-1.png)
