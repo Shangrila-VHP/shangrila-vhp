@@ -306,3 +306,7 @@ The zen garden is a beautiful addition that enhances the overall aesthetic and t
 
 We believe that the zen garden will be a valuable feature for our community, promoting mindfulness and a sense of calm.
 
+## All subsequent updates can be located via the [wiki](https://github.com/Shangrila-VHP/shangrila-vhp/wiki)
+
+Thank you and please consider sponsoring this project! It's much needed around the world and can also help create a lot of quality jobs. As well, help improve the human condition! 
+
