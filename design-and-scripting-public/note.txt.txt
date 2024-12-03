@@ -1,0 +1,4 @@
+# Decision on 12-01-2024
+# # Renders will be exported on the following path: img/hacking-12-02-2024-and-onwards
+## This way, source files can remain at: design-and-scripting-public
+### And renders will not clutter up the folder. Besides all renders will then be in a singular folder
