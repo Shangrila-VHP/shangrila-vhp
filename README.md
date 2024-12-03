@@ -1,3 +1,5 @@
+'If it's up to be. It's up to me.' - via Itsa Dan Hawk 
+
 ![](img/03-10-2024-Render-CoPilot-Hooyah-Main-01.jpg)
 
 # Introduction
