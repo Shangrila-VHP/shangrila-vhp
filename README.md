@@ -1,5 +1,7 @@
 'If it's up to be. It's up to me.' - via Itsa Dan Hawk 
 
+The question is, who is your real family & why. The other question is, ask what you can do for your family.
+
 ![](img/03-10-2024-Render-CoPilot-Hooyah-Main-01.jpg)
 
 # Introduction
