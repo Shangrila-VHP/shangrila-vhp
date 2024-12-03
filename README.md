@@ -62,7 +62,7 @@ Together, we can build a future where every human (starting with veterans and fi
 
 ---
 
-![copy path via github directly](img/Shangrila-vhp-main-idea-v1-1.png)
+![copy path via github directly](img/Shangrila-vhp-main-idea-v123.jpg)
 <!-- Will keep these other options. Or should I. Hmm.
 ![Image that captures the main idea](/img/Shangrila-vhp-main-idea-v1-1.png)
 ![Same w unc path](https://github.com/Shangrila-VHP/shangrila-vhp/blob/main/img/Shangrila-vhp-main-idea-v1-1.png)
