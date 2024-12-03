@@ -13,7 +13,9 @@
     * Vision: Scalable expansion in successive phases, to eventually solve afforable housing around the world in partnership with our sister organizations.
     * My wish is that the day this project is officially initiated is today. In the sense that by July of 2025, homeless is a thing of the past for front-line staff and also single parents like myself.
     * Here is a preliminary budget that I created back in February of the year 2023. [First attempt at budgeting - link](https://docs.google.com/spreadsheets/d/1UCKKH7VVqoafzyE_3Dc9-L4a1Vtmi-4Hmhda887AsPc/edit?usp=sharing)
-     *  I am constantly working on innovations to help lower the capital expenditure that will go towards the creation of the facilities. With careful timing, I can already see a time when a $5000 house will be available for anyone on the planet. In a manner that living in the house will be very good for the overall health of the inhabitants. As well, the structure will shielded from earth-quakes, floods, fire, inclement weather (maybe Tsunamis - but not yet!). I will be sharing the meditations specific to these innovations. Mostly sitting as screenshots on my external drive. Would be great to have some help here! 
+     *  I am constantly working on innovations to help lower the capital expenditure that will go towards the creation of the facilities. With careful timing, I can already see a time when a $5000 house will be available for anyone on the planet. In a manner that living in the house will be very good for the overall health of the inhabitants. As well, the structure will shielded from earth-quakes, floods, fire, inclement weather (maybe Tsunamis - but not yet!). I will be sharing the meditations specific to these innovations. Mostly sitting as screenshots on my external drive. Would be great to have some help here!
+   
+>"Support your veteran community by being an active listener and not passing judgement." - S. Bloom (Jan 25, 2022)
 
 [Note: Front view of one of the buildings.]
 ![](img/03-10-2024-Render-CoPilot-Hooyah-Main-05.jpg)
