@@ -8,6 +8,7 @@
 * * * From the day it is officially initiated. The purpose of this vehicle is to:
     * Advocate for and actively innovative towards helping address quality housing for veterans across the OTAN command and allies.
     * To address and eliminate homelessness in the veterans, first-responder and front-line staff community within 6 months.
+    * To enable the structure whereby there is an increasing higher focus/obsession towards service the audience/client.
     * To prosper worldwide, equipping other startups to adopt our model. Towards helping educate and for creating affordable housing.
     * Vision: Scalable expansion in successive phases, to eventually solve afforable housing around the world in partnership with our sister organizations.
     * My wish is that the day this project is officially initiated is today. In the sense that by July of 2025, homeless is a thing of the past for front-line staff and also single parents like myself.
