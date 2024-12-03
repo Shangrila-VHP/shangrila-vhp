@@ -8,8 +8,8 @@ The question is, who is your real family & why. The other question is, ask what 
 
 ---
 
-**Shangrila-VHP - Veterans Healing Places**: 
-* * * From the day it is officially initiated. The purpose of this vehicle is to:
+* Shangrila-VHP - Veterans Healing Places**: 
+* * From the day it is officially initiated. The purpose of this vehicle is to:
     * To address and help eliminate homelessness in the veterans, first-responder and front-line staff community as soon as possible. Improving overall quality, care during all the times.
     * The endeavour will then evolve to solve afforable housing around the world in partnership with the sister organizations. [Aerospace side of things](https://asi.surge.sh/) & [Global Healthcare side of things](https://auh.surge.sh/)
    
