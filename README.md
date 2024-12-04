@@ -242,7 +242,7 @@ A veterans healing facility built <redacted>. With an swimming pool, Covered out
 Overall, I imagine these locations to be mixed real estate facilities for enabling hope and healing.
 Whereby humans and robots would collaborate in order to bring hope and healing for veterans, first responders, healthcare 
 workers from all over the world. I haven't had a chance to develop the care-giving robots side of things. But I'd love to 
-somehow collaborate with [Awakening Health](https://awakening.health/) and USC ICT (link shared previously)
+somehow collaborate with Dr. Hanson and Dr. Goertzel and USC ICT (links shared previously)
 
 #Let's Collaborate
 I would **absolutely love feedback** and I seek to collaborate with you on this project. It is my hope that this project 
