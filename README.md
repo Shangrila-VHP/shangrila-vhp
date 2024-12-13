@@ -1,7 +1,5 @@
 'If it's up to be. It's up to me.' - via Itsa Dan Hawk 
 
-'What can do for my real family?'.
-
 'May I continue forging the capacity and capability to do universal good in this reality & all other realitities that our worlds are [entangled with](https://www.quantamagazine.org/tensor-networks-and-entanglement-20150428/) 
 
 ![](img/03-10-2024-Render-CoPilot-Hooyah-Main-01.jpg)
