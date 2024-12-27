@@ -1,0 +1,19 @@
+import logging
+
+# Configure logging
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+
+def main():
+    logging.info("Starting the script")
+    print("Hello, World!")
+    result = add_numbers(5, 3)
+    logging.info(f"The sum of 5 and 3 is: {result}")
+    print(f"The sum of 5 and 3 is: {result}")
+    logging.info("Script finished")
+
+def add_numbers(a, b):
+    logging.info(f"Adding numbers: {a} + {b}")
+    return a + b
+
+if __name__ == "__main__":
+    main()
