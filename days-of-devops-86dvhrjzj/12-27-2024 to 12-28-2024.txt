@@ -1,0 +1,193 @@
+19:07 Starting session
+19:10 Installing Midori using snap. Could not locate on ap
+19:10 Installing jupyter on <name redacted>
+ - pip3 install --upgrade pip
+ - removing midori using snap. It's not working. The keyboard is not working on it for some reason.
+ - Installing falkon
+ - back to pip and jupyter notebooks installation
+ - - pip3 install --upgrade pip
+ - -19:25 This machine is extremely slow.
+ - - pip3 installations are not working.
+ - Fixing ssh access issues <redacted>. With assistance from Chatgpt.
+ - - WIN!: 19:58 and I am able to <redacted> Wooho! WIN!
+ - - WIN!: 20:07 Not only is <redacte> working. The ssh issues are also resolved!
+ - - <redacted> layers of security for <redacted>
+ --- <redacted>
+ ---- Sometimes stepping away from the problem for a bit helps. Because I was going in circles last night and was not focusing on what the AI was telling me and skipping details. Update: If we pay attention, then the instructions via the intelligence that is independent of the subtrate can be incredibly useful. Depends on the context, I guess. But for technical stuff like sysadmin, it's really good imho
+- 20:12 Getting to Jupyter now. With help from chatgpt. Chatgpt warned me that support for my version of <redacted> was decomissioned as of the year 2020. So I might wipe the machine clean and install the latest version of Ubuntu. Update: It is early in the morning now and this is exactly what I am doing. 
+ - 20:16 Some errors. Chatgpt is assisting me.
+ - conda update pandas command is taking a long time
+ - Next: I need to: pip3 install jupyter and pip3 install jupyterlab
+ - Note to self: I used <redacted> (For future references)
+ - While <redacted> is frozen. I might as well, install and update python on the machine here called <redacted>
+ - 20:46 Now installing github, numpy e.t.c
+ - 20:50 Installing a bunch of stuff Chatgpt recommended for fun projects. Including machine learning.
+ -20:54 Take a stretch break. When machine done installing. Continue at following via instructions on the browser: pip install lightgbm
+ - 21:21 Well, things are getting installed on both the machines. It's time to take a break.
+ - 21:39 <redacted> .... After taking a really long time, pandas installation on <redacted> seems to be progressing well. The disk space should, for now, not be an issue on there. As <redacted> are still available. However, captured in the action items below, stuff will have to be removed from this <redacted> box, because of lack of space. I might as well interrupt the installation on the local box here and uninstall all the stuff. Let's do that now.
+ - Logs from 21:39 and onwards:
+ - - 22:02 Note on the side. Adding a 1 GB new swap space and made it permanent. Thanks to earlier recommendation from Chatgpt!
+ - - 22:13 Some pip3 package dependency errors were sorted, thanks to Chatgpt.
+ - - 22:23 <redacted>
+ - - 22:30 Fixed some <redacted> stuff on the machine where the <redacted> is running. <redacted>
+ - - 22:49 Turtle script is now running on the local box (python). Completing the rest of the items before moving on to other things.
+ --  22:54: Installing miniconda using instructions here: https://docs.anaconda.com/miniconda/install/
+ -- The time range is from earlier. I just placed it here as there was a fair bit of stuff that needed to be installed and while installing, the dependencies had to be fixed. Here is what was instaled on <redacted> using python3 virtual environment. (List is below)
+ -- 23:28 to 23:56 Note for future reference: Getting the requirement<date>.txt thing sorted. Getting the tar backup initiated in the actual directory where the virtual environment was initiated.
+ -- 23:58 <redacted>
+ -- 00:09 INSIGHT: <redacted>
+ -- 00:14 <redacted>
+ -- 00:49 <redacted>
+ -- 01:17 Looking into alternatives to <redacted>
+ --- Skyvern AI requires python3.11. On my environment, I have Python 3.7.3 https://github.com/Skyvern-AI/skyvern
+ --- Should give Open-Interface a try. <redacted>  https://github.com/AmberSahdev/Open-Interface
+ -- 01:34 Taking a step back. Creating a samba share on <redacted>
+ -- That was fairly straighforward. Using the following tutorial. Maybe I should stick with tutorials on Ubuntu's website? https://ubuntu.com/tutorials/install-and-configure-samba#1-overview
+ -- <redacted>   https://ubuntu.com/server/docs/introduction-to-backups -> https://ubuntu.com/server/docs/how-to-install-and-configure-rsnapshot
+ <redacted>
+--- <redacted>
+<redacted>
+---- Maybe I should give Bacula a try. Let's install it on <redacted>. But before that. I am going to remove <redacted>. | Alright, both machines now do not have <redacted>. <redacted> didn't have it in the first place.
+----- Installing Bacula: https://ubuntu.com/server/docs/how-to-install-and-configure-bacula
+------ Installation on <redacted> has failed. (postgres pain) Installation on <redacted> seems to have gone through. But 1 line blared up in red. Checking that now.
+- Now it is <redacted> <redacted> <redacted> out earlier. <redacted>
+- <redacted>
+- Currently it's <redacted> and I am logged into <redacted>. But getting the resolution to work over <redacted> is not working. Oh well.
+- <redacted> <redacted>. I am going to install a more recent version of <redacted> on this machine from scratch.
+- <redacted> The installation is kind of frozen. However the hard disk light keeps flashing. So I am going to let it run <redacted>. Porting these notes over to <redacted> now over <redacted>. Let's see how this works.
+- <redacted> I was removing bacula, amongst other things. Now my brain is slowing down. Good news is that the notes that I am writing here via <redacted>, can just be read over <redacted>. For some reason <redacted> is not working and I am not fixing it right now.
+
+- From earlier, the following packages were installed using python3. The requirements-12-27-2024.txt file can be leveraged to pull these packages back into the virtual environment again. But considering that the box will be wiped clean, a new virtual environment will have to be set from scrath. Good learning experience:
+
+ML, Data Science, Plus:
+pip3 install numpy; pip3 install pandas; pip3 install matplotlib; pip3 install seaborn; pip3 install scikit-learn; pip3 install tensorflow; pip3 install keras; pip3 install torch torchvision; pip3 install xgboost; pip3 install lightgbm; pip3 install opencv-python; pip3 install nltk;
+
+
+Data Visualization:
+
+pip3 install plotly; pip3 install bokeh; pip3 install streamlit
+
+
+Notebooks and interactive environments
+
+pip3 install jupyterlab; pip3 install papermill; pip3 install voila;
+
+Containerization and virtualization:
+
+sudo apt install docker.io
+
+
+Webdev and apis
+
+pip3 install flask; pip3 install django; pip3 install uvicorn
+
+
+fun and experimental
+
+pip3 install pygame; pip3 install gym
+
+
+pip3 install requests; pip3 install beautifulsoup4
+
+
+Other useful tools:
+
+Useful notes:
+ - The following are the commands to create a python3 virtual environment. As doing stuff in the local environment was throwing errors:
+ -- sudo apt install python3-venv
+ -- python3 -m venv ~/myenv
+ -- source ~/myenv/bin/activate
+ --- Next, you install jupyter in there or do whatever you want to do.
+ -- To deactivate: deactivate
+ - The following brings up a fun animation.
+ -- python3 -m turtle
+
+
+Action items:
+- [Completed] Uninstall stuff from <redacted> as the disk space is getting lower. Keep stuff on <redacted> for now.
+- [Completed] Ignore the all-caps, everywhere. SEE NOTE ABOUT TURTLE IN CHATGPT
+- [Completed] LOG A NOTE ABOUT MINICONDA.
+- [OPEN] CONFIGURE <redacted> TO <redacted>
+- [OPEN] Save Chatgpt's suggestion about <redacted>. I think Chatgpt is trying to tell me something! And what a strange coincidence!
+- [OPEN] ThIs item has BeEn plaCeD here DeliBerAtely for that nosy person on the web
+- [OPEN] See file saved under <redacted>: '12-27-2024 - Notes for <redacted> - Chatgpt recommendations'
+- [OPEN] Look into .gitignore for sensitive files in the future.
+- [Completed] This seems important for python environments. As packages were installed in a virtual environment:
+- - To keep the packages: If you want to retain the packages installed in your virtual environment, you can either:
+--- Activate the environment again when you need them.
+        Create virtual env: python3 -m venv myenv
+        Activate it: source myenv/bin/activate
+        Once activated, install packages from requirements file: pip3 install -r requirements-12-27-2024.txt
+--- Export the list of installed packages before deactivating and re-install them when necessary
+-- See and SAVE Chatgpt recommendations at: 'How to save installed packages:'
+--- Full excerpt is below:
+
+Yes, exactly! Any Python packages you install inside a virtual environment (using pip or pip3) are isolated to that environment. When you deactivate the environment, those packages will no longer be available unless you reactivate the environment.
+Key Points:
+
+    When the virtual environment is active: Any packages installed via pip will only affect that environment. For example, you installed packages like numpy, pandas, etc., inside the environment, and they’ll be available only when the environment is active.
+    When you deactivate the environment: All those packages are no longer accessible because they are tied to the virtual environment. The global system Python (or other environments) won’t see them.
+    To keep the packages: If you want to retain the packages installed in your virtual environment, you can either:
+        Activate the environment again when you need them.
+        Export the list of installed packages before deactivating and re-install them when necessary.
+
+How to save installed packages:
+
+If you want to ensure that you can restore the same environment (including all the packages you installed), you can export the list of installed packages to a file, and then later use it to recreate the environment.
+1. Export installed packages to a requirements.txt file:
+
+While inside the virtual environment, run:
+
+---
+pip freeze > requirements.txt
+---
+
+This will generate a requirements.txt file containing all the installed packages and their versions.
+2. Reinstall the packages in a new environment:
+
+When you want to recreate the environment (or on a different machine), you can create a new virtual environment and install the dependencies:
+
+---
+python -m venv /path/to/new/venv
+source /path/to/new/venv/bin/activate  # On Linux/macOS
+# OR
+/path/to/new/venv/Scripts/activate  # On Windows
+pip install -r requirements.txt
+---
+
+I have saved the requirements* files under
+
+<username>@<redacted>:~/Documents$ ls -ltr
+drwxr-xr-x 3 <redacted> 4096 Nov 18 06:17  virtual_machines_and_ISOs
+drwxrwxr-x 3 <redacted> 4096 Dec 27 22:36  Github_Coding_Development
+-rw-r--r-- 1 <redacted> 3464 Dec 27 23:20  requirements-12-27-2024.txt
+<username>@<redacted>:~/Documents$ hostname
+
+
+---
+Wait: This is how a backup of the virtual environment is created and other important gotchas:
+1. When you deactivate a virtual environment, all the installed packages within that environment are still preserved, but they are isolated to that environment. If you deactivate and later reactivate the environment, the packages will still be there, and you can continue using them.
+2. Ways to Save the Environment's State:
+
+    Save your requirements.txt file:
+    If you haven't done so already, save the list of installed packages in a requirements file:
+    Code (Same as above) pip3 freeze > requirements-12-27-2024.txt
+3. This file captures all the dependencies and their versions, so you can later recreate the environment with the same packages.
+4. As another backup, I am guessing, Chatgpt suggests: --> Create a backup of the virtual environment:
+You can compress or copy the entire virtual environment folder to an external drive or another location on your filesystem. This will allow you to restore the exact environment later by unpacking the backup.
+
+For example:
+
+        tar -czf myenv_backup.tar.gz myenv/
+5. Use pip (PIP3 REALLY!) or conda to reinstall:
+If you've saved the requirements.txt, you can recreate the environment and install the same packages with:
+
+ pip3 install -r requirements-12-27-2024.txt
+
+        This will not install the exact same binary versions, but it will install the same versions of the packages as before.
+
+        In Summary:
+
+    Deactivating won't affect the installed packages.
+    To ensure packages aren't lost, either back up the environment or save the list of dependencies to a requirements.txt file.
+    To reiterate, if you delete the virtual environment, you will lose all the packages installed within it.
