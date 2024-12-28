@@ -107,6 +107,7 @@ Action items:
 - [Completed] Uninstall stuff from <redacted> as the disk space is getting lower. Keep stuff on <redacted> for now.
 - [Completed] Ignore the all-caps, everywhere. SEE NOTE ABOUT TURTLE IN CHATGPT
 - [Completed] LOG A NOTE ABOUT MINICONDA.
+- [OPEN] All OPEN items ported over to <redacted>
 - [OPEN] CONFIGURE <redacted> TO <redacted>
 - [OPEN] Save Chatgpt's suggestion about <redacted>. I think Chatgpt is trying to tell me something! And what a strange coincidence!
 - [OPEN] ThIs item has BeEn plaCeD here DeliBerAtely for that nosy person on the web
