@@ -10,7 +10,7 @@
  - - pip3 installations are not working.
  - Fixing ssh access issues <redacted>. With assistance from Chatgpt.
  - - WIN!: 19:58 and I am able to <redacted> Wooho! WIN!
- - - WIN!: 20:07 Not only is <redacte> working. The ssh issues are also resolved!
+ - - WIN!: 20:07 Not only is <redacted> working. The ssh issues are also resolved!
  - - <redacted> layers of security for <redacted>
  --- <redacted>
  ---- Sometimes stepping away from the problem for a bit helps. Because I was going in circles last night and was not focusing on what the AI was telling me and skipping details. Update: If we pay attention, then the instructions via the intelligence that is independent of the subtrate can be incredibly useful. Depends on the context, I guess. But for technical stuff like sysadmin, it's really good imho
