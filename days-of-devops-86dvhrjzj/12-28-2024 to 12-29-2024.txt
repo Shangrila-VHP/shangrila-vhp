@@ -31,7 +31,7 @@
 - [OPEN/MOVED] Added 12-28-2024 - As times equals money, it's time to shift to Cloud Code
 - <ITEM REDACTED>
 - <ITEM REDACTED>
-- [OPEN/MOVED] Added 12-28-2024 - Update times in project management software.
+- [ClOSED] Added 12-28-2024 - Update times in project management software.
 - [OPEN/MOVED] Added 12-28-2024 - Configure Gh Pull Request for vsc. https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github
 
 	
