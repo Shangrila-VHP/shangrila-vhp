@@ -3,8 +3,14 @@
 - An action item has been created for the near future, in order to understand and then deploy the .gitignore feature
 - All other action items will be directly logged under standard project management software for now. Not Github Project feature
 
+###
 Resource/Note to self: 
 01. Actual notes saved on Desktop under username: ~/Documents/_Days_of_Devops$
 03. The notes are then entered in the pm tool of choice (Not Public)
 02. Notes are then ported over, where I a. Clean them up and redact information b. I upload the redacted version of the notes into a text file to the following folder on github directly: shangrila-vhp
- -> days-of-devops-86dvhrjzj/ 
+ -> days-of-devops-86dvhrjzj/
+
+Process and Documentation: 
+- A pictorial representation of this process can be located here. Thanks to Claude: https://github.com/Shangrila-VHP/shangrila-vhp/tree/main/days-of-devops-86dvhrjzj/Process
+- The code to generate the graph above is now stored here: https://github.com/Shangrila-VHP/shangrila-vhp/tree/main/design-and-scripting-public/mermaid
+###
