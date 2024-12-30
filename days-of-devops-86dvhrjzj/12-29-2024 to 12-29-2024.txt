@@ -107,12 +107,12 @@ bobdhillon (Punjabi rock star?)
 
 - [CLOSED]: Add all times to project management software & update Github for S-vhp
 
-- [OPEN]: Update the newly added Wins section below.
+- [CLOSED]: Update the newly added Wins section below.
 
 
 ### Wins today
 - [Ok win] Reclaimed space on existing machine. 
-- [Good Win!] Got new machine up and running. Putting the 8 cores to use. The new distro handles the cpus well and so far the machine is not over-heating. This makes me realize how efficiently software can handle the hardware or to the contrary. It reminds me of a conversation I had, albeit briefly with someone back in the year 2012. However, I have yet to find a 'sensors' package for the distro I am leveraging. 
+- [Good Win!] Got new machine up and running. Putting the 8 cores to use! -- [Additional sub-wins] The new distro handles the cpus well (well, okay. I noticed that one cpu keeps maxing out and the other 9 are idle.) But compared to running other distros, so far the machine is not over-heating. This also makes me realize how efficiently software can/could handle the hardware or to the contrary. There are a deeper set of questions here. It reminds me of a conversation I had, albeit briefly with someone back in the year 2012. Coming back, I have yet to find a 'sensors' package for the distro I am leveraging. 
 - [Okay win that will yield dividends] Learning how to setting up python virtual environment. 
 - [Okay Win that will yield dividends] [Beginning to tinker with docker (nano win) 
-- [Standard Win] Installed, update definitions and run anti-virus scan.
+- [Standard Win] Installed, updated definitions and ran anti-virus scan.
