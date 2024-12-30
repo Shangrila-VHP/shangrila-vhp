@@ -1,0 +1,121 @@
+### Session 01: [16:00 to 17:21]
+- Ran out of space <redacted>. Space was being taken up by 01. Timeshift snapshots. 02. Python virtual environment. I had to blow up the entire environment for python 03. Some system logs (about 2 Gigs). 
+-- Cleaned up the space, with assistance. 
+-- Disabled Timeshift snapshots
+--  [LINE MARKED TO BE REDACTED FOR PUBLIC NOTES]  
+- 17:00 Downloading an ISO prior to break.
+-- Downloading Ubuntu Server prior to break. For manual install.
+
+### Session 02: [17:49 to 18:23]
+- Action items (two) to tackle in sequence, after the break. Moved to Session 03 at 18:22  
+- 17:49 Back. Writing ISO in order to boot. Fingers crossed. 
+- 18:02 The Default Burner app keeps throwing errors. I wonder if it will still burn the image, even though it keeps throwing errors
+-- Switched to Brasero. Which was also throwing errors. After a search via forums, the following entry 'could' help avoid the errors. It's been a while since I burned an image. So let's simulate it first. Thanks to the following individual on the interwebs (below). And thanks to Vice President Al-Gore for inventing the internet.
+<snip>
+ June 27th, 2009, 10:00 AM                                                                                         
+   Brasero doesn't know it's supposed to burn an image (as opposed to just data) unless you tell it...               
+   Try right-clicking on the iso file you have downloaded and then choose "burn to disk," and Brasero gets it        
+   from there.                                                                                                       
+   One more thing to check, and I only mention it because I made this mistake only yesterday - make sure the         
+   blank CD is a CD and not a DVD!                                                                                   
+   Cheers,                                                                                                           
+   <name redacted>
+</snip>
+--- Note to self, it's slight different for me. As in, I have to right-click on the iso and then 'open' it in Brasero. vs the "burn to disk," option. It's interesting that the user placed a comma inside of double-quotes. 
+--- By the way, if your machine is sitting horizontally vs the traditional tower position that it is supposed to be in. Gravity weighs down upon the cdrom and dvd that you have inserted. The reason why gravity is weighing down upon the object, is, (the way of our current understanding) is that the mass (quantum particles entangled) of Earth is warping space time. And space time itself appears to be stuff that is entangled with some other realm or set of realities (most likely, from my uneducated perspective). As gravity weighs down upon the object, gravity makes the item (cdrom or dvd) jiggle inside of the tray. Well, the object is spinning inside of the tray, but this motion is now perpendicular (kind of) to how gravity is weighing down upon the tray. You can think of it as a solo wheel that is propelled on a flat surface, for it to eventually start wobbling and with gravity finally causing it to be at rest. So, in the horizontal position of the tower, you might find that the object starts making strange whirring noises. Contingent upon the level of superstitious beliefs you have been conditioned with, the probabilty then states that you may think that the tray has been possessed (spelling) by a demon. But all you really have to do is to make sure that the tower (machine) is in it's standard position. With the tray being parallel to the individual. Contingent upon the assumption that the individual (human, robot, being made out of Einstein-Bose particles) is somehow 'not' floating in a hortizontal position themselves. It's all relative.
+
+### Session 03: [REDACTED] [Multi hour segment]  [LINE MARKED TO BE REDACTED FOR PUBLIC NOTES]
+- 19:05 Physics poetry below:
+-- Shooting a particle through the double-slit
+-- Chopra would say that the particle can feel
+-- What does the particle say? Let me turn into a wave and go through both the doors at the same time
+-- What if you had an infinite number of doors, would the particle go through all the doors at once?
+- 19:07 Random thought from earlier on:
+-- If we plant the seeds for olive trees somewhere in outer space, with care
+-- Then the earliest we could start collecting the harvest would be between 6 or 8 years. If memory serves me correctly.
+-- My mentor from Greece had shared with me about the benefits of olive and olive oil for cognition. But that alone would not constitute a healthy nutrition. So focus on the quality of nutrition is key, in order to help make this reality better for all of life.
+- 19:13 Installing 'cdrdao' & then xfburn
+- 19:18 Checking to see if Checksum is progressing by moving the gui closer to the edge of the window. lazy hack. The process is active. I guess I could find out the rate at which the process is writing to the DVD.
+-- 19:22 I think the checksum is stuck. So I will reboot & try the dvd in the other machine.
+-- 19:34 I don't think the DVD was written to properly. Boot is taking a long time to load from DVD. I'll work interchagably between micro-sd and DVD
+--- But first, removing Brasero. I haven't had success with Brasero for many years now. I don't know why I keep installing it again. Maybe because I never documented this before!
+--- After a couple of attempts, I am going to download a minimal vesion of the server, burn it to a CDROM vs a DVD and give it a try. This will save time and also put the CDROMs to use. 
+---- Note to self: k3b works for writing to cdroms. Hopefully DVDs also?
+---- 20:12 Give ... [LINE MARKED TO BE REDACTED FOR PUBLIC NOTES]
+----- 20:32 Install...Setup process was via command line and quite seamless [LINE MARKED TO BE REDACTED FOR PUBLIC NOTES]
+- Pickup where I left off .... [LINE MARKED TO BE REDACTED FOR PUBLIC NOTES]
+-- version downloaded: .... [LINE MARKED TO BE REDACTED FOR PUBLIC NOTES]
+-- Thought: It would be nice to have a robot around. Or two. Or more! They could be much smaller for the purpose of utility. 
+- 22:35 Well, I now [REDACTED] up and running. It's actually incredibly nimble and I have yet to install [REDACTED].[LINE MARKED TO BE REDACTED FOR PUBLIC NOTES]
+-- 23:16 For the other machine, I attempted to setup the timeshift utility, but it's going to require a bit more nuance. So I have added an action item below. [LINE MARKED TO BE REDACTED FOR PUBLIC NOTES]
+- [WHOLE SECTION BELOW REDACTED FOR PUBLIC NOTES]
+-- 23:34 This is how to initiate a python virtual environment on [REDACTED] as [REDACTED]
+cd /home/<username redacted>/myproject-12-29-2024 # 
+source myenv/bin/activate
+(myenv) /home/<username redacted>/myproject-12-29-2024 # whoami
+bobdhillon (Punjabi rock star?)
+(myenv) /home/<username redacted>/myproject-12-29-2024 # 
+- [WHOLE SECTION ABOVE REDACTED FOR PUBLIC NOTES]
+- Reminder: To install python packages in the virtual environment. Issue the following command (in the virtual environment) and as an example: pip3 install numpy
+- 23:57 Continue here at [REDACTED]: https://www.springboard.com/blog/data-science/python-libraries-for-machine-learning/
+-- 00:11 Some went through and others are throwing errors. 
+-- 00:18 Action item item: Installing java for Alda. Not Allan from M.A.S.H though.  https://github.com/alda-lang/alda?tab=readme-ov-file
+--- 00:23 Continue alda installation by putting it on path (Step 3): https://alda.io/install/ 
+- 00:30 Trying scriptmonkey: https://github.com/lukerbs/ScriptMonkey 
+-- Search string: 'automatically fix python package during installation using ai' 
+--- Requires OpenAI key. Will check it out later.
+- Rebooting new host. Fingers crossed the python environment remains intact. It should. 
+- Docker main commands:
+-- [To list docker sessions] docker ps 
+-- [To start a docker container using example from their hub] docker run -dp 80:80 docker/getting-started 
+-- [To stop a docker container] docker stop <id for container using docker ps, step above>
+--- Further details via the following simple yet well-written post: https://linuxhandbook.com/docker-stop-container/ 
+- Note: This command helps add docs, which is like [REDACTED] for [REDACTED]: [REDACTED] 
+-- Found under the comments here and the command above works. h[REDACTED] So the instructions here are redundant I am guessing. Update: after the [REDACTED] I have man pages. sweet. [LINE MARKED TO BE REDACTED FOR PUBLIC NOTES]
+
+- Break at 01:31
+
+### Session 04: [REDACTED] [Multi hour segment] 
+- 04:19 Figuring samba issues. Now just beginning to learn about ACL (Access control lists)
+- 04:40 Problem was solved another way. I installed the [REDACTED] plugin in VS Code Studio and I am editing this file [REDACTED] now. I am going to [REDACTED] [REDACTED] and see what happens. Fingers crossed! This is amazing.
+- 05:40 [REDACTED] issues. Action items updated below. [LINE MARKED TO BE REDACTED FOR PUBLIC NOTES]
+- 05:45 Now going line by line to redact information and update github with cleaned up version.
+- 06:05 Making steady progress. Sweep. Sort. Standardize. I kind of like this new format. It gives me a singular visual into what I did today. Previously I was categorizing the containers (between 1 to 3) and pulling them into a file that I refer to as '3 things.' I still do that. But '3 things', by itself requires for me to go into three different containers. Anyhow, all of these updates are going to go into one container. I am still very much so putting the PM Tool to use. As I pay for it each month.
+- Note: The command to shutdown [REDACTED] is [REDACTED] [LINE MARKED TO BE REDACTED FOR PUBLIC NOTES]
+
+----- xx:xx Take a break and do some pushups [Hmm, this I need to actually start doing and do it more often!]
+
+
+- [OPEN]: Separately, today I wanted to try ALDA: Making music using code. This is why I logged in! But, hey, good lesson to be learned here on how to reclaim disk space. Once I reclaimed the disk space, I realized how crucial it was for me to get the other machine working and put it's processing power to use. I am proud of the set of achivements via these sprint like Days of Devops! Pat myself on the back.
+
+
+### Action item:
+- [NOT NEEDED/CLOSED]: Format SSD again. Create new Startup Disk Creator. But use a lighter ISO. 
+
+- [CLOSED]: Work interchagably between micro-sd and DVD and now CDROMs: Format micro-sd again. Create new Startup Disk Creator. But use a lighter ISO. Seeing this microsd is borked, switching to DVD. Once back, install [distro] using DVD.
+
+- [CLOSED]: Figure out what else is taking up the space on the local disk
+
+- [CLOSED]: Make a note that python virtual environments take up a lot of space. The process of creating virtual environments and activating, deactivating and if needed, getting rid of them has to be documented properly. 
+
+- [TRANSFERRED]: Look into https://canonical.com/multipass & https://ubuntu.com/download/server#automated-provisioning also
+
+- [TRANSFERRED]: This piqued my interest: https://ubuntu.com/observability/what-is-observability & I noticed that Ubuntu offers the building of a private cloud: I guess this is separate: https://ubuntu.com/observability/what-is-observability
+
+- [TRANSFERRED] Tinker with jupyter and see what benefits it provides.
+
+- [TRANSFERRED]: Separately, today I wanted to try ALDA: Making music using code. What an amazing concept! This is why I logged in! But, hey, good lesson to be learned here on how to reclaim disk space. 
+
+- [CLOSED] Documented how to open and close python virtual environments. Also from ssh. 
+
+- [CLOSED]: Add all times to project management software & update Github for S-vhp
+
+- [OPEN]: Update the newly added Wins section below.
+
+
+### Wins today
+- [Ok win] Reclaimed space on existing machine. 
+- [Good Win!] Got new machine up and running. Putting the 8 cores to use. The new distro handles the cpus well and so far the machine is not over-heating. This makes me realize how efficiently software can handle the hardware or to the contrary. It reminds me of a conversation I had, albeit briefly with someone back in the year 2012. However, I have yet to find a 'sensors' package for the distro I am leveraging. 
+- [Okay win that will yield dividends] Learning how to setting up python virtual environment. 
+- [Okay Win that will yield dividends] [Beginning to tinker with docker (nano win) 
+- [Standard Win] Installed, update definitions and run anti-virus scan.
