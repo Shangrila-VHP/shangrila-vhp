@@ -1,6 +1,8 @@
 ### Application for reading these files
 
-- You can read these files directly from GitHub in any browser. The files should render automatically. The files under the 'Days of Devops' folder have been converted into the .md format (Markdown).
+- You can read these files directly from GitHub in any browser. The files should render automatically, in almost all browsers (Maybe even lynx by using the direct url. I haven't tested it). 
+- The files under the 'Days of Devops' folder have been converted into the .md format (Markdown).
+- If you have downloaded the files and/or cloned the repository and wish to read the files outside of the browser, then please see below.
 
 ### Text Editors
 
