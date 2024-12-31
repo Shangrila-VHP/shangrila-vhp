@@ -1,0 +1,12 @@
+### Purpose
+01. Document high-level details that are being undertaken, in order to develop the infrastructure that will support on-going endeavours at Shangrila-VHP (Veterans Healing Places)
+02. Cleanup these details and share the public version of the details
+03. Focus on continous innovation and continually adopt best practice. In order to become a 'Best Place to work' in North America and the world.
+04. Continously adopt excellet HR (Human Resources) practices
+05. Maintain a security mindset. As care is at the heart
+06. Balance innovation with the need to maintain and improve vigilance
+07. Provide continually better and exception experience to the customer. In order to win and maintain them as a client and integrate them as family 
+
+### Application for reading these files
+- The files can be read in any text editor. Notepad on windows, vi/nano on *nix and other gui (graphical user interface based text editors also)
+- Personally, I feel that these files read better in visual studio code. If you'd prefer, feel free to to download vs code via the official link by Microsoft: https://code.visualstudio.com/download
