@@ -2,9 +2,9 @@
 
 ### Installation
 
-#### Other useful notes 
+### Other useful notes 
 
-#### Procedural documentation identified
+### Procedural documentation identified
 
 ### Action items with status
 All 'OPEN' action items transferred to Project Management software of choice:
