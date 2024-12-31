@@ -2,6 +2,14 @@
 
 'May I continue forging the capacity and capability to do universal good in this reality & all other realitities that our worlds are [entangled with](https://www.quantamagazine.org/tensor-networks-and-entanglement-20150428/) 
 
+My dream is to house and equip every single individual in the world. Where the individuals can heal, rest, be with their loved ones and also have access to direct support staff. I wish to make a dent in eliminating homelessness in the veterans community. Particularly for anyone who is a veteran or first-line staff and had an injury. Physical, psychological +. I just want to start building tiny-houses and other structures for this purpose.
+
+There has to be a way to build resilient and safe housing structures using earthen materials. Something that can be built for $5000 a unit. This is a render that I generated on December the 31st, 2024 after some preliminary consultations with Microsoft Copilot.
+![](img/12-31-2024/12-31-2024-Copilot-render-01-simple-tiny-house.jpg)
+
+Historically, I was thinking of another means/mechanism for manufacturing and domed shaped facilities for their structural strengths. Inspired by Bucky (Buckminster) Fuller. This is a longer term implementation, whereby changes are needed in the energy landscape. I do see these changes happening. But the question is one of time. As even one minute in the frigid cold or searing heat can cause some serious problems on the human body and mind.
+
+Here is a render from March of 2024. 
 ![](img/03-10-2024-Render-CoPilot-Hooyah-Main-01.jpg)
 
 # Introduction
