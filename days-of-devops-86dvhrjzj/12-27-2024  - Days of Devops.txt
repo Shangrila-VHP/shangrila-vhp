@@ -1,5 +1,5 @@
-19:07 Starting session
-19:10 Installing Midori using snap. Could not locate on ap
+###Standard Logs
+19:07 Starting session. Reviewing these notes again, I was simply trying to get a more light-weight browser installed. As the standard set of browsers can be resource intensive. 
 19:10 Installing jupyter on <name redacted>
  - pip3 install --upgrade pip
  - removing midori using snap. It's not working. The keyboard is not working on it for some reason.
@@ -13,7 +13,7 @@
  - - WIN!: 20:07 Not only is <redacted> working. The ssh issues are also resolved!
  - - <redacted> layers of security for <redacted>
  --- <redacted>
- ---- Sometimes stepping away from the problem for a bit helps. Because I was going in circles last night and was not focusing on what the AI was telling me and skipping details. Update: If we pay attention, then the instructions via the intelligence that is independent of the subtrate can be incredibly useful. Depends on the context, I guess. But for technical stuff like sysadmin, it's really good imho
+ ---- Note to self: Sometimes stepping away from the problem for a bit helps. Because I was going in circles last night and was not focusing on what the AI was telling me and skipping details. Update: If we pay attention, then the instructions via the intelligence that is independent of the subtrate can be incredibly useful. Depends on the context, I guess. But for technical stuff like sysadmin, it's really good imho
 - 20:12 Getting to Jupyter now. With help from chatgpt. Chatgpt warned me that support for my version of <redacted> was decomissioned as of the year 2020. So I might wipe the machine clean and install the latest version of Ubuntu. Update: It is early in the morning now and this is exactly what I am doing. 
  - 20:16 Some errors. Chatgpt is assisting me.
  - conda update pandas command is taking a long time
@@ -57,6 +57,7 @@
 - <redacted> The installation is kind of frozen. However the hard disk light keeps flashing. So I am going to let it run <redacted>. Porting these notes over to <redacted> now over <redacted>. Let's see how this works.
 - <redacted> I was removing bacula, amongst other things. Now my brain is slowing down. Good news is that the notes that I am writing here via <redacted>, can just be read over <redacted>. For some reason <redacted> is not working and I am not fixing it right now.
 
+###Installation instructions for python3 packages, interesting python packages recommended by Chatgpt and how to leverage a txt file to pull the requirements into a new environment (If need be)
 - From earlier, the following packages were installed using python3. The requirements-12-27-2024.txt file can be leveraged to pull these packages back into the virtual environment again. But considering that the box will be wiped clean, a new virtual environment will have to be set from scrath. Good learning experience:
 
 ML, Data Science, Plus:
@@ -92,7 +93,7 @@ pip3 install requests; pip3 install beautifulsoup4
 
 Other useful tools:
 
-Useful notes:
+#### Other useful notes (python3 related)
  - The following are the commands to create a python3 virtual environment. As doing stuff in the local environment was throwing errors:
  -- sudo apt install python3-venv
  -- python3 -m venv ~/myenv
@@ -102,18 +103,7 @@ Useful notes:
  - The following brings up a fun animation.
  -- python3 -m turtle
 
-
-Action items:
-- [Completed] Uninstall stuff from <redacted> as the disk space is getting lower. Keep stuff on <redacted> for now.
-- [Completed] Ignore the all-caps, everywhere. SEE NOTE ABOUT TURTLE IN CHATGPT
-- [Completed] LOG A NOTE ABOUT MINICONDA.
-- [OPEN] All OPEN items ported over to <redacted>
-- [OPEN] CONFIGURE <redacted> TO <redacted>
-- [OPEN] Save Chatgpt's suggestion about <redacted>. I think Chatgpt is trying to tell me something! And what a strange coincidence!
-- [OPEN] ThIs item has BeEn plaCeD here DeliBerAtely for that nosy person on the web
-- [OPEN] See file saved under <redacted>: '12-27-2024 - Notes for <redacted> - Chatgpt recommendations'
-- [OPEN] Look into .gitignore for sensitive files in the future.
-- [Completed] This seems important for python environments. As packages were installed in a virtual environment:
+ This seems important for python environments. As packages were installed in a virtual environment:
 - - To keep the packages: If you want to retain the packages installed in your virtual environment, you can either:
 --- Activate the environment again when you need them.
         Create virtual env: python3 -m venv myenv
@@ -164,7 +154,6 @@ drwxrwxr-x 3 <redacted> 4096 Dec 27 22:36  Github_Coding_Development
 -rw-r--r-- 1 <redacted> 3464 Dec 27 23:20  requirements-12-27-2024.txt
 <username>@<redacted>:~/Documents$ hostname
 
-
 ---
 Wait: This is how a backup of the virtual environment is created and other important gotchas:
 1. When you deactivate a virtual environment, all the installed packages within that environment are still preserved, but they are isolated to that environment. If you deactivate and later reactivate the environment, the packages will still be there, and you can continue using them.
@@ -192,3 +181,16 @@ If you've saved the requirements.txt, you can recreate the environment and insta
     Deactivating won't affect the installed packages.
     To ensure packages aren't lost, either back up the environment or save the list of dependencies to a requirements.txt file.
     To reiterate, if you delete the virtual environment, you will lose all the packages installed within it.
+
+
+
+### Action items with status All 'OPEN' action items transferred to Project Management software of choice:
+- [Completed] Uninstall stuff from <redacted> as the disk space is getting lower. Keep stuff on <redacted> for now.
+- [Completed] Ignore the all-caps, everywhere. SEE NOTE ABOUT TURTLE IN CHATGPT
+- [Completed] LOG A NOTE ABOUT MINICONDA.
+- [OPEN] All OPEN items ported over to <redacted>
+- [OPEN] CONFIGURE <redacted> TO <redacted>
+- [OPEN] Save Chatgpt's suggestion about <redacted>. I think Chatgpt is trying to tell me something! And what a strange coincidence!
+- [OPEN] ThIs item has BeEn plaCeD here DeliBerAtely for that nosy person on the web
+- [OPEN] See file saved under <redacted>: '12-27-2024 - Notes for <redacted> - Chatgpt recommendations'
+- [OPEN] Look into .gitignore for sensitive files in the future.
