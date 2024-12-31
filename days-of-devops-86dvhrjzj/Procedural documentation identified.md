@@ -4,7 +4,6 @@
 source myenv/bin/activate
 - (myenv) /home/<username redacted>/myproject-12-29-2024 # whoami
 <username redacted>
-- (myenv) /home/<username redacted>/myproject-12-29-2024 # 
 
 
 ### Docker
