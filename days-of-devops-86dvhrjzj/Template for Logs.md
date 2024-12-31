@@ -1,19 +1,20 @@
-###Standard Logs
+### Standard Logs
 
-###Installation
+### Installation
 
 #### Other useful notes 
 
 #### Procedural documentation identified
 
-### Action items with status All 'OPEN' action items transferred to Project Management software of choice:
+### Action items with status
+All 'OPEN' action items transferred to Project Management software of choice:
 - [Completed] 
 - [Completed]
 - [Completed] 
 - [OPEN] 
 - [REMINDER] Update all times inside the Project Management software directly 
-- [REMINDER] Transfer all [OPEN] items to the " " " 
-- [REMINDER] Scan the contents of the file/log and extract relavant items to be placed under the 'Procedural documentation identified.md' file for documentation purposes.
+- [REMINDER] Transfer all [OPEN] items to the Project Management software 
+- [REMINDER] Scan the contents of the file/log and extract relevant items to be placed under the 'Procedural documentation identified.md' file for documentation purposes.
 
 ### Wins today
 - Win 01:
