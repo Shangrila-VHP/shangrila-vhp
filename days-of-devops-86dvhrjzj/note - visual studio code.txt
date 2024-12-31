@@ -1,2 +1,0 @@
-- These files read better in visual studio code
-- Link to download vs code here: https://code.visualstudio.com/download

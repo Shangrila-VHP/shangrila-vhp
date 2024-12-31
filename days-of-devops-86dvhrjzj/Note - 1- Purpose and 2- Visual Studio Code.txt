@@ -1,0 +1,6 @@
+### Purpose
+The purpose of this folder is to document the high-level details that are being undertaken, in order to develop the infrastructure that will support on-going endeavours at Shangrila-VHP (Veterans Healing Places)
+
+### Application for reading these files
+- The files can be read in any text editor. Notepad on windows, vi/nano on *nix and other gui (graphical user interface based text editors also)
+- Personally, I feel that these files read better in visual studio code. If you'd prefer, feel free to to download vs code via the official link by Microsoft: https://code.visualstudio.com/download
