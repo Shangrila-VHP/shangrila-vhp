@@ -1,0 +1,1 @@
+../../../install_clamav_and_scan.sh
