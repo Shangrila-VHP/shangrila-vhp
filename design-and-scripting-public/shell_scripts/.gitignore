@@ -4,9 +4,6 @@
 !design-and-scripting-public/shell_scripts/*.sh
 !.gitignore
 
-# Ignore everything else
-*
-
 # Explicitly ignore sensitive files
 .env
 *.log
