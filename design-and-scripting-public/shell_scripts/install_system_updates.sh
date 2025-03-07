@@ -1,10 +1,11 @@
 #!/bin/bash
-
 # Source environment variables
 source "$(dirname "$0")/.env"
 
-# List of machines
-machines=("10.0.0.226" "10.0.0.124" "10.0.0.111" "10.0.0.108")
+# Read machine IPs from environment variable
+# Using the same MACHINE_IPS variable as other scripts
+IFS=' ' read -r -a machines <<< "$MACHINE_IPS"
+
 user="$DB_USER"
 
 # Prompt for sudo password
@@ -36,10 +37,12 @@ REMOTE_SCRIPT
   
   # Clean up
   rm "$temp_script"
-
   if [ $? -ne 0 ]; then
     echo "Failed to complete updates on $machine"
   fi
+  
+  # Add a small delay between machines
+  sleep 2
 done
 
-echo "System updates completed on all machines."
+echo "System update process completed on all machines."

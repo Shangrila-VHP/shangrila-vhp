@@ -1,19 +1,20 @@
 #!/bin/bash
-
 # Source environment variables
 source "$(dirname "$0")/.env"
 
-# List of machines
-machines=("10.0.0.226" "10.0.0.124" "10.0.0.111" "10.0.0.108")
+# Read machine IPs from environment variable
+# Using the same MACHINE_IPS variable as other scripts
+IFS=' ' read -r -a machines <<< "$MACHINE_IPS"
+
 user="$DB_USER"
 
 # Prompt for sudo password
 read -s -p "Enter sudo password: " sudo_password
 echo ""
 
-# Loop through each machine to install the given apt package 
+# Loop through each machine to install smartmontools
 for machine in "${machines[@]}"; do
-  echo "Starting ncdu install on $machine..."
+  echo "Starting smartmontools install on $machine..."
   
   # Create a temporary script with the commands
   temp_script=$(mktemp)
@@ -22,9 +23,9 @@ for machine in "${machines[@]}"; do
     echo "$1" | sudo -S apt-get update > /dev/null 2>&1
     echo "$1" | sudo -S apt-get install -y smartmontools 
     if [ $? -eq 0 ]; then
-      echo "Successfully installed your package on $(hostname)"
+      echo "Successfully installed smartmontools on $(hostname)"
     else
-      echo "Failed to install your package on $(hostname)"
+      echo "Failed to install smartmontools on $(hostname)"
       exit 1
     fi
 REMOTE_SCRIPT
@@ -34,10 +35,12 @@ REMOTE_SCRIPT
   
   # Clean up
   rm "$temp_script"
-
   if [ $? -ne 0 ]; then
     echo "Failed to complete installation on $machine"
   fi
+  
+  # Add a small delay between machines
+  sleep 2
 done
 
-echo "installation process completed."
+echo "Smart monitoring tools installation process completed."

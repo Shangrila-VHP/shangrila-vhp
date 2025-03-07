@@ -1,0 +1,14 @@
+# Ignore everything first
+*
+
+# Allow specific directories and files
+!design-and-scripting-public/
+!design-and-scripting-public/shell_scripts/
+!design-and-scripting-public/shell_scripts/*.sh
+!.gitignore
+
+# Explicitly ignore sensitive files
+.env
+*.log
+secrets1.txt*
+machine_info_audit/
