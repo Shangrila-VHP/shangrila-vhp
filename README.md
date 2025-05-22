@@ -22,9 +22,10 @@ In short, I've been trying to figure out how to construct an incredibly high-qua
 
 If you'd like to collaborate, then please feel free to get in contact. My contact info is via my profile on here. Here is the [link](https://github.com/genidma) Thank you for reading!
 
----
+
 Legacy text is below
 
+---
 My dream is to house and equip every single individual in the world. Where the individuals can heal, rest, be with their loved ones and also have access to direct support staff. I wish to make a dent in eliminating homelessness in the veterans community. Particularly for anyone who is a veteran or first-line staff and had an injury. Physical, psychological +. I just want to start building tiny-houses and other structures for this purpose.
 
 There has to be a way to build resilient and safe housing structures using earthen materials. Something that can be built for $5000 a unit. This is a render that I generated on December the 31st, 2024 after some preliminary consultations with Microsoft Copilot.
