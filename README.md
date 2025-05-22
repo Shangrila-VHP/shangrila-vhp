@@ -1,6 +1,17 @@
 'If it's up to be. It's up to me.' - via Itsa Dan Hawk 
 
-'May I continue forging the capacity and capability to do universal good in this reality & all other realitities that our worlds are [entangled with](https://www.quantamagazine.org/tensor-networks-and-entanglement-20150428/) 
+I've been working on figuring out ways via which an incredible safe, good for human abode for longer term, structurally sound, earthquake proof, inclement weather proof, tornado proof, maybe flood proof e.t.c housing structure can be built. Starting at a price point of $5000. I've been looking at adobe earth and other materials in order to bring the cost down substantially. 
+
+I started building models out of pizza boxes. In May of the year 2025, I was fortunate to acquire a 3d-printer. Thanks to the incredible generosit of a kid (and their parents) who sold me his older 3d-printer. Right now I am just learning the basics of TinkerCAD.
+
+I post regular updates on 01. The wiki on here. So if you'd like, head over to the wiki. Here is the [link](https://github.com/Shangrila-VHP/shangrila-vhp/wiki). 02. I'll be pulling content off of the other project management system that I've been leveraging over the years and will be placing the content inside of the issues section on Github. Here is the [link](https://github.com/Shangrila-VHP/shangrila-vhp/issues). There is already an issue that is pinned on there. In this issue, I've been placing updates related to the daily ethical hacking/endeavors. So anyone who happens to be interested has an almost real-time view of what has been going on related to Shangrila-VHP. As well, hints at what I've been thinking. 
+
+All the links posted in the wiki are either going to be to Github itself, to youtube. Maybe printables.com in the future. 
+
+If you'd like to collaborate, then please feel free to get in contact. My contact info is via my profile on here. Here is the [link](https://github.com/genidma) Thank you for reading!
+
+---
+Legacy text is below
 
 My dream is to house and equip every single individual in the world. Where the individuals can heal, rest, be with their loved ones and also have access to direct support staff. I wish to make a dent in eliminating homelessness in the veterans community. Particularly for anyone who is a veteran or first-line staff and had an injury. Physical, psychological +. I just want to start building tiny-houses and other structures for this purpose.
 
