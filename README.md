@@ -22,6 +22,8 @@ I post regular updates on 01. The wiki on here. So if you'd like, head over to t
 
 All the links posted in the wiki are either going to be to Github itself, to youtube. Maybe printables.com in the future. 
 
+In short, I've been trying to figure out how to construct an incredibly high-quality dwelling (in every sense of the word imaginable) for $5000 Canadian. Inflation adjusted. To achieve this vision and scale it around the world, I propose that the construction of a larger scale 3d-printing that can print using a mixture of mud and ...  is open-sourced and that these designs are iterated upon continously. Again, what wikipedia did for knowledge management and sharing and what Ubuntu has done for Linux.
+
 If you'd like to collaborate, then please feel free to get in contact. My contact info is via my profile on here. Here is the [link](https://github.com/genidma) Thank you for reading!
 
 ---
