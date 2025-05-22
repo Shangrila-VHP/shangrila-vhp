@@ -1,18 +1,20 @@
 'If it's up to be. It's up to me.' - via Itsa Dan Hawk 
 
-Mission and Vision: To manufacture incredibly safe, good for human abode for the short/mid/longer term, structurally sound, earthquake proof, inclement weather proof, tornado proof, maybe flood proof housing structures. Starting at a price point of $5000 Canadian. Leveraging adobe earth and other eco-logically friendly and human (and pet) friendly materials.
+Mission and Vision: Manufacturing incredibly safe, good for human abode for the short/mid/longer term, structurally sound, earthquake proof, inclement weather proof, (this one is a maybe, next) flood proof housing structures. Starting at a price point of $5000 Canadian dollars.
 
-Large-scale open-source 3d-printer. The current price point for acquiring a 3d-printer that can print with these materials is too expensive. Care is to be meted for someone with asthma and means of preventing asthma from emerging or becoming chronic has to be identified [link](https://github.com/Shangrila-VHP/shangrila-vhp/issues/46).
+Leveraging earthen and other eco-logically friendly and human (and pet) friendly materials.
 
-The first major milestone would be to construct at least 10 units. Individuals could take possessions of these units at a price that is fair for all. I haven't done the math, but once we start getting materials from outer space, then the price to construct a decent housing structure should plummet to $1000 each or less. 
+Large-scale open-source 3d-printer: The current price point for acquiring a 3d-printer that can print with these materials is too expensive. Care is to be meted for someone with asthma and means of preventing asthma from emerging or becoming chronic has to be identified [link](https://github.com/Shangrila-VHP/shangrila-vhp/issues/46).
 
-Housing and food are very important areas, but the **only way to safeguard the future is through education. **
+The first major milestone would be to construct at least 10 units,via the 3d-printer that will be developed in-house. Individuals could take possessions of these units at a price that is fair for all. I haven't done the math, but once we start getting materials from outer space, then the price to construct a decent housing structure should plummet to $1000 each or less. 
 
 Core focus (proposed): The construction of a larger scale 3d-printer that can print using materials that are cheap/abundant and materials that humans have had around for as far back as we can recall.
 
 The intended mission of a sister organization (project really) is to make autonomous manufacturing units (AMUs). In theory and provided materials are fed to the AMUs, the AMUs can make a copy of themselves [Sample images here](https://asi.surge.sh/effort). This, should be possible, in theory, as desktop pcb printers have been available on the market for quite some time. As well, the price for 3d-printers will plummet exponentially. While the same is not to be expected in the industrial robotics industry. That being said, the zero-marginal cost effects in the 3d-printing realm are going to ripple through the robotics (and other) industries and a whole variety/type of robotics are expected to become available within 5 years. Coming back to the AMUs, in addition to making a copy of themselves, the AMUs could, in theory, manufacture any other innovations (within reason). This is where the mass-collaboration piece comes in. What Wikipedia has been able to do for knowledge management. This, in theory, is what Shangrila, combined with the concept of AMUs, has been conceived to do for quality housing, quality food production, energy transition, reversing climate change, opening up outer space safely and securely, ai safety and more. 
 
 The core effort should start with housing. Housing and entire community that are designed for helping the human and other agents optimize their overall well-being. Without ecological offense or any other offense occuring and as it relates to the enablement of and maintenance of the facility of facility.
+
+Housing and food are very important areas, but the **only way to safeguard the future is through education. **
 
 The reason why I started Shangrila-VHP is because I learned about homelessness in the veterans community. While these numbers are falling in North America. I mean, I have never been homeless and the climate here in Canada, can really cold and really hot. I genuinely feel that this problem is solvable. After helping ensure that every veteran and first-line staff across NATO (and core allies) have a place to call their own. Shangrila will advance towards helping ensure quality housing across the world.
 
