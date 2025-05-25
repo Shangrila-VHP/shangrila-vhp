@@ -8,7 +8,7 @@ Leveraging earthen and other eco-logically friendly and human (and pet) friendly
 
 That the design of the individual units and the communities at large helps improve the well-being of the agent. vs to the contrary. In memory of [Gerard K. O'Neill](https://en.wikipedia.org/wiki/Gerard_K._O%27Neill)
 
-That residing in these abodes and the communities is good for the humans and other agents in every sense imaginable. It is serene, calm and relaxing.
+That residing in these abodes and the communities is good for the humans and other agents in every sense imaginable. It is serene, calm, relaxing and healing.
 
 ---
 Scope: 
