@@ -2,7 +2,7 @@
 
 Mission and Vision: Manufacturing a climate resilient and safe human abode for less than $5000 Canadian. An abode that can help house all veterans and first-responders worldwide and then help address homelessness. Without ecological or any other offense to the environment or to any living being. 
 
-For the short/mid/longer term the units manufactured must be structurally sound, earthquake proof (value on the Richterscale is to be defined), inclement weather proof, (this one is a maybe, next) and flood proof. 
+For the short/mid/longer term the units manufactured must be structurally sound, earthquake proof (value on the Richter scale is to be defined), inclement weather proof, (this one is a maybe, next) and flood proof. 
 
 Leveraging earthen and other eco-logically friendly and human (and pet) friendly materials. That do not cause cause respiratory issues or illnesses. [link](https://github.com/Shangrila-VHP/shangrila-vhp/issues/46).
 
