@@ -6,6 +6,8 @@ For the short/mid/longer term the units manufactured must be structurally sound,
 
 Leveraging earthen and other eco-logically friendly and human (and pet) friendly materials. That do not cause cause respiratory issues or illnesses. [link](https://github.com/Shangrila-VHP/shangrila-vhp/issues/46).
 
+That the design of the individual units and the communities at large helps improve the well-being of the agent. vs to the contrary. In memory of [Gerard K. O'Neill](https://en.wikipedia.org/wiki/Gerard_K._O%27Neill)
+
 That residing in these abodes is good for the humans and other agents in every sense imaginable.
 
 ---
