@@ -1,0 +1,10 @@
+graph TD
+    A[Find an existing clay extruder design] --> B[Modify existing extruder design for my recipe]
+    B --> C[Attach 3D-printed syringe to extruder]
+    C --> D[Attach unit to 3D printer]
+    D --> E[Create hoist for the units that were newly joined]
+    E --> F[From existing issue 40, Mix a basic batch, get the right consistency not too watery]
+    F --> G[Create a base for water to be absorbed]
+    G --> H[Create basic .stl file and export to .gcode]
+    H --> I[Send a trial 3D-print test job]
+    I --> J[Rinse, repeat. Literally]
