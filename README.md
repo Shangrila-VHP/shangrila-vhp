@@ -1,5 +1,7 @@
 'If it's up to be. It's up to me.' - via Itsa Dan Hawk 
 
+'Dreams are made if people try.' - Terry Fox
+
 Mission and Vision: Manufacturing a climate resilient and safe human abode for less than $5000 Canadian. To first house all veterans and first-responders (and myself as a civilian and a parent). Then scale the operations worldwide in order to help address homelessness and help enable dignity. Without ecological or any other offense to the environment or to any living being. 
 
 For the short/mid/longer term the units manufactured must be structurally sound, earthquake proof (value on the Richter scale is to be defined), inclement weather proof, (this one is a maybe, next) and flood proof. 
