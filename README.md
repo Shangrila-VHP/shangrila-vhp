@@ -2,7 +2,7 @@
 
 'Dreams are made if people try.' - Terry Fox
 
-Mission and Vision: Manufacturing a climate resilient and safe human abode for less than $5000 Canadian. To first house all veterans and first-responders (and myself as a civilian and a parent). Then scale the operations worldwide in order to help address homelessness and help enable dignity. Without ecological or any other offense to the environment or to any living being. 
+Mission and Vision: I think it would be super awesome to somehow enable a climate resilient abode for less than $5000 Canadian. Where humans and their pets can reside. Such habitats will be manufactured, in order to first house all veterans and first-responders (and myself as a civilian and a parent). Next, continue iterating on the designs in order to scale the operations worldwide. Doing so will help address homelessness in a meaningful way. Thus restoring human dignity. The state vision is to be accomplished Without ecological or any other offense to the environment or to any living being. 
 
 For the short/mid/longer term the units manufactured must be structurally sound, earthquake proof (value on the Richter scale is to be defined), inclement weather proof, (this one is a maybe, next) and flood proof. 
 
