@@ -49,6 +49,11 @@ Link to session: [link](https://github.com/copilot/c/aaca47f2-8b28-441b-b367-e64
 - Key finding 1
 - Key finding 2
 
+#### To do today
+
+- [ ] Task 1
+- [ ] Task 2
+
 #### Next Steps
 - [ ] Priority task
 - [ ] Follow-up task
