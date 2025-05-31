@@ -2,7 +2,8 @@
 
 - [x] Past midnight: Issue 38. Continue [here](https://github.com/Shangrila-VHP/shangrila-vhp/issues/38#issuecomment-2917914358)
 
-- [ ] Need a template for below. Leverage CoPilot's assistance.
+- [ ] Need a template for updates going to the wiki. Leverage CoPilot's assistance (See below)
+
 - Today's session focused on ?
 
 
@@ -53,3 +54,36 @@ Link to session: [link](https://github.com/copilot/c/aaca47f2-8b28-441b-b367-e64
 ---
 **Session Status:** [In Progress/Completed/Blocked]
 **Time Spent:** [HH:MM]
+
+---
+This is a practical demonstration that Copilot provided me, of what could go into the 'measurements and verification' section
+
+Let me explain the "Measurements & Verification" section with a practical example from your hinge project:
+
+#### Measurements & Verification
+| Component | Current (mm) | Previous (mm) | Status | Notes |
+|-----------|-------------|---------------|--------|-------|
+| Hinge Diameter | 8.00 | 8.66 | ✓ | Standardized across all 5 hinges |
+| Rod Diameter | 3.50 | 4.80 | ⚠️ | Reduced to prevent binding |
+| Anchor Width | 8.00 | 8.82 | ✓ | Fixed inconsistency |
+| Plank Thickness | 3.20 | 3.20 | ✓ | No change needed |
+| Cavity Clearance | 0.20 | 0.15 | ⚠️ | Testing fit |
+
+
+Key Features:
+1. **Component**: Names the specific part being measured
+2. **Current**: Shows new/updated measurement
+3. **Previous**: Records last known measurement for comparison
+4. **Status**:
+   - ✓ = Verified/Approved
+   - ⚠️ = Needs attention/testing
+   - ❌ = Failed verification
+4. **Notes**: Brief context about the change
+
+This format helps you:
+- Track changes between versions
+- Identify components that need attention
+- Maintain a history of modifications
+- Document the reasoning behind changes
+
+Would you like to see how this would look with some of your other specific measurements from the hinge project?
