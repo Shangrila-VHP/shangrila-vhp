@@ -22,6 +22,8 @@ Previous pending items below
 
 Link to session: [link](https://github.com/copilot/c/aaca47f2-8b28-441b-b367-e64d088f1f70)
 
+### Actual Template recommended by Copilot starts directly below 
+
 ### Update: [YYYY-MM-DD HH:MM] UTC
 **File Version:** [TinkerCAD filename and version number]
 
