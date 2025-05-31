@@ -1,3 +1,5 @@
+### My minimal template is below: 
+
 - [x] Past midnight: Issue 38. Continue [here](https://github.com/Shangrila-VHP/shangrila-vhp/issues/38#issuecomment-2917914358)
 
 - [ ] Need a template for below. Leverage CoPilot's assistance.
@@ -13,3 +15,41 @@ Previous pending items below
 - [x] Fyi only: New item added today. Issue #49 [link](https://github.com/Shangrila-VHP/shangrila-vhp/issues/49)
 -  Updates will go directly inside of the container (link is above)
 - **Note to self**: This is where the markdown file is located: Under ....  -> design-and-scripting-public -> 3dprinting -> TinkerCAD -> In the folder for the day(s)
+
+---
+### Template recommended by Copilot is below: 
+
+Link to session: [link](https://github.com/copilot/c/aaca47f2-8b28-441b-b367-e64d088f1f70)
+
+### Update: [YYYY-MM-DD HH:MM] UTC
+**File Version:** [TinkerCAD filename and version number]
+
+#### Changes Made
+- [ ] Change 1
+- [ ] Change 2
+
+#### Measurements & Verification
+| Component | Current | Previous | Status |
+|-----------|---------|----------|---------|
+| [Part] | [value] | [value] | ✓/⚠️ |
+
+#### Visual Inspection
+- Angle 1: [observations]
+- Angle 2: [observations]
+
+#### Screenshots
+[Numbered list format - always reference as ![imageN](imageN)]
+1. [Description of view/change]
+2. [Description of view/change]
+
+#### Technical Notes
+- Key finding 1
+- Key finding 2
+
+#### Next Steps
+- [ ] Priority task
+- [ ] Follow-up task
+
+---
+**Session Status:** [In Progress/Completed/Blocked]
+**Time Spent:** [HH:MM]
