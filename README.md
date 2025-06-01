@@ -2,15 +2,17 @@
 
 'Dreams are made if people try.' - Terry Fox
 
-Mission, Vision and Ask: Will you help me towards safely housing every single being in this reality? I personally think that it would be just incredible and absolutely and spectacularly awesome to somehow enable a climate resilient abode for less than $5000 Canadian. Not just shelters, but high-strength, high-quality and hyper safe (in every way) abodes, where humans and their pets can reside. Such habitats are envisioned to be manufactured, in order to first house all veterans and first-responders (and myself as a parent. A civilian at that). Next, continue iterating on the designs in order to scale the operations worldwide. Doing so will help address homelessness in a meaningful way. Thus restoring human dignity. The stated vision is to be accomplished without ecological or any other offense to the environment or to any living being. On the contrary, as Shangrila-VHP scales, it will have a healing impact on the human and machine reality that we share with other beings. Without distorting the meaning of any word. Including healing.
+Mission, Vision and Ask: What if every human had a place to call home? Shangrila-VHP strives to create affordable ($5,000 Canadian) climate-resilient housing solutions that are sourced with eco-friendly materials.
 
-For the short/mid/longer term the units manufactured must be structurally sound, earthquake proof (value on the Richter scale is to be defined), inclement weather proof, (this one is a maybe, next) and flood proof. 
+Will you help me towards safely housing every single being in this reality? I personally think that it would be just incredible and absolutely and spectacularly awesome to somehow enable a climate resilient abode for less than $5000 Canadian. 
 
-Leveraging earthen and other eco-logically friendly and human (and pet) friendly materials. That do not cause cause respiratory issues or illnesses. [link](https://github.com/Shangrila-VHP/shangrila-vhp/issues/46).
+- Cost: $5,000 CAD
+- Primary: Veterans housing
+- Scale: Global potential
+- Impact: Healing focused
 
-That the design of the individual units and the communities at large helps improve the well-being of the agent. vs to the contrary. In memory of [Gerard K. O'Neill](https://en.wikipedia.org/wiki/Gerard_K._O%27Neill)
-
-That residing in these abodes and the communities is good for the humans and other agents in every sense imaginable. It is serene, calm, relaxing and healing.
+> "Less, but better."
+> — Dieter Rams, *Ten Principles for Good Design*
 
 ---
 Scope: 
@@ -19,58 +21,37 @@ Large-scale open-source 3d-printer: The current price point for acquiring a 3d-p
 
 The first major milestone would be the enablement of a large-scale 3d-printer. The next major milestone would be to construct at least 10 units, via the 3d-printer that will be developed in-house.
 
-Individuals and specific institutions could take possessions of these units at a price that is fair for all. I haven't done the math, but once we start getting materials from outer space, then the price to construct a decent housing structure should plummet to $1000 each or less. 
+Individuals and specific institutions could take possessions of these units at a price that is fair for all. Within ten years, the cost to construct a decent housing structure should plummet to $1000 each or less. In 20 years, the cost of constructing a house will be close to zero dollars. 
 
-The intended mission of a sister organization (project really) is to make autonomous manufacturing units (AMUs). In theory and provided materials are fed to the AMUs, the AMUs can make a copy of themselves [Sample images here](https://asi.surge.sh/effort). This, should be possible, in theory, as desktop pcb printers have been available on the market for quite some time. As well, the price for 3d-printers will plummet exponentially. While the same is not to be expected in the industrial robotics industry. That being said, the zero-marginal cost effects in the 3d-printing realm are going to ripple through the robotics (and other) industries and a whole variety/type of robotics are expected to become available within 5 years. Coming back to the AMUs, in addition to making a copy of themselves, the AMUs could, in theory, manufacture any other innovations (within reason). This is where the mass-collaboration piece comes in. What Wikipedia has been able to do for knowledge management. This, in theory, is what Shangrila, combined with the concept of AMUs, has been conceived to do for quality housing, quality food production, energy transition, reversing climate change, opening up outer space safely and securely, ai safety and more. 
+The intended mission of a sister organization (project for now) is to make autonomous manufacturing units (AMUs). In theory and provided materials are fed to the AMUs, the AMUs can make a copy of themselves [Sample images here](https://asi.surge.sh/effort).  
 
 Housing and food are very important areas, but the **only way to safeguard the future is through education. **
 
-The reason why I started Shangrila-VHP is because I learned about homelessness in the veterans community. While these numbers are falling in North America. I mean, I have never been homeless and the climate here in Canada, can really cold and really hot. I genuinely feel that this problem is solvable. After helping ensure that every veteran and first-line staff across NATO (and core allies) have a place to call their own. Shangrila will advance towards helping ensure quality housing across the world.
+The reason why I started Shangrila-VHP is because I learned about homelessness in the veterans community. While these numbers are falling in North America. One veteran or first-responder experiencing homelessness is too many. I genuinely believe that this problem is solvable. After helping ensure that every veteran and first-line staff across NATO (and core allies) have a place to call their own. Shangrila will advance towards helping ensure quality housing across the world.
 
-I started the project via collaboration with Microsoft Copilot. Basically providing prompts and seeing what images Copilot would render. [samples](https://github.com/Shangrila-VHP/shangrila-vhp/tree/main/img) and [link](https://github.com/Shangrila-VHP/shangrila-vhp/tree/main/img/_Archives). Next, I built a model out of a pizza box. In May of the year 2025, I was fortunate to acquire a 3d-printer. Thanks to the incredible generosity of a kid (and their parents) who sold me his/their older 3d-printer (at a greatly discounted price!). Right now I am just learning the basics of TinkerCAD. In the following days, I will 3d-print a simple concept of a structure with a door and a hinge. So basiscally taking baby-steps each day.
+- I started the project via collaboration with Microsoft Copilot. Basically providing prompts and seeing what images Copilot would render. [samples](https://github.com/Shangrila-VHP/shangrila-vhp/tree/main/img) and [link](https://github.com/Shangrila-VHP/shangrila-vhp/tree/main/img/_Archives). Next, I built a model out of a pizza box.
+-  In May of the year 2025, I was fortunate to acquire a 3d-printer. Thanks to the incredible generosity of a kid (and their parents) who sold me his/their older 3d-printer (at a greatly discounted price!). Right now I am just learning the basics of TinkerCAD. In the following days, I will 3d-print a simple concept of a structure with a door and a hinge. So basiscally taking baby-steps each day.
 
-I post regular updates on 01. The wiki on here. So if you'd like, head over to the wiki. Here is the [link](https://github.com/Shangrila-VHP/shangrila-vhp/wiki). 02. I'll be pulling content off of the other project management system that I've been leveraging over the years and will be placing the content inside of the issues section on Github. Here is the [link](https://github.com/Shangrila-VHP/shangrila-vhp/issues). There is already an issue that is pinned on there. In this issue, I've been placing updates related to the daily ethical hacking/endeavors. So anyone who happens to be interested has an almost real-time view of what has been going on related to Shangrila-VHP. As well, hints at what I've been thinking. 
-
-All the links posted in the wiki are either going to be to Github itself, to youtube. Maybe printables.com in the future. 
+I post regular updates at:
+- The wiki on here. So if you'd like, head over to the wiki. Here is the [link](https://github.com/Shangrila-VHP/shangrila-vhp/wiki).
+- I'll be extracting content off of the other project management system that I've been leveraging over the years and will be placing the content inside of the issues section on Github. Here is the [link](https://github.com/Shangrila-VHP/shangrila-vhp/issues).
+- There is already an issue that is pinned on there. In this issue, I've been placing updates related to the daily ethical hacking/endeavors. So anyone who happens to be interested has an almost real-time view of what has been going on related to Shangrila-VHP. As well, hints at what I've been thinking.
+- There are also snapshots and code available on the repository. Including and more recently, actual .stl (stereolithography) [link](https://en.wikipedia.org/wiki/STL_(file_format)) files that anyone can import into their 3d-printing slicing software.
+- It is to note, that all the links posted in the wiki are either going to be to Github itself, to youtube. Maybe printables.com in the future. 
 
 In short, I've been trying to figure out how to construct an incredibly high-quality dwelling (in every sense of the word imaginable) for $5000 Canadian. Inflation adjusted. To achieve this vision and scale it around the world, I propose that the construction of a larger scale 3d-printer that can print using a mixture of mud and (secret ingredients 😉)  is open-sourced and that these designs are iterated upon continously. Again, what wikipedia did for knowledge management and sharing and what Ubuntu has done for Linux.
 
-If you'd like to collaborate, then please feel free to get in contact. My contact info is via my profile on here. Here is the [link](https://github.com/genidma) Thank you for reading!
+If you'd like to collaborate, then please feel free to get in contact. My contact info is via my profile on here. Here is the [link](https://github.com/genidma) 
 
-
-Legacy text is below
-
----
-My dream is to house and equip every single individual in the world. Where the individuals can heal, rest, be with their loved ones and also have access to direct support staff. I wish to make a dent in eliminating homelessness in the veterans community. Particularly for anyone who is a veteran or first-line staff and had an injury. Physical, psychological +. I just want to start building tiny-houses and other structures for this purpose.
-
-There has to be a way to build resilient and safe housing structures using earthen materials. Something that can be built for $5000 a unit. This is a render that I generated on December the 31st, 2024 after some preliminary consultations with Microsoft Copilot.
-![](img/12-31-2024/12-31-2024-Copilot-render-01-simple-tiny-house.jpg)
-
-Historically, I was thinking of another means/mechanism for manufacturing and domed shaped facilities for their structural strengths. Inspired by Bucky (Buckminster) Fuller. This is a longer term implementation, whereby changes are needed in the energy landscape. I do see these changes happening. But the question is one of time. As even one minute in the frigid cold or searing heat can cause some serious problems on the human body and mind.
-
-Here is a render from March of 2024. 
-![](img/03-10-2024-Render-CoPilot-Hooyah-Main-01.jpg)
-
-# Introduction
-
----
-
-* Shangrila-VHP - Veterans Healing Places**: 
-* * From the day it is officially initiated. The purpose of this vehicle is to:
-    * To address and help eliminate homelessness in the veterans, first-responder and front-line staff community as soon as possible. Improving overall and ongoing quality and care during all the times. With a core obsession towards servicing the client.
-    * The endeavour will then evolve to solve afforable housing around the world in partnership with the sister organizations. [Aerospace side of things](https://asi.surge.sh/) & [Global Healthcare side of things](https://auh.surge.sh/)
+Thank you for reading!
    
-
-The technology is already here. We just need the will to help enable better realities for all. Starting with veterans and first-responders. We enjoy an increasingly better quality of life, because of the sacrifices today and in the past.   
-
+>"Support your veteran community by being an active listener and not passing judgement." - S. Bloom (Jan 25, 2022)
 ---
+
 * Preliminary budget that I created in February of the year 2023. [First attempt at budgeting - link](https://docs.google.com/spreadsheets/d/1UCKKH7VVqoafzyE_3Dc9-L4a1Vtmi-4Hmhda887AsPc/edit?usp=sharing)
      *  I am constantly working on innovations to help lower the capital expenditure that will go towards the creation of the facilities.
      *  With careful timing, I can already see a time when a $5000 house will be available for anyone on the planet. In a manner that living in the house will be very good for the overall health of the inhabitants.
      *  As well, the structure will shielded from earth-quakes, floods, fire, inclement weather (maybe Tsunamis - but not yet!). I will be sharing the meditations specific to these innovations. Mostly sitting as screenshots on my external drive. Would be great to have some help here!
-*  I have been making updates more consistently in the wiki section via Github. Same page here, but easy to miss the section, unless it is specificially highlight. Feel free to check out the [Wiki section here](https://github.com/Shangrila-VHP/shangrila-vhp/wiki)
-   
->"Support your veteran community by being an active listener and not passing judgement." - S. Bloom (Jan 25, 2022)
 
 [Note: Front view of one of the buildings.]
 ![](img/03-10-2024-Render-CoPilot-Hooyah-Main-05.jpg)
