@@ -1,4 +1,6 @@
 ---
 description: 'Description of the custom chat mode.'
 tools: [ 'tool1', 'tool2' ]
----
+---cd C:\
+mkdir venvtest
+cd venvtest
