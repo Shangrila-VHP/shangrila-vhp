@@ -1,0 +1,4 @@
+jupyter-book create --help
+---cd C:\Users\easterwisland
+mkdir venvtest
+cd venvtest
