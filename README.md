@@ -1,3 +1,15 @@
+Thank you for visiting. I welcome and honour your presence. I am very fortunate that you took the time from your daily schedule in order to visit this page. 
+
+If I can request a moment of your time, in order to share a little bit of the background about Shangrila-VHP with you. 
+
+But before that, what does the VHP in Shangrila-VHP actually stands for? The idea has been conceived in order to help enable human dignity. Originally the idea was imagined to be a healing place for veterans (world-wide) hence, veterans healing places (VHP).  Since then the project has evolved in it's scope, in order to help enable housing structures that can withstand the test of time. While ensuring that the inhabitants within these abodes are healing in a good and wholesome way.
+
+I hope you will join me, as I (it's just me right now) lay the foundations for a project that could stand the test of time. 
+
+Here is a picture that I took on the morning of June the 21st, 2025. These are the very very prototypes that I have created using [TinkerCAD](www.tinkercad.com) and I then 3d-printed them. 
+
+   ![alt text](img/2025/06-2025/06-21-2025/Prototype_Snapshot_20250621_1040UTC.jpg)
+
 'If it's up to be. It's up to me.' - via Itsa Dan Hawk 
 
 'Dreams are made if people try.' - Terry Fox
