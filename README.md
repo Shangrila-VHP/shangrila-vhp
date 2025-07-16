@@ -1,27 +1,18 @@
-Thank you for visiting. I welcome and honour your presence. I am very fortunate that you took the time from your daily schedule in order to visit this page. 
-
-If I can request a moment of your time, in order to share a little bit of the background about Shangrila-VHP with you. 
-
-But before that, what does the VHP in Shangrila-VHP actually stands for? The idea has been conceived in order to help enable human dignity. Originally the idea was imagined to be a healing place for veterans (world-wide) hence, veterans healing places (VHP).  Since then the project has evolved in it's scope, in order to help enable housing structures that can withstand the test of time. While ensuring that the inhabitants within these abodes are healing in a good and wholesome way.
+Originally imagined to be a veterans healing place (vhp). Since then the project has evolved to help provide safe/affordable/eco-friendly housing to as many humans (and their pets) as possible. While ensuring that the inhabitants within these abodes are healing in a good and wholesome way.
 
 I hope you will join me, as I (it's just me right now) lay the foundations for a project that could stand the test of time. 
 
-Here is a picture that I took on the morning of June the 21st, 2025. These are the very very prototypes that I have created using [TinkerCAD](www.tinkercad.com) and I then 3d-printed them. 
+Here is a picture that I took on the morning of June 21st, 2025. These are the very very prototypes that I have created using [TinkerCAD](www.tinkercad.com) and I then 3d-printed them. 
 
    ![alt text](img/2025/06-2025/06-21-2025/Prototype_Snapshot_20250621_1040UTC.jpg)
 
-'If it's up to be. It's up to me.' - via Itsa Dan Hawk 
-
 'Dreams are made if people try.' - Terry Fox
 
-Mission, Vision and Ask: What if every human had a place to call home? Shangrila-VHP strives to create affordable ($5,000 Canadian) climate-resilient housing solutions that are sourced with eco-friendly materials.
-
-Will you help me towards safely housing every single being in this reality? I personally think that it would be just incredible and absolutely and spectacularly awesome to somehow enable a climate resilient abode for less than $5000 Canadian. 
-
-- Cost: $5,000 CAD
-- Primary: Veterans housing
-- Scale: Global potential
-- Impact: Healing focused
+- Cost (to get to): $5,000 CAD
+- Primary Focus:  Veterans housing
+- Primary Focus:  Single parents and those experiencing homelessness
+- Next Focus:     Scale worldwide
+- Impact:         Healing focused
 
 > "Less, but better."
 > — Dieter Rams, *Ten Principles for Good Design*
@@ -29,29 +20,35 @@ Will you help me towards safely housing every single being in this reality? I pe
 ---
 Scope: 
 
-Large-scale open-source 3d-printer: The current price point for acquiring a 3d-printer that can print with earthen materials is expensive, if you wish to scale your projects/endeavours. 
+Large-scale open-source 3d-printer: The current price point for acquiring a 3d-printer that can print with earthen materials is expensive. Particularly, if you wish to scale your project(s).
 
-The first major milestone would be the enablement of a large-scale 3d-printer. The next major milestone would be to construct at least 10 units, via the 3d-printer that will be developed in-house.
+The first major milestone would be the enablement of a large-scale 3d-printer. 
 
-Individuals and specific institutions could take possessions of these units at a price that is fair for all. Within ten years, the cost to construct a decent housing structure should plummet to $1000 each or less. In 20 years, the cost of constructing a house will be close to zero dollars. 
+The next major milestone would be to construct at least 10 units, via the 3d-printer that will be developed in-house.
 
-The intended mission of a sister organization (project for now) is to make autonomous manufacturing units (AMUs). In theory and provided materials are fed to the AMUs, the AMUs can make a copy of themselves [Sample images here](https://asi.surge.sh/effort).  
+Individuals and specific institutions could take possessions of these units at a price that is fair for all.
 
-Housing and food are very important areas, but the **only way to safeguard the future is through education. **
+Within ten years, the cost to construct a decent housing structure should plummet to $1000 each or less. In 20 years, the cost of constructing a house will be close to zero dollars. 
+
+The intended mission of a sister organization (project for now) is to make autonomous manufacturing units (AMUs). In theory and provided materials are fed to the AMUs, the AMUs can make a copy of themselves [Sample images here](https://asi.surge.sh/effort).
+
+Housing and food are very important areas, but the **only way to safeguard the future is through education.**
 
 The reason why I started Shangrila-VHP is because I learned about homelessness in the veterans community. While these numbers are falling in North America. One veteran or first-responder experiencing homelessness is too many. I genuinely believe that this problem is solvable. After helping ensure that every veteran and first-line staff across NATO (and core allies) have a place to call their own. Shangrila will advance towards helping ensure quality housing across the world.
 
-- I started the project via collaboration with Microsoft Copilot. Basically providing prompts and seeing what images Copilot would render. [samples](https://github.com/Shangrila-VHP/shangrila-vhp/tree/main/img) and [link](https://github.com/Shangrila-VHP/shangrila-vhp/tree/main/img/_Archives). Next, I built a model out of a pizza box.
--  In May of the year 2025, I was fortunate to acquire a 3d-printer. Thanks to the incredible generosity of a kid (and their parents) who sold me his/their older 3d-printer (at a greatly discounted price!). Right now I am just learning the basics of TinkerCAD. In the following days, I will 3d-print a simple concept of a structure with a door and a hinge. So basiscally taking baby-steps each day.
+- I started the project via collaboration with Microsoft Copilot, by providing prompts and seeing what images Copilot would render. [samples](https://github.com/Shangrila-VHP/shangrila-vhp/tree/main/img) and [link](https://github.com/Shangrila-VHP/shangrila-vhp/tree/main/img/_Archives). Next, I built a model out of a pizza box.
+-  In May of the year 2025, I was fortunate to acquire a 3d-printer. After learning the basics of TinkerCAD. I proceeded towards 3d-printing an initial MVP (minimum viable product - via Eric Ries). The MVP is also focused on open-sourcing the design and the construction of the structure. There is a key emphasis right now on the door and the hinge. So that the housing structure can be built in a modular manner and if needed, moved to another location.
 
-I post regular updates at:
+I have been posting regular updates at:
 - The wiki on here. So if you'd like, head over to the wiki. Here is the [link](https://github.com/Shangrila-VHP/shangrila-vhp/wiki).
 - I'll be extracting content off of the other project management system that I've been leveraging over the years and will be placing the content inside of the issues section on Github. Here is the [link](https://github.com/Shangrila-VHP/shangrila-vhp/issues).
 - There is already an issue that is pinned on there. In this issue, I've been placing updates related to the daily ethical hacking/endeavors. So anyone who happens to be interested has an almost real-time view of what has been going on related to Shangrila-VHP. As well, hints at what I've been thinking.
 - There are also snapshots and code available on the repository. Including and more recently, actual .stl (stereolithography) [link](https://en.wikipedia.org/wiki/STL_(file_format)) files that anyone can import into their 3d-printing slicing software.
 - It is to note, that all the links posted in the wiki are either going to be to Github itself, to youtube. Maybe printables.com in the future. 
 
-In short, I've been trying to figure out how to construct an incredibly high-quality dwelling (in every sense of the word imaginable) for $5000 Canadian. Inflation adjusted. To achieve this vision and scale it around the world, I propose that the construction of a larger scale 3d-printer that can print using a mixture of mud and (secret ingredients 😉)  is open-sourced and that these designs are iterated upon continously. Again, what wikipedia did for knowledge management and sharing and what Ubuntu has done for Linux.
+In short, I've been trying to figure out how to construct an incredibly high-quality dwelling (in every sense of the word imaginable) for $5000 Canadian. Inflation adjusted. To achieve this vision and scale it around the world, I propose that the construction of a larger scale 3d-printer that can print using a mixture of mud and (other ingredients)  is open-sourced and that these designs are iterated upon continously. 
+
+Learning from the wikinomics model. Imagine if we could do for affordable housing, what wikipedia did for knowledge management and sharing and what Ubuntu has done for Linux.
 
 If you'd like to collaborate, then please feel free to get in contact. My contact info is via my profile on here. Here is the [link](https://github.com/genidma) 
 
