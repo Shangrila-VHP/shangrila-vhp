@@ -1,6 +1,8 @@
-Originally imagined to be a veterans healing place (vhp). Since then the project has evolved to help provide safe/affordable/eco-friendly housing to as many humans (and their pets) as possible. While ensuring that the inhabitants within these abodes are healing in a good and wholesome way.
+Originally imagined to be a veterans healing place (vhp). Since then the project has evolved to help provide safe/affordable/eco-friendly housing to as many humans (and their pets) as possible. While ensuring that the inhabitants within these abodes are healing in a good and wholesome way. As well that the environment and the biosphere at large benefit from the development of these communities and neighborhoods.
 
-I hope you will join me, as I (it's just me right now) lay the foundations for a project that could stand the test of time. 
+Shangrila-VHP is a project that bring the world-wide community together, in order to enable more hope and healing. 
+
+Please join me and make this project your own.
 
 Here is a picture that I took on the morning of June 21st, 2025. These are the very very prototypes that I have created using [TinkerCAD](www.tinkercad.com) and I then 3d-printed them.
 
