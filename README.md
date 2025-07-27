@@ -2,7 +2,7 @@ Originally imagined to be a veterans healing place (vhp). Since then the project
 
 I hope you will join me, as I (it's just me right now) lay the foundations for a project that could stand the test of time. 
 
-Here is a picture that I took on the morning of June 21st, 2025. These are the very very prototypes that I have created using [TinkerCAD](www.tinkercad.com) and I then 3d-printed them.  
+Here is a picture that I took on the morning of June 21st, 2025. These are the very very prototypes that I have created using [TinkerCAD](www.tinkercad.com) and I then 3d-printed them.
 
    ![alt text](img/2025/06-2025/06-21-2025/Prototype_Snapshot_20250621_1040UTC.jpg)
 
