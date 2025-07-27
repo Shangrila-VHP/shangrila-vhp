@@ -72,7 +72,7 @@ Thank you for reading!
 4. Phase 01-b: In parallel, helping eliminate homelessness in the single parents category. (Completely separate locations managed by completely different staff)
 5. Phase 02: Leverage learnings in order to enable sustainable and affordable housing around the world. Infrastructure and designs that will work in the face of climate change and possibly [rapid climate change](https://www.youtube.com/watch?v=ZHNNW8c_FaA) (Sharing does not equal endorsement, as I am not a climate scientist).
 
-Shangrila-VHP will be hands-on in building facilities, ensuring every interaction is meaningful and contributes to a superior living experience. We advocate and work with governments to create lasting solutions for homelessness, guiding individuals towards making a positive impact on society. We believe in the healing power of a supportive environment.
+Shangrila-VHP will be hands-on in building facilities, ensuring every interaction is meaningful and contributes to a superior living experience. We advocate and work with governments to create lasting solutions for homelessness, guiding individuals towards making a positive impact on society. We believe in the healing power of a supportive environment. 
 
 ![](img/03-10-2024-Render-CoPilot-Hooyah-Main-02.jpg)
 
