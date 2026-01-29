@@ -34,7 +34,7 @@ Shangrila-VHP is a project that brings the world-wide community together to enab
 > — Dieter Rams, *Ten Principles for Good Design*
 
 ### The Problem
-One veteran or first-responder experiencing homelessness is too many. We believe this problem is solvable. After ensuring safety for every veteran and first-line staff across NATO and core allies, Shangrila will advance towards quality housing worldwide.
+**Every homeless veteran/first-responder is one too many** — a solvable problem. NATO and allies first, then quality housing for all worldwide.
 
 ---
 
