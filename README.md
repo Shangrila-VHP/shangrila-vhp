@@ -45,6 +45,13 @@ I've been talking to a contact.
 - Option # 1 is to license the technology
 - Option # 2 involves a different technique employing humanoid robots and humans separately. This approach is thanks to an innovator from Egypt, who's work has built upon pioneers in this area from the past. But he has also inspired advanced research in France (at a specific Polytechnic University)
 
+### Earthship inspired designs
+- See [earthship.com/](https://earthship.com/). No affiliation
+- - Game-plan: Learn directly from the founders and supporters of Earthship Biotecture.
+- - - Two options: 
+- - - - Option # 1: Training via the main website [here](https://earthship.com/learn/)
+- - - - Option # 2: Training via [backstage.earthship.com](https://backstage.earthship.com/pricing)
+
 ### Large-Scale 3D Printing
 Large-scale open-source 3D-printers capable of printing with earthen materials.
 
