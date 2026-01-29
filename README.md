@@ -48,6 +48,7 @@ The first major milestone is the enablement of a large-scale open-source 3D-prin
 ### Modular & Autonomous Manufacturing
 - **MVP (Minimum Viable Product)**: Focused on modular designs (e.g., doors and hinges) so structures can be moved or expanded.
 - **Autonomous Manufacturing Units (AMUs)**: Exploring self-replicating manufacturing units to safeguard the future through education and automation.
+  - - Note: The heavy lifting is via a sister organization via [ASI or Awakened Imagination - Yet to be registered](https://github.com/stellardreams/asi.surge.sh)
 
 ---
 
