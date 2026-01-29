@@ -51,6 +51,7 @@ I've been talking to a contact.
 - - - Two options: 
 - - - - Option # 1: Training via the main website [here](https://earthship.com/learn/)
 - - - - Option # 2: Training via [backstage.earthship.com](https://backstage.earthship.com/pricing)
+- - Note: 
 
 ### Large-Scale 3D Printing
 Large-scale open-source 3D-printers capable of printing with earthen materials.
