@@ -98,7 +98,7 @@ The first major milestone is the enablement of a large-scale open-source 3D-prin
 
 "Dreams are made if people try." We would love your feedback and collaboration!
 
-- **Join the Workspace**: [Shangrila-VHP GitHub Organization](https://github.com/Shangrila-VHP)
+- **Join the Discussion**: [Shangrila-VHP GitHub Organization](https://github.com/orgs/Shangrila-VHP/discussions)
 - **Connect on LinkedIn**: [Adeel Khan](https://www.linkedin.com/in/adeelkhan1/) (Please include a message about collaborating!)
 - **Support**: Consider sponsoring this project to help create quality jobs and improve the human condition.
 
