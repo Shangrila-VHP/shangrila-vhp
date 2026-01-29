@@ -78,6 +78,10 @@ To come back to this sub-idea:
 3.  **Phase 01-b**: Parallel elimination of homelessness in the single parents category.
 4.  **Phase 02**: Global leverage for sustainable/affordable housing resilient to climate change.
 
+
+![Main Schematic](img/Shangrila-vhp-main-idea-v123.png)
+
+
 ---
 
 ## 🖼️ Progress Gallery
@@ -86,8 +90,6 @@ To come back to this sub-idea:
 - **Pizza Box Model**: The very first conceptualization used recycled materials.
 - **TinkerCAD & 3D Printing**: Transitioned to digital design and physical scale models.
 - **Zen Garden Addition**: Meditative spaces integrated into the living environment for tranquility.
-
-![Main Schematic](img/Shangrila-vhp-main-idea-v123.png)
 
 ---
 
