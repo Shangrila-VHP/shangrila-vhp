@@ -1,6 +1,6 @@
 # Shangrila Veterans Healing Places (Shangrila-VHP)
 
-Originally imagined to be a veterans healing place (VHP), the project has evolved to provide safe, affordable, and eco-friendly housing to as many humans (and their pets) as possible. We ensure that inhabitants are healing in a wholesome way while the environment and biosphere benefit from the development of these communities.
+**Evolved from veterans' healing vision (from my civilian perspective) to eco-housing for all—affordable, safe, wholesome living that heals both people and planet.**
 
 > "Dreams are made if people try." — Terry Fox
 
