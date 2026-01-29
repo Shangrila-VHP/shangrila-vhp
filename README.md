@@ -82,9 +82,6 @@ To come back to this sub-idea:
 
 ## 🖼️ Progress Gallery
 
-### Renders & Concepts
-
-
 ### Prototyping History
 - **Pizza Box Model**: The very first conceptualization used recycled materials.
 - **TinkerCAD & 3D Printing**: Transitioned to digital design and physical scale models.
