@@ -46,7 +46,14 @@ I've been talking to a contact.
 - Option # 2 involves a different technique employing humanoid robots and humans separately. This approach is thanks to an innovator from Egypt, who's work has built upon pioneers in this area from the past. But he has also inspired advanced research in France (at a specific Polytechnic University)
 
 ### Large-Scale 3D Printing
-The first major milestone is the enablement of a large-scale open-source 3D-printer capable of printing with earthen materials.
+Large-scale open-source 3D-printers capable of printing with earthen materials.
+
+This is already a reality, but the designs are not open-source. 
+
+So we can open-source the designs and then individuals and groups can start developing climate resilient communities. With means to off set the harmful effects of climate change and enable pocket climates. For this to happen, the design of the towns will have to be limited. These communities will be as self-sustainable as possible.
+
+To come back to this sub-idea:
+
 - **In-house Development**: Cost-effective alternative to expensive commercial printers.
 - **Materials**: Mud and organic mixtures for sustainable, high-quality dwellings.
 
