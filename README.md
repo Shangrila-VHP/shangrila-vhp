@@ -102,7 +102,7 @@ To come back to this sub-idea:
 ---
 
 ## ✍️ Project Credits
-- **Pioneer**: [@genidma](https://github.com/genidma) (Adeel Khan)
+- **pioneer**: [@genidma](https://github.com/genidma) (Adeel Khan)
 - **wing person 01**: antigravity (AI Assistant)
 - **wing person 02**: claude (AI Assistant)
 - **wing person 03**: copilot (AI Assistant)
