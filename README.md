@@ -48,9 +48,8 @@ I've been talking to a contact.
 ### Large-Scale 3D Printing
 Large-scale open-source 3D-printers capable of printing with earthen materials.
 
-This is already a reality, but the designs are not open-source. 
-
-So we can open-source the designs and then individuals and groups can start developing climate resilient communities. With means to off set the harmful effects of climate change and enable pocket climates. For this to happen, the design of the towns will have to be limited. These communities will be as self-sustainable as possible.
+- This is already a reality, but the designs are not open-source. 
+- So we can open-source the designs and then individuals and groups can start developing climate resilient communities. With means to off set the harmful effects of climate change and enable pocket climates. For this to happen, the design of the towns will have to be limited. These communities will be as self-sustainable as possible.
 
 To come back to this sub-idea:
 
