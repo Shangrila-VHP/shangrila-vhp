@@ -40,6 +40,11 @@ Shangrila-VHP is a project that brings the world-wide community together to enab
 
 ## 🛠️ Technical Approach
 
+### Rammed Earth
+I've been talking to a contact. 
+- Option # 1 is to license the technology
+- Option # 2 involves a different technique employing humanoid robots and humans separately. This approach is thanks to an innovator from Egypt, who's work has built upon pioneers in this area from the past. But he has also inspired advanced research in France (at a specific Polytechnic University)
+
 ### Large-Scale 3D Printing
 The first major milestone is the enablement of a large-scale open-source 3D-printer capable of printing with earthen materials.
 - **In-house Development**: Cost-effective alternative to expensive commercial printers.
