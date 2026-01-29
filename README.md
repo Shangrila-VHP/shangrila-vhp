@@ -83,10 +83,7 @@ To come back to this sub-idea:
 ## 🖼️ Progress Gallery
 
 ### Renders & Concepts
-| Community Hub | Living Units | Lush Environments |
-| :--- | :--- | :--- |
-| ![Main Render 05](img/03-10-2024-Render-CoPilot-Hooyah-Main-05.jpg) | ![Main Render 03](img/03-10-2024-Render-CoPilot-Hooyah-Main-03.jpg) | ![Main Render 02](img/03-10-2024-Render-CoPilot-Hooyah-Main-02.jpg) |
-| ![Main Render 04](img/03-10-2024-Render-CoPilot-Hooyah-Main-04.jpg) | ![Main Render 06](img/03-10-2024-Render-CoPilot-Hooyah-Main-06.jpg) | ![Main Render 07](img/03-10-2024-Render-CoPilot-Hooyah-Main-07.jpg) |
+
 
 ### Prototyping History
 - **Pizza Box Model**: The very first conceptualization used recycled materials.
