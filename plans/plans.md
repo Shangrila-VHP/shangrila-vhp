@@ -74,6 +74,15 @@ Integrating automated nutrition with essential hygiene and harm reduction to res
 - **Economics**: "Pay What you Can" model inspired by the success of JBJ Soul Kitchen.
 - **Synergy**: Culinary student volunteer tracks and professional mental health/social work support.
 
+### 🛡️ Hero's Haven (Housing for Injured Front-Line Workers)
+A global safety net for injured front-line workers (Doctors, Nurses, Firefighters, Soldiers) and their caregivers, focusing on resident ownership and skills transition.
+
+#### Core Pillars
+- **Resident Equity**: Properties are owned by residents, capturing long-term appreciation and tied to [LSGB Fund](https://github.com/Shangrila-VHP/shangrila-vhp/issues/18) growth.
+- **Empowerment Engine**: Transitioning residents to high-quality technical fields ([Issue #65](https://github.com/Shangrila-VHP/shangrila-vhp/issues/65)) and certified investor roles.
+- **Social Infrastructure**: Integrated social work support with mandatory weekly check-ups and as-needed crisis meetings.
+- **Financial Shield**: Specialized insurance models (leveraging [IEEE broker concepts](https://www.ieee.org/membership/discounts)) for housing protection.
+
 ---
 
 ### Contributing
