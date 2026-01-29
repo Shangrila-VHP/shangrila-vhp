@@ -96,7 +96,6 @@ To come back to this sub-idea:
 ## 📚 Resource Hub
 
 - **[DIY Shelter Plans](plans/plans.md)**: Empowering individuals with vetted construction methods.
-- **[Ethical Hacking & Updates (Issue #58)](https://github.com/Shangrila-VHP/shangrila-vhp/issues/58)**: Real-time view of daily endeavors and project thoughts.
 - **[Project Wiki](https://github.com/Shangrila-VHP/shangrila-vhp/wiki)**: Regular updates and extracted project management content.
 - **[Issue Tracker](https://github.com/Shangrila-VHP/shangrila-vhp/issues)**: Ongoing tasks and community feedback.
 
