@@ -3,7 +3,7 @@ import Clarity from '@microsoft/clarity';
 // Basic website interactions
 document.addEventListener('DOMContentLoaded', () => {
     console.log('Shangrila-VHP Website Loaded');
-    Clarity.init('YOUR_CLARITY_PROJECT_ID');
+    Clarity.init('v8tqy4j717');
 
     // Smooth scroll for navigation links handled by CSS
     
