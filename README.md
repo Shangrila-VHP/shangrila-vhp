@@ -10,13 +10,13 @@
 ---
 
 ## 📋 Table of Contents
-- [Mission & Vision](#-mission--vision)
-- [Technical Approach](#-technical-approach)
-- [Roadmap & Phases](#-roadmap--phases)
-- [Progress Gallery](#-progress-gallery)
-- [Resource Hub](#-resource-hub)
-- [Project Credits](#-project-credits)
-- [Collaboration & Contact](#-collaboration--contact)
+- [Mission & Vision](#mission--vision)
+- [Technical Approach](#technical-approach)
+- [Roadmap & Phases](#roadmap--phases)
+- [Progress Gallery](#progress-gallery)
+- [Resource Hub](#resource-hub)
+- [Project Credits](#project-credits)
+- [Collaboration & Contact](#collaboration--contact)
 
 ---
 
