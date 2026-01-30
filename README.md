@@ -116,7 +116,7 @@ To come back to this sub-idea:
 
 - **Join the Discussion**: [Shangrila-VHP GitHub Organization](https://github.com/orgs/Shangrila-VHP/discussions)
 - **Open Issues**: [Report bugs or request features](https://github.com/Shangrila-VHP/shangrila-vhp/issues)
-- **Support**: Consider [sponsoring this project](https://github.com/sponsors/genidma) to help create quality jobs and improve the human condition.
+- **Support**: Consider [sponsoring this project](https://github.com/sponsors/genidma) to help create quality jobs and improve the human condition
 - **Connect on LinkedIn**: [Adeel Khan](https://www.linkedin.com/in/adeelkhan1/) (Please include a message about collaborating!)
 
 ---
