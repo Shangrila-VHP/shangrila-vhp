@@ -17,6 +17,7 @@
 - [Resource Hub](#resource-hub)
 - [Project Credits](#project-credits)
 - [Collaboration & Contact](#collaboration--contact)
+- [Wiki](https://github.com/Shangrila-VHP/shangrila-vhp/wiki)
 
 ---
 
@@ -114,8 +115,9 @@ To come back to this sub-idea:
 "Dreams are made if people try." We would love your feedback and collaboration!
 
 - **Join the Discussion**: [Shangrila-VHP GitHub Organization](https://github.com/orgs/Shangrila-VHP/discussions)
+- **Open Issues**: [Report bugs or request features](https://github.com/Shangrila-VHP/shangrila-vhp/issues)
+- **Support**: Consider [sponsoring this project](https://github.com/sponsors/genidma) to help create quality jobs and improve the human condition.
 - **Connect on LinkedIn**: [Adeel Khan](https://www.linkedin.com/in/adeelkhan1/) (Please include a message about collaborating!)
-- **Support**: Consider sponsoring this project to help create quality jobs and improve the human condition.
 
 ---
 *Thank you for reading and being part of the solution.*
