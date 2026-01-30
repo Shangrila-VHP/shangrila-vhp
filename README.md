@@ -9,18 +9,18 @@
 
 ---
 
-## 📋 Table of Contents
-- [Mission & Vision](#-mission--vision)
-- [Technical Approach](#-technical-approach)
-- [Roadmap & Phases](#-roadmap--phases)
-- [Progress Gallery](#-progress-gallery)
-- [Resource Hub](#-resource-hub)
-- [Project Credits](#-project-credits)
-- [Collaboration & Contact](#-collaboration--contact)
+## Table of Contents
+- [Mission & Vision](#mission--vision)
+- [Technical Approach](#technical-approach)
+- [Roadmap & Phases](#roadmap--phases)
+- [Progress Gallery](#progress-gallery)
+- [Resource Hub](#resource-hub)
+- [Project Credits](#project-credits)
+- [Collaboration & Contact](#collaboration--contact)
 
 ---
 
-## 🌟 Mission & Vision
+## Mission & Vision
 
 Shangrila-VHP is a project that brings the world-wide community together to enable hope and healing.
 
@@ -38,7 +38,7 @@ Shangrila-VHP is a project that brings the world-wide community together to enab
 
 ---
 
-## 🛠️ Technical Approach
+## Technical Approach
 
 ### Rammed Earth
 I've been talking to a contact. 
@@ -71,7 +71,7 @@ To come back to this sub-idea:
 
 ---
 
-## 🗺️ Roadmap & Phases
+## Roadmap & Phases
 
 1.  **Phase 01**: OKR-based goals to end veteran homelessness with VA, NATO, and allies.
 2.  **Phase 01-a**: Customer Obsession — feedback from Veteran Affairs on facility designs.
@@ -84,7 +84,7 @@ To come back to this sub-idea:
 
 ---
 
-## 🖼️ Progress Gallery
+## Progress Gallery
 
 ### Prototyping History
 - **Pizza Box Model**: The very first conceptualization used recycled materials.
@@ -93,7 +93,7 @@ To come back to this sub-idea:
 
 ---
 
-## 📚 Resource Hub
+## Resource Hub
 
 - **[DIY Shelter Plans](plans/plans.md)**: Empowering individuals with vetted construction methods.
 - **[Project Wiki](https://github.com/Shangrila-VHP/shangrila-vhp/wiki)**: Regular updates and extracted project management content.
@@ -101,7 +101,7 @@ To come back to this sub-idea:
 
 ---
 
-## ✍️ Project Credits
+## Project Credits
 - **pioneer**: [@genidma](https://github.com/genidma) (Adeel Khan)
 - **wing person 01**: antigravity (AI Assistant)
 - **wing person 02**: claude (AI Assistant)
@@ -109,7 +109,7 @@ To come back to this sub-idea:
 
 ---
 
-## 🤝 Collaboration & Contact
+## Collaboration & Contact
 
 "Dreams are made if people try." We would love your feedback and collaboration!
 
