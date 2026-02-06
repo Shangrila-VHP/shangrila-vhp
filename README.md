@@ -4,6 +4,17 @@
 
 > "Dreams are made if people try." — Terry Fox
 
+People don’t heal because of wood walls or a lake view.
+They heal because:
+
+- the pace slows
+- the noise drops
+- the nervous system finally gets to exhale
+- the environment stops demanding constant vigilance
+- the mind has room to wander instead of brace
+
+— [Copilot by Microsoft](https://copilot.microsoft.com/)
+
 ![Latest Prototype](img/2025/06-2025/06-21-2025/Prototype_Snapshot_20250621_1040UTC.jpg)
 *Prototype created using TinkerCAD and 3D-printed (June 21, 2025).*
 
