@@ -326,6 +326,56 @@ blockquote cite {
     color: var(--text);
 }
 
+.healing-insight {
+    padding: 1.5rem;
+    background: rgba(45, 90, 39, 0.05);
+    border-radius: 0.75rem;
+    border: 1px dashed var(--primary-light);
+}
+
+.healing-insight p {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--secondary);
+}
+
+.healing-insight ul {
+    list-style: none;
+    padding-left: 0.5rem;
+}
+
+.healing-insight li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+.healing-insight li::before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.healing-insight cite {
+    font-size: 0.85rem;
+    font-style: italic;
+    color: var(--text-muted);
+}
+
+.healing-insight cite a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.healing-insight cite a:hover {
+    text-decoration: underline;
+}
+
 .stats {
     display: flex;
     gap: 2rem;
