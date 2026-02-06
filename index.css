@@ -583,10 +583,29 @@ blockquote cite {
 .good-news .news-item {
     border-left: 4px solid var(--accent);
     transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
 .good-news .news-item:hover {
-    transform: translateX(5px);
+    transform: translateX(8px);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.news-content {
+    font-size: 1.1rem;
+    color: var(--text);
+}
+
+.news-content a {
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.news-content a:hover {
+    text-decoration: underline;
 }
 
 .news-date {
@@ -603,8 +622,8 @@ blockquote cite {
     color: var(--secondary);
 }
 
-.mb-4 {
-    margin-bottom: 3rem;
+.mb-2 {
+    margin-bottom: 1.5rem;
 }
 
 .p-2 {
