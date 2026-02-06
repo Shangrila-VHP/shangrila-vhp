@@ -20,8 +20,9 @@ They heal because:
 
 ---
 
-## Table of Contents
+- [Table of Contents](#table-of-contents)
 - [Mission & Vision](#mission--vision)
+- [Project Philosophy](PHILOSOPHY.md)
 - [Technical Approach](#technical-approach)
 - [Roadmap & Phases](#roadmap--phases)
 - [Progress Gallery](#progress-gallery)
