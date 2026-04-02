@@ -22,6 +22,7 @@ Launch Blender normally. You'll start on the default splash screen — just clic
 ### 2. Switch to the Scripting Workspace
 
 At the **top of the screen**, you'll see a row of workspace tabs:
+tip: 'Scroll the Top Bar: If your screen resolution is low, the Scripting tab might be hidden on the far right. Hold the middle mouse button and drag the top tab bar to the left to reveal it.'
 
 ```
 Layout | Modeling | Sculpting | UV Editing | Texture Paint | Shading | Animation | Rendering | Compositing | Scripting
