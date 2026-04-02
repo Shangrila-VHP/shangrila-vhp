@@ -49,6 +49,9 @@ import math
 # ── GLOBAL SCALE (1.0 = metres; change to match your printer's units) ─────────
 SCALE = 1.0   # e.g. set to 0.001 to work in mm for STL export
 
+# ── STYLE MODE (classic / futuristic) ───────────────────────────────────────────
+STYLE = "futuristic"  # set to "classic" for original layout.
+
 
 # ── CLEAR SCENE ───────────────────────────────────────────────────────────────
 bpy.ops.object.select_all(action='SELECT')
@@ -232,6 +235,29 @@ def add_pine_tree(name, x, y):
              (x, y, 4.55), r_base=0.4, r_top=0.0, height=0.8, mat=M_PINE)
 
 
+def add_futuristic_house(cx, cy, base_z):
+    """Futuristic multi-level house, 3D-print friendly, with roof cantilevers."""
+    # Base slab
+    add_box("Fut_Base", (cx, cy, base_z), (12.0, 10.0, 0.7), M_CONCRETE)
+
+    # Hovering upper volume on standoffs
+    add_box("Fut_Upper", (cx, cy, base_z + 1.6), (8.0, 6.0, 1.5), M_WALL)
+    for i, dx in enumerate((-3.3, 3.3)):
+        for j, dy in enumerate((-2.6, 2.6)):
+            add_box(f"Fut_Standoff_{i}_{j}", (cx + dx, cy + dy, base_z + 0.95), (0.3, 0.3, 1.1), M_TRIM)
+
+    # Slanted front face (using skewed gable)
+    add_gabled_roof("Fut_Roof", cx, cy, base_z + 2.35, 9.2, 7.2, 1.6, M_ROOF)
+
+    # Accent fins
+    for ix in (-2.6, 2.6):
+        add_box(f"Fut_Fin_{ix}", (cx + ix, cy + 0.0, base_z + 1.8), (0.2, 7.2, 0.18), M_TRIM)
+
+    # Portal-style slit windows (solid shells for printing)
+    add_box("Fut_Window_1", (cx - 2.4, cy + 0.05, base_z + 1.7), (1.6, 0.12, 1.1), M_WINDOW)
+    add_box("Fut_Window_2", (cx + 2.4, cy + 0.05, base_z + 1.7), (1.6, 0.12, 1.1), M_WINDOW)
+
+
 # ═══════════════════════════════════════════════════════════════════════════════
 # SCENE CONSTRUCTION
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -245,20 +271,23 @@ add_box("Driveway", ( 6.0, -5.0, 0.01), (5.0, 12.0, 0.07), M_CONCRETE)
 add_box("Walkway",  (-1.0, -5.0, 0.01), (1.4,  6.0, 0.06), M_CONCRETE)
 
 # ── MAIN HOUSE ────────────────────────────────────────────────────────────────
-HX, HY, HW, HD, HH = -1.0, 0.0, 9.0, 7.0, 4.5
-add_box("HouseBody", (HX, HY, HH / 2), (HW, HD, HH), M_WALL)
+if STYLE == "futuristic":
+    add_futuristic_house(-1.0, 0.0, 0.35)
+else:
+    HX, HY, HW, HD, HH = -1.0, 0.0, 9.0, 7.0, 4.5
+    add_box("HouseBody", (HX, HY, HH / 2), (HW, HD, HH), M_WALL)
 
-# Trim fascia
-add_box("Trim_front", (HX, HY - HD/2 - 0.05, HH + 0.12), (HW+0.4, 0.15, 0.25), M_TRIM)
-add_box("Trim_back",  (HX, HY + HD/2 + 0.05, HH + 0.12), (HW+0.4, 0.15, 0.25), M_TRIM)
-add_box("Trim_left",  (HX - HW/2 - 0.05, HY, HH + 0.12), (0.15, HD+0.3, 0.25), M_TRIM)
-add_box("Trim_right", (HX + HW/2 + 0.05, HY, HH + 0.12), (0.15, HD+0.3, 0.25), M_TRIM)
+    # Trim fascia
+    add_box("Trim_front", (HX, HY - HD/2 - 0.05, HH + 0.12), (HW+0.4, 0.15, 0.25), M_TRIM)
+    add_box("Trim_back",  (HX, HY + HD/2 + 0.05, HH + 0.12), (HW+0.4, 0.15, 0.25), M_TRIM)
+    add_box("Trim_left",  (HX - HW/2 - 0.05, HY, HH + 0.12), (0.15, HD+0.3, 0.25), M_TRIM)
+    add_box("Trim_right", (HX + HW/2 + 0.05, HY, HH + 0.12), (0.15, HD+0.3, 0.25), M_TRIM)
 
-# Gabled roof
-add_gabled_roof("HouseRoof", HX, HY, HH, HW + 0.5, HD + 0.5, 2.8, M_ROOF)
+    # Gabled roof
+    add_gabled_roof("HouseRoof", HX, HY, HH, HW + 0.5, HD + 0.5, 2.8, M_ROOF)
 
-# Chimney
-add_box("Chimney", (HX - 2.0, HY + 1.0, HH + 1.8), (0.9, 0.9, 2.6), M_CHIMNEY)
+    # Chimney
+    add_box("Chimney", (HX - 2.0, HY + 1.0, HH + 1.8), (0.9, 0.9, 2.6), M_CHIMNEY)
 
 # ── GARAGE ────────────────────────────────────────────────────────────────────
 GCX, GCY, GW, GD, GH = HX + HW/2 + 2.5, -0.5, 5.0, 6.0, 3.2
