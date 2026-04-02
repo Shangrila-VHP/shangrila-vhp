@@ -60,12 +60,13 @@ garage_walls.Label = "GarageWalls"
 # ── ROOF ─────────────────────────────────────────────────────────────────────
 # House Roof
 house_face = Draft.make_rectangle(length=L+400, height=W+400, placement=FreeCAD.Placement(FreeCAD.Vector(-L/2-200, -W/2-200, H), FreeCAD.Rotation()))
-roof = Arch.makeRoof(house_face, angles=[35.0], thicknesses=[200.0], overhangs=[400.0], heights=[500.0])
+# Note: thicknesses/overhangs are now singular thickness/overhang in v1.1
+roof = Arch.makeRoof(house_face, angles=[35.0], thickness=[200.0], overhang=[400.0])
 roof.Label = "MainRoof"
 
 # Garage Roof
 garage_face = Draft.make_rectangle(length=GW+400, height=GL+400, placement=FreeCAD.Placement(FreeCAD.Vector(L/2-700, -GL/2-200, GH), FreeCAD.Rotation()))
-g_roof = Arch.makeRoof(garage_face, angles=[25.0], thicknesses=[150.0], overhangs=[300.0], heights=[400.0])
+g_roof = Arch.makeRoof(garage_face, angles=[25.0], thickness=[150.0], overhang=[300.0])
 g_roof.Label = "GarageRoof"
 
 # ── OPENINGS (Doors & Windows) ───────────────────────────────────────────────
@@ -78,8 +79,8 @@ def add_opening(parent_wall, x, y, z, w, h, d, label):
     box.Width = d
     box.Height = h
     box.Placement = FreeCAD.Placement(FreeCAD.Vector(x - w/2, y - d/2, z), FreeCAD.Rotation())
-    # Add the box to the wall as a subtraction
-    parent_wall.Subtractor = parent_wall.Subtractor + [box]
+    # Add the box to the wall as a subtraction (In v1.1 this is .Subtractions)
+    parent_wall.Subtractions = parent_wall.Subtractions + [box]
     box.ViewObject.Visibility = False
     return box
 
