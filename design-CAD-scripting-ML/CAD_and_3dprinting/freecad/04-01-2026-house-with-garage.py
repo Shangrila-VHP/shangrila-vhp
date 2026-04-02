@@ -58,15 +58,26 @@ garage_walls = Arch.makeWall(rect_garage, width=WALL_THICKNESS, height=GH)
 garage_walls.Label = "GarageWalls"
 
 # ── ROOF ─────────────────────────────────────────────────────────────────────
+# Force recompute so the geometry is ready for the roof tool
+doc.recompute()
+
 # House Roof
 house_face = Draft.make_rectangle(length=L+400, height=W+400, placement=FreeCAD.Placement(FreeCAD.Vector(-L/2-200, -W/2-200, H), FreeCAD.Rotation()))
-# Note: thicknesses/overhangs are now singular thickness/overhang in v1.1
-roof = Arch.makeRoof(house_face, angles=[35.0], thickness=[200.0], overhang=[400.0])
+# Provide 4 values for the 4 edges of the rectangle
+roof = Arch.makeRoof(house_face, 
+                     angles=[35.0, 35.0, 35.0, 35.0], 
+                     run=[3000.0, 3000.0, 3000.0, 3000.0], 
+                     thickness=[200.0, 200.0, 200.0, 200.0], 
+                     overhang=[400.0, 400.0, 400.0, 400.0])
 roof.Label = "MainRoof"
 
 # Garage Roof
 garage_face = Draft.make_rectangle(length=GW+400, height=GL+400, placement=FreeCAD.Placement(FreeCAD.Vector(L/2-700, -GL/2-200, GH), FreeCAD.Rotation()))
-g_roof = Arch.makeRoof(garage_face, angles=[25.0], thickness=[150.0], overhang=[300.0])
+g_roof = Arch.makeRoof(garage_face, 
+                       angles=[25.0, 25.0, 25.0, 25.0], 
+                       run=[2000.0, 2000.0, 2000.0, 2000.0], 
+                       thickness=[150.0, 150.0, 150.0, 150.0], 
+                       overhang=[300.0, 300.0, 300.0, 300.0])
 g_roof.Label = "GarageRoof"
 
 # ── OPENINGS (Doors & Windows) ───────────────────────────────────────────────
