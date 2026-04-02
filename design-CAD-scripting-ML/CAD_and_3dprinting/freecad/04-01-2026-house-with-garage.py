@@ -61,23 +61,27 @@ garage_walls.Label = "GarageWalls"
 # Force recompute so the geometry is ready for the roof tool
 doc.recompute()
 
-# House Roof
-house_face = Draft.make_rectangle(length=L+400, height=W+400, placement=FreeCAD.Placement(FreeCAD.Vector(-L/2-200, -W/2-200, H), FreeCAD.Rotation()))
-# Provide 4 values for the 4 edges of the rectangle
-roof = Arch.makeRoof(house_face, 
-                     angles=[35.0, 35.0, 35.0, 35.0], 
-                     run=[3000.0, 3000.0, 3000.0, 3000.0], 
-                     thickness=[200.0, 200.0, 200.0, 200.0], 
-                     overhang=[400.0, 400.0, 400.0, 400.0])
+# House Roof Footprint (face=True is required for stable edge detection in 1.1)
+house_rect = Draft.make_rectangle(length=L+400, height=W+400, face=True, placement=FreeCAD.Placement(FreeCAD.Vector(-L/2-200, -W/2-200, H), FreeCAD.Rotation()))
+doc.recompute()
+
+# Create Roof object and then set its properties explicitly
+roof = Arch.makeRoof(house_rect)
+roof.Angles = [35.0, 35.0, 35.0, 35.0]
+roof.Runs = [3000.0, 3000.0, 3000.0, 3000.0]
+roof.Thickness = [200.0, 200.0, 200.0, 200.0]
+roof.Overhang = [400.0, 400.0, 400.0, 400.0]
 roof.Label = "MainRoof"
 
-# Garage Roof
-garage_face = Draft.make_rectangle(length=GW+400, height=GL+400, placement=FreeCAD.Placement(FreeCAD.Vector(L/2-700, -GL/2-200, GH), FreeCAD.Rotation()))
-g_roof = Arch.makeRoof(garage_face, 
-                       angles=[25.0, 25.0, 25.0, 25.0], 
-                       run=[2000.0, 2000.0, 2000.0, 2000.0], 
-                       thickness=[150.0, 150.0, 150.0, 150.0], 
-                       overhang=[300.0, 300.0, 300.0, 300.0])
+# Garage Roof Footprint
+garage_rect = Draft.make_rectangle(length=GW+400, height=GL+400, face=True, placement=FreeCAD.Placement(FreeCAD.Vector(L/2-700, -GL/2-200, GH), FreeCAD.Rotation()))
+doc.recompute()
+
+g_roof = Arch.makeRoof(garage_rect)
+g_roof.Angles = [25.0, 25.0, 25.0, 25.0]
+g_roof.Runs = [2000.0, 2000.0, 2000.0, 2000.0]
+g_roof.Thickness = [150.0, 150.0, 150.0, 150.0]
+g_roof.Overhang = [300.0, 300.0, 300.0, 300.0]
 g_roof.Label = "GarageRoof"
 
 # ── OPENINGS (Doors & Windows) ───────────────────────────────────────────────
