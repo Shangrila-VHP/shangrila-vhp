@@ -1,11 +1,11 @@
 """
 ╔══════════════════════════════════════════════════════════════════════════════╗
-║         House with Garage — Unified Hollow Interior (v1.1)                  ║
+║         House with Garage — Unified Hollow Interior (v1.2)                  ║
 ╠══════════════════════════════════════════════════════════════════════════════╣
 ║  Changes:                                                                    ║
-║  - Unified House & Garage footprint (Hollow Interior)                        ║
-║  - Added Floor Slab (for 3D Printing base)                                   ║
-║  - Single 15° Slanted Roof across the entire structure                       ║
+║  - Fixed "Vanishing Walls" by using Part.fuse for the footprint.             ║
+║  - Improved Roof intersection logic.                                         ║
+║  - Retained Floor Slab for 3D Printing.                                      ║
 ╚══════════════════════════════════════════════════════════════════════════════╝
 """
 
@@ -26,36 +26,42 @@ GL, GW, GH = 5000, 6000, 2800
 WALL_THICKNESS = 200
 
 # ── UNIFIED HOLLOW FOOTPRINT ─────────────────────────────────────────────────
-# Create House Rectangle
+# Create House Rectangle 
 r_house = Draft.make_rectangle(length=L, height=W, placement=FreeCAD.Placement(FreeCAD.Vector(-L/2, -W/2, 0), FreeCAD.Rotation()))
-# Create Garage Rectangle (offset to the right)
+# Create Garage Rectangle
 r_garage = Draft.make_rectangle(length=GW, height=GL, placement=FreeCAD.Placement(FreeCAD.Vector(L/2 - 500, -GL/2, 0), FreeCAD.Rotation()))
+doc.recompute()
 
-# Merge them into one single hollow outline
-merged_footprint = Draft.union([r_house, r_garage])
+# ROBust MERGE: Use Part.fuse to combine shapes, then get the outer wire
+fused_shape = r_house.Shape.fuse(r_garage.Shape)
+merged_wire = doc.addObject("Part::Feature", "FullFootprint")
+merged_wire.Shape = fused_shape.removeSplitter().OuterWire
+merged_wire.ViewObject.Visibility = False
 doc.recompute()
 
 # ── WALLS & FLOOR ─────────────────────────────────────────────────────────────
-# Create one unified wall object (removes the internal wall)
-house_walls = Arch.makeWall(merged_footprint, width=WALL_THICKNESS, height=H)
+# Create one unified wall object from the merged outer wire
+house_walls = Arch.makeWall(merged_wire, width=WALL_THICKNESS, height=H)
 house_walls.Label = "UnifiedWalls"
 
 # Add Floor Slab (150mm thick base)
-floor = Arch.makeStructure(merged_footprint)
+floor = Arch.makeStructure(merged_wire)
 floor.Height = 150
 floor.Placement = FreeCAD.Placement(FreeCAD.Vector(0,0,-155), FreeCAD.Rotation())
 floor.Label = "FloorSlab"
 
 # ── UNIFIED SLANTED ROOF ──────────────────────────────────────────────────────
 doc.recompute()
-# Define a larger footprint for the entire roof
-roof_rect = Draft.make_rectangle(length=L+GW+400, height=W+400, face=True, placement=FreeCAD.Placement(FreeCAD.Vector(-L/2-200, -W/2-200, H), FreeCAD.Rotation()))
+# Roof dimensions to cover the whole L-shape (from -L/2 to L/2+GW-500)
+total_length = (L/2 + GW - 500) - (-L/2)
+roof_rect = Draft.make_rectangle(length=total_length + 800, height=W + 800, face=True, 
+                                 placement=FreeCAD.Placement(FreeCAD.Vector(-L/2 - 400, -W/2 - 400, H), FreeCAD.Rotation()))
 doc.recompute()
 
 # Create a single 15-degree roof slanted Right -> Left
 roof = Arch.makeRoof(roof_rect)
 roof.Angles = [89.0, 15.0, 89.0, 89.0] 
-roof.Runs = [0.0, L + GW, 0.0, 0.0]
+roof.Runs = [0.0, total_length + 800, 0.0, 0.0]
 roof.Thickness = [200.0, 200.0, 200.0, 200.0]
 roof.Overhang = [400.0, 400.0, 400.0, 400.0]
 roof.Label = "MainRoof"
@@ -78,7 +84,9 @@ add_opening(house_walls, -2500, -W/2, 1200, 1500, 1200, 400, "WindowL")
 add_opening(house_walls,  2500, -W/2, 1200, 1500, 1200, 400, "WindowR")
 
 # ── CONNECT WALLS TO ROOF ────────────────────────────────────────────────────
+# Temporarily set walls very tall to ensure they intersect the roof
 house_walls.Height = H + 3000
+# Add the roof as an 'Addition' to trim the walls
 house_walls.Additions = house_walls.Additions + [roof]
 
 # ── FINAL RECOMPUTE & VIEW FIT ───────────────────────────────────────────────
@@ -88,6 +96,6 @@ if FreeCAD.GuiUp:
     Gui.ActiveDocument.ActiveView.viewAxonometric()
     Gui.ActiveDocument.ActiveView.viewFit()
 
-print("\n✅ Unified Hollow House generated in FreeCAD!")
-print("   - Single shell interior (no internal wall).")
-print("   - Solid floor slab added for 3D printing.\n")
+print("\n✅ Unified Hollow House (v1.2) generated!")
+print("   - Walls are back! Fixed via shape fusion.")
+print("   - Interior is hollow and connected.")
