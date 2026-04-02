@@ -41,7 +41,7 @@ WALL_THICKNESS = 200
 
 # ── MAIN HOUSE WALLS ─────────────────────────────────────────────────────────
 # Create the footprint rectangle
-rect_house = Draft.makeRectangle(length=L, width=W, placement=FreeCAD.Placement(FreeCAD.Vector(-L/2, -W/2, 0), FreeCAD.Rotation()))
+rect_house = Draft.make_rectangle(length=L, height=W, placement=FreeCAD.Placement(FreeCAD.Vector(-L/2, -W/2, 0), FreeCAD.Rotation()))
 rect_house.Label = "HouseFootprint"
 
 # Generate walls from the footprint (Arch Wall)
@@ -51,7 +51,7 @@ house_walls.Label = "MainHouseWalls"
 # ── GARAGE WALLS ─────────────────────────────────────────────────────────────
 # Position garage to the right of the house
 gx_offset = L/2 + GW/2 - 1000 # Slight overlap for a solid join
-rect_garage = Draft.makeRectangle(length=GW, width=GL, placement=FreeCAD.Placement(FreeCAD.Vector(L/2 - 500, -GL/2, 0), FreeCAD.Rotation()))
+rect_garage = Draft.make_rectangle(length=GW, height=GL, placement=FreeCAD.Placement(FreeCAD.Vector(L/2 - 500, -GL/2, 0), FreeCAD.Rotation()))
 rect_garage.Label = "GarageFootprint"
 
 garage_walls = Arch.makeWall(rect_garage, width=WALL_THICKNESS, height=GH)
@@ -59,12 +59,12 @@ garage_walls.Label = "GarageWalls"
 
 # ── ROOF ─────────────────────────────────────────────────────────────────────
 # House Roof
-house_face = Draft.makeRectangle(length=L+400, width=W+400, placement=FreeCAD.Placement(FreeCAD.Vector(-L/2-200, -W/2-200, H), FreeCAD.Rotation()))
+house_face = Draft.make_rectangle(length=L+400, height=W+400, placement=FreeCAD.Placement(FreeCAD.Vector(-L/2-200, -W/2-200, H), FreeCAD.Rotation()))
 roof = Arch.makeRoof(house_face, angles=[35.0], thicknesses=[200.0], overhangs=[400.0], heights=[500.0])
 roof.Label = "MainRoof"
 
 # Garage Roof
-garage_face = Draft.makeRectangle(length=GW+400, width=GL+400, placement=FreeCAD.Placement(FreeCAD.Vector(L/2-700, -GL/2-200, GH), FreeCAD.Rotation()))
+garage_face = Draft.make_rectangle(length=GW+400, height=GL+400, placement=FreeCAD.Placement(FreeCAD.Vector(L/2-700, -GL/2-200, GH), FreeCAD.Rotation()))
 g_roof = Arch.makeRoof(garage_face, angles=[25.0], thicknesses=[150.0], overhangs=[300.0], heights=[400.0])
 g_roof.Label = "GarageRoof"
 
