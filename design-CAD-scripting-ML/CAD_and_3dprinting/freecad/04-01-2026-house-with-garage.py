@@ -35,7 +35,8 @@ doc.recompute()
 # ROBust MERGE: Use Part.fuse to combine shapes, then get the outer wire
 fused_shape = r_house.Shape.fuse(r_garage.Shape)
 merged_wire = doc.addObject("Part::Feature", "FullFootprint")
-merged_wire.Shape = fused_shape.removeSplitter().OuterWire
+# In v1.1, we extract the outer wire from the fused faces via .Wires[0]
+merged_wire.Shape = fused_shape.removeSplitter().Wires[0]
 merged_wire.ViewObject.Visibility = False
 doc.recompute()
 
@@ -93,8 +94,8 @@ house_walls.Additions = house_walls.Additions + [roof]
 doc.recompute()
 if FreeCAD.GuiUp:
     import FreeCADGui as Gui
-    Gui.ActiveDocument.ActiveView.viewAxonometric()
-    Gui.ActiveDocument.ActiveView.viewFit()
+    Gui.activeView().viewAxonometric()
+    Gui.activeView().fitAll()
 
 print("\n✅ Unified Hollow House (v1.2) generated!")
 print("   - Walls are back! Fixed via shape fusion.")
