@@ -36,3 +36,4 @@
 - For large-format 3D printing workflows, **FreeCAD** or **Fusion 360** are the strongest choices due to their precise parametric modeling and STL/STEP export.
 - **Blender** is best when you also need rendering, animation, or GPU-accelerated visualisation (e.g. with NVIDIA OptiX).
 - **OpenSCAD** is ideal if you prefer a fully code-driven approach (similar to scripting in Blender but purpose-built for CAD geometry).
+- **04-01-2026** — Based on Antigravity's recommendation, giving FreeCAD a third chance. Key reasons: FreeCAD 1.0 fixed the long-standing topological naming bug, and the Flatpak version always ships the latest stable release.
