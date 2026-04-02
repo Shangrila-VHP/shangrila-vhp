@@ -1,4 +1,4 @@
-# CAD Software — Best Bang for the Buck
+# CAD Software — Best Bang for the Buck (according to antigravity by google)
 
 > A quick reference comparing free and low-cost CAD tools.
 > Compiled: 04-01-2026
