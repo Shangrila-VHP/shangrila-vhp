@@ -271,23 +271,24 @@ add_box("Driveway", ( 6.0, -5.0, 0.01), (5.0, 12.0, 0.07), M_CONCRETE)
 add_box("Walkway",  (-1.0, -5.0, 0.01), (1.4,  6.0, 0.06), M_CONCRETE)
 
 # ── MAIN HOUSE ────────────────────────────────────────────────────────────────
+HX, HY, HW, HD, HH = -1.0, 0.0, 9.0, 7.0, 4.5
+add_box("HouseBody", (HX, HY, HH / 2), (HW, HD, HH), M_WALL)
+
+# Trim fascia
+add_box("Trim_front", (HX, HY - HD/2 - 0.05, HH + 0.12), (HW+0.4, 0.15, 0.25), M_TRIM)
+add_box("Trim_back",  (HX, HY + HD/2 + 0.05, HH + 0.12), (HW+0.4, 0.15, 0.25), M_TRIM)
+add_box("Trim_left",  (HX - HW/2 - 0.05, HY, HH + 0.12), (0.15, HD+0.3, 0.25), M_TRIM)
+add_box("Trim_right", (HX + HW/2 + 0.05, HY, HH + 0.12), (0.15, HD+0.3, 0.25), M_TRIM)
+
+# Gabled roof
+add_gabled_roof("HouseRoof", HX, HY, HH, HW + 0.5, HD + 0.5, 2.8, M_ROOF)
+
+# Chimney
+add_box("Chimney", (HX - 2.0, HY + 1.0, HH + 1.8), (0.9, 0.9, 2.6), M_CHIMNEY)
+
+# Optional futuristic add-on volume (retains garage/windows/trees)
 if STYLE == "futuristic":
-    add_futuristic_house(-1.0, 0.0, 0.35)
-else:
-    HX, HY, HW, HD, HH = -1.0, 0.0, 9.0, 7.0, 4.5
-    add_box("HouseBody", (HX, HY, HH / 2), (HW, HD, HH), M_WALL)
-
-    # Trim fascia
-    add_box("Trim_front", (HX, HY - HD/2 - 0.05, HH + 0.12), (HW+0.4, 0.15, 0.25), M_TRIM)
-    add_box("Trim_back",  (HX, HY + HD/2 + 0.05, HH + 0.12), (HW+0.4, 0.15, 0.25), M_TRIM)
-    add_box("Trim_left",  (HX - HW/2 - 0.05, HY, HH + 0.12), (0.15, HD+0.3, 0.25), M_TRIM)
-    add_box("Trim_right", (HX + HW/2 + 0.05, HY, HH + 0.12), (0.15, HD+0.3, 0.25), M_TRIM)
-
-    # Gabled roof
-    add_gabled_roof("HouseRoof", HX, HY, HH, HW + 0.5, HD + 0.5, 2.8, M_ROOF)
-
-    # Chimney
-    add_box("Chimney", (HX - 2.0, HY + 1.0, HH + 1.8), (0.9, 0.9, 2.6), M_CHIMNEY)
+    add_futuristic_house(0.0, 12.5, 0.35)
 
 # ── GARAGE ────────────────────────────────────────────────────────────────────
 GCX, GCY, GW, GD, GH = HX + HW/2 + 2.5, -0.5, 5.0, 6.0, 3.2
