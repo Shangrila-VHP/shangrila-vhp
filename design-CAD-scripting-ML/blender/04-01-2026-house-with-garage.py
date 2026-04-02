@@ -5,6 +5,11 @@
 ║  Version     : 1.01                                                         ║
 ║  Date        : 04-01-2026                                                   ║
 ║  Author      : Antigravity (Google DeepMind)                                ║
+║  Role        : Troubleshooter (added by Copilot)                            ║
+║  Requestor   : @genidma                                                     ║
+║  Version     : 1.01                                                         ║
+║  Date        : 04-01-2026                                                   ║
+║  Author      : Antigravity (Google DeepMind)                                ║
 ║  Requestor   : @genidma                                                     ║
 ║  Co-collaborator : @genidma                                                 ║
 ╠══════════════════════════════════════════════════════════════════════════════╣
@@ -114,7 +119,9 @@ def make_glass_mat(name, r=0.75, g=0.88, b=0.95, ior=1.45):
 
     mat.use_backface_culling = False
     mat.blend_method = 'HASHED'
-    mat.shadow_method = 'HASHED'
+    # Blender 4.x removed mat.shadow_method; keep compatibility with older versions.
+    if hasattr(mat, 'shadow_method'):
+        mat.shadow_method = 'HASHED'
     return mat
 
 
