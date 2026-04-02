@@ -109,8 +109,14 @@ add_opening(garage_walls, L/2 + GW/2 - 500, -GL/2, 0, 3500, 2200, 400, "GarageDo
 add_opening(house_walls, -2500, -W/2, 1200, 1500, 1200, 400, "Window_L")
 add_opening(house_walls,  2500, -W/2, 1200, 1500, 1200, 400, "Window_R")
 
-# ── FINAL RECOMPUTE ──────────────────────────────────────────────────────────
+# ── FINAL RECOMPUTE & VIEW FIT ───────────────────────────────────────────────
 doc.recompute()
+
+# If running inside the FreeCAD GUI, zoom to fit the house
+if FreeCAD.GuiUp:
+    import FreeCADGui as Gui
+    Gui.ActiveDocument.ActiveView.viewAxonometric()
+    Gui.ActiveDocument.ActiveView.viewFit()
 
 print("\n✅ FreeCAD House with Garage v1.01 generated!")
 print("   - Objects are parametric Arch solids.")
