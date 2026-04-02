@@ -23,7 +23,7 @@
 | **SolveSpace** | Free | Lightweight constraint-based CAD | ✅ Yes | 🟢 Free / Open Source | 2 |
 | **OpenSCAD** | Free | Code-first / programmatic CAD | — | 🟢 Free / Open Source | — |
 | **Onshape** (free tier) | Free | Browser-based, pro-grade, collaborative | — | 🟡 Freemium | — |
-| **Fusion 360** (personal) | Free* | Industry-standard, fab / CAM / simulation | — | 🟡 Freemium* | — |
+| **Fusion 360** (personal) | Free* | Industry-standard, fab / CAM / simulation | ✅ Yes | 🟡 Freemium* | 3 |
 
 > \* Fusion 360's free personal license has restrictions: no commercial use, limited export formats.
 > Familiarity scale: 0 = no experience, 100 = expert.
