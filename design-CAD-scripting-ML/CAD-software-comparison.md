@@ -17,7 +17,9 @@
 
 | Software | Cost | Best For | Project Uses | Pricing Tier | Familiarity (0–100) | Notes |
 |----------|------|----------|:------------:|:------------:|:-------------------:|-------|
-| **FreeCAD** | Free | Parametric / engineering / 3D printing | ✅ Yes | 🟢 Free / Open Source | 8 | 04-01-2026: * Based on Antigravity's recommendation, giving FreeCAD a third chance. * FreeCAD 1.0 fixed the topological naming bug; install via Flatpak for latest version. |
+| **FreeCAD** | Free | Parametric / engineering / 3D printing | ✅ Yes | 🟢 Free / Open Source | 8 | 04-01-2026: 
+* Based on Antigravity's recommendation, giving FreeCAD a third chance. 
+* FreeCAD 1.0 fixed the topological naming bug; install via Flatpak for latest version. |
 | **Blender** | Free | Organic shapes, rendering, animation | ✅ Yes | 🟢 Free / Open Source | 3 | — |
 | **TinkerCAD** | Free | Beginner-friendly browser-based CAD | ✅ Yes | 🟢 Free (Autodesk) | 20 | — |
 | **SolveSpace** | Free | Lightweight constraint-based CAD | ✅ Yes | 🟢 Free / Open Source | 2 | — |
