@@ -1,0 +1,3 @@
+# Local Continue config and secrets
+.continue/
+.continuerc.json
