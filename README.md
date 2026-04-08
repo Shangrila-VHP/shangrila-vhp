@@ -102,6 +102,57 @@ Large-scale open-source 3D-printers capable of printing with earthen materials.
 
 ---
 
+## Budget Overview
+
+### Single Site (1 year)
+
+| Category | Capex | Opex | Notes |
+|----------|-------|------|-------|
+| Architectural consultation | $40,000 | - | Made-up value, not confirmed with contact |
+| Tiny Home Consultation | $154,847 | $0 | Lindsay Wood & Zack Giffin |
+| Construction (earthen materials) | $100,000 | - | Cost reduced significantly |
+| Land purchase | $5,800,000 | - | Single biggest cost; opportunity zone consideration |
+| Computers & software | $840 | $220 | 4 laptops + cloud software |
+| Furniture (DIY) | $6,426 | - | Budget estimate, DIY approach |
+| Wood working tools | $1,186 | - | |
+| Vehicles (2 golf carts) | $40,000 | $5,000 | |
+| Patents (IP) | $100,000 | $25,000 | |
+| Food | - | $103,200 | $200/person/month × 43 people |
+| Salaries (non-Coaches) | $694,388 | - | GP, nurse, mental health practitioner, cook, security, admins |
+| Salaries (Coaches) | $100,000 | - | 1 PD coach per site |
+| Accounting & legal | $5,000 | $10,000 | |
+| Bank charges | $600 | $500 | |
+| Sales & marketing | $2,000 | - | |
+| Office supplies | - | $300 | |
+| Repairs | - | $3,000 | |
+| Utilities | - | $18,600 | Internet, phone, hydro, gas, water |
+| Microsoft Flight Simulator | $109 | - | |
+| Flying lessons (×5) | $110,950 | - | |
+| Cessna purchase | $30,000 | - | |
+| Maintenance & fuel | - | $25,000 | |
+
+### Totals (1 site, 1 year)
+- **Total Capex**: $514,958
+- **Total Opex**: $6,862,208
+- **Combined**: $7,377,166
+
+### Nationwide Projections (Not accurate)
+| Country | Estimated Cost |
+|---------|---------------|
+| USA | $383,612,632 |
+| Canada | $95,903,158 |
+| UK | $73,771,660 |
+| Australia | $59,017,328 |
+| New Zealand | $44,262,996 |
+| Germany | $118,034,656 |
+| France | $132,788,988 |
+| Ukraine | $177,051,984 |
+| Turkey | $295,086,640 |
+
+*Note: These are rough estimates and require further analysis. Does not include Rest of Alliance or Allies.*
+
+---
+
 ## Resource Hub
 
 - **[DIY Shelter Plans](plans/plans.md)**: Empowering individuals with vetted construction methods.
