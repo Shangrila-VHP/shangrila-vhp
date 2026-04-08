@@ -1,3 +1,23 @@
+# Foldable House Script - v1.1
+# Author: Kilo (with collaborator @genidma)
+# Author: Trinity Large Thinking by Arcee AI 
+# Date: 2026-04-08
+#
+# Related to GitHub Issues:
+# - Issue #83: Prototype: Training: Added 04-01-2026: blender python renders
+# - Issue #38: Initial prototype and training (TinkerCAD)
+# - Issue #50: Hinge design improvements (circular/concave portion for alignment)
+#
+# This script generates a 3D-printable foldable house model.
+#
+# Features:
+# - Functional 3D-printable hinges with separate plates and pins
+# - Windows and doors with frames
+# - Interior partition wall
+# - Detachable roof
+# - Modular connectors for expansion
+# - All objects grouped in "FoldableHouse" collection
+
 import bpy
 import math
 from mathutils import Vector
@@ -20,8 +40,8 @@ CONNECTOR_LENGTH = 2.0
 CONNECTOR_WIDTH = 1.0
 CONNECTOR_HEIGHT = 1.0
 
-# 3D printing parameters
-PRINT_TOLERANCE = 0.02      # Clearance for moving parts
+# 3D printing parameters (tolerances for movement)
+PRINT_TOLERANCE = 0.02      # Clearance between moving parts
 HINGE_PIN_DIAMETER = 0.1    # Diameter of hinge pin
 HINGE_BARREL_DIAMETER = 0.5 # Diameter of hinge barrel
 HINGE_LEAF_THICKNESS = 0.1  # Thickness of hinge leaf plate
@@ -81,7 +101,7 @@ def create_mesh(name, vertices, faces, location=(0,0,0)):
     return obj
 
 def create_wall_box(position, size, material_name):
-    """Create a hollow wall box with thickness"""
+    """Create a hollow wall box with realistic thickness"""
     x, y, z = position
     width, height, depth = size
     
@@ -200,7 +220,7 @@ def create_folding_wall(side):
         material_name='Exterior'
     )
     
-    # Hinge at the connection point
+    # Hinge at the connection point (simple placeholder - actual hinge is separate)
     hinge = create_mesh(
         "Hinge",
         vertices=[
@@ -378,6 +398,8 @@ def create_hinge_plate(leaf_type, location, rotation):
     """
     Create a hinge leaf plate with a barrel.
     leaf_type: 'fixed' or 'moving' - determines barrel orientation.
+    
+    Design based on work from Issue #50 (circular/concave portion for alignment).
     """
     # Leaf plate dimensions
     leaf_x = HINGE_LEAF_WIDTH
