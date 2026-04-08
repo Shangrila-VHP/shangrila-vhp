@@ -134,11 +134,18 @@ Large-scale open-source 3D-printers capable of printing with earthen materials.
 | Maintenance & fuel | - | $25,000 | |
 
 ### Totals (1 site, 1 year)
-- **Total Capex**: $514,958
-- **Total Opex**: $6,862,208
-- **Combined**: $7,377,166
+| Scenario | Capex | Opex | Combined |
+|----------|-------|------|----------|
+| With land | $7,186,346 | $190,820 | $7,377,166 |
+| Without land (donated) | $1,386,346 | $190,820 | $1,577,166 |
 
-### Nationwide Projections (Not accurate)
+*Note: Opex breakdown in table above shows individual items totaling $190,820. The original Google Sheet shows Total Opex as $6,862,208—please verify which figure is correct.*
+
+### Land (Potential Donation)
+- **Land purchase**: $5,800,000
+- *Note: Land may be donated by governments or private donors. This has happened in similar projects. See opportunity zones.*
+
+### Nationwide Projections (Not accurate - based on combined with land)
 | Country | Estimated Cost |
 |---------|---------------|
 | USA | $383,612,632 |
