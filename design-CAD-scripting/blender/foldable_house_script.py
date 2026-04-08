@@ -446,7 +446,7 @@ def create_hinge_plate(leaf_type, location, rotation):
     # Parent barrel to leaf plate (or join)
     leaf_obj = create_mesh(f"HingePlate_{leaf_type}", vertices, faces, location)
     leaf_obj.rotation_euler = rotation
-    bpy.context.collection.objects.link(leaf_obj)
+    # leaf_obj is already linked to the active collection by create_mesh
     
     # Join barrel to leaf
     bpy.ops.object.select_all(action='DESELECT')
