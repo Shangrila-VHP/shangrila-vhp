@@ -1,4 +1,0 @@
-Python: Traceback (most recent call last):
-  File "\house-with-garage-04-01-2026.py.002", line 128, in <module>
-  File "\house-with-garage-04-01-2026.py.002", line 117, in make_glass_mat
-AttributeError: 'Material' object has no attribute 'shadow_method'
