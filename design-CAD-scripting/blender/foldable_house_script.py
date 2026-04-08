@@ -2,10 +2,6 @@ import bpy
 import math
 from mathutils import Vector
 
-# Clear existing objects
-bpy.ops.object.select_all(action='SELECT')
-bpy.ops.object.delete(use_global=False)
-
 # ==================== PARAMETERS ====================
 # House dimensions (Boxabl-like: 20ft x 20ft)
 HOUSE_WIDTH = 20.0  # Blender units
@@ -15,8 +11,7 @@ HOUSE_HEIGHT = 9.0   # Typical room height
 # Wall thickness (realistic: 4-6 inches = 0.33-0.5 ft)
 WALL_THICKNESS = 0.4
 
-# Folding mechanism parameters
-HINGE_RADIUS = 0.05
+# Folding wall parameters
 FOLDING_WALL_WIDTH = 8.0
 FOLDING_WALL_HEIGHT = 7.0
 
@@ -25,8 +20,19 @@ CONNECTOR_LENGTH = 2.0
 CONNECTOR_WIDTH = 1.0
 CONNECTOR_HEIGHT = 1.0
 
-# Number of modular sections (default 1, can be increased)
-MODULAR_SECTIONS = 1
+# 3D printing parameters
+PRINT_TOLERANCE = 0.02      # Clearance for moving parts
+HINGE_PIN_DIAMETER = 0.1    # Diameter of hinge pin
+HINGE_BARREL_DIAMETER = 0.5 # Diameter of hinge barrel
+HINGE_LEAF_THICKNESS = 0.1  # Thickness of hinge leaf plate
+HINGE_LEAF_WIDTH = 1.0      # Width of hinge leaf
+HINGE_LEAF_HEIGHT = 0.5     # Height of hinge leaf
+
+# Window and door parameters
+WINDOW_WIDTH = 2.0
+WINDOW_HEIGHT = 3.0
+DOOR_WIDTH = 3.0
+DOOR_HEIGHT = 7.0
 
 # ==================== MATERIAL DEFINITIONS ====================
 MATERIAL_COLORS = {
@@ -157,10 +163,10 @@ def create_wall_box(position, size, material_name):
         
         # Connecting faces (between outer and inner)
         faces.extend([
-            [0, 8, 12, 4],    # front-left connector
-            [1, 9, 13, 5],    # front-right connector
-            [2, 10, 14, 6],   # back-right connector
-            [3, 11, 15, 7],   # back-left connector
+            [0, inner_start+0, inner_start+4, 4],    # front-left connector
+            [1, inner_start+1, inner_start+5, 5],    # front-right connector
+            [2, inner_start+2, inner_start+6, 6],   # back-right connector
+            [3, inner_start+3, inner_start+7, 7],   # back-left connector
         ])
     
     obj = create_mesh(f"Wall_{int(x)}_{int(y)}", vertices, faces)
@@ -288,6 +294,216 @@ def create_modular_connector(side):
     
     return obj
 
+def create_window(location, orientation=(0,0,0)):
+    """Create a window frame (no glass)"""
+    frame_thickness = 0.05
+    frame_width = WINDOW_WIDTH
+    frame_height = WINDOW_HEIGHT
+    frame_depth = WALL_THICKNESS + 0.1
+    
+    half_w = frame_width / 2
+    half_d = frame_depth / 2
+    half_h = frame_height / 2
+    
+    vertices = [
+        Vector((-half_w, -half_d, -half_h)),
+        Vector((half_w, -half_d, -half_h)),
+        Vector((half_w, half_d, -half_h)),
+        Vector((-half_w, half_d, -half_h)),
+        Vector((-half_w, -half_d, half_h)),
+        Vector((half_w, -half_d, half_h)),
+        Vector((half_w, half_d, half_h)),
+        Vector((-half_w, half_d, half_h)),
+    ]
+    
+    faces = [
+        [0, 1, 2, 3],  # front
+        [4, 5, 6, 7],  # back
+        [0, 1, 5, 4],  # top
+        [1, 2, 6, 5],  # right
+        [2, 3, 7, 6],  # bottom
+        [3, 0, 4, 7],  # left
+    ]
+    
+    window = create_mesh("WindowFrame", vertices, faces, location)
+    window.rotation_euler = orientation
+    
+    mat = create_material('WindowFrame', MATERIAL_COLORS['WindowFrame'], metallic=0.3, roughness=0.2)
+    if window.data.materials:
+        window.data.materials[0] = mat
+    else:
+        window.data.materials.append(mat)
+    
+    return window
+
+def create_door(location, orientation=(0,0,0)):
+    """Create a door"""
+    door_thickness = 0.1
+    half_w = DOOR_WIDTH / 2
+    half_d = door_thickness / 2
+    half_h = DOOR_HEIGHT / 2
+    
+    vertices = [
+        Vector((-half_w, -half_d, -half_h)),
+        Vector((half_w, -half_d, -half_h)),
+        Vector((half_w, half_d, -half_h)),
+        Vector((-half_w, half_d, -half_h)),
+        Vector((-half_w, -half_d, half_h)),
+        Vector((half_w, -half_d, half_h)),
+        Vector((half_w, half_d, half_h)),
+        Vector((-half_w, half_d, half_h)),
+    ]
+    
+    faces = [
+        [0, 1, 2, 3],  # front
+        [4, 5, 6, 7],  # back
+        [0, 1, 5, 4],  # top
+        [1, 2, 6, 5],  # right
+        [2, 3, 7, 6],  # bottom
+        [3, 0, 4, 7],  # left
+    ]
+    
+    door = create_mesh("Door", vertices, faces, location)
+    door.rotation_euler = orientation
+    
+    mat = create_material('Door', MATERIAL_COLORS['Door'], metallic=0.1, roughness=0.7)
+    if door.data.materials:
+        door.data.materials[0] = mat
+    else:
+        door.data.materials.append(mat)
+    
+    return door
+
+def create_hinge_plate(leaf_type, location, rotation):
+    """
+    Create a hinge leaf plate with a barrel.
+    leaf_type: 'fixed' or 'moving' - determines barrel orientation.
+    """
+    # Leaf plate dimensions
+    leaf_x = HINGE_LEAF_WIDTH
+    leaf_y = HINGE_LEAF_HEIGHT
+    leaf_z = HINGE_LEAF_THICKNESS
+    
+    # Barrel dimensions
+    barrel_diameter = HINGE_BARREL_DIAMETER
+    barrel_length = leaf_y - 0.2  # Barrel along the height of leaf
+    
+    # Create leaf plate mesh
+    half_x = leaf_x / 2
+    half_y = leaf_y / 2
+    half_z = leaf_z / 2
+    
+    vertices = [
+        Vector((-half_x, -half_y, -half_z)),
+        Vector((half_x, -half_y, -half_z)),
+        Vector((half_x, half_y, -half_z)),
+        Vector((-half_x, half_y, -half_z)),
+        Vector((-half_x, -half_y, half_z)),
+        Vector((half_x, -half_y, half_z)),
+        Vector((half_x, half_y, half_z)),
+        Vector((-half_x, half_y, half_z)),
+    ]
+    
+    faces = [
+        [0, 1, 2, 3],  # front
+        [4, 5, 6, 7],  # back
+        [0, 1, 5, 4],  # top
+        [1, 2, 6, 5],  # right
+        [2, 3, 7, 6],  # bottom
+        [3, 0, 4, 7],  # left
+    ]
+    
+    # Create barrel cylinder (aligned along Y axis for vertical hinge)
+    barrel_radius = barrel_diameter / 2
+    bpy.ops.mesh.primitive_cylinder_add(vertices=32, radius=barrel_radius, depth=barrel_length, location=location)
+    barrel_obj = bpy.context.object
+    barrel_obj.name = f"HingeBarrel_{leaf_type}"
+    # Rotate cylinder so its axis is along Y (up/down)
+    barrel_obj.rotation_euler = (math.radians(90), 0, 0)
+    
+    # Parent barrel to leaf plate (or join)
+    leaf_obj = create_mesh(f"HingePlate_{leaf_type}", vertices, faces, location)
+    leaf_obj.rotation_euler = rotation
+    bpy.context.collection.objects.link(leaf_obj)
+    
+    # Join barrel to leaf
+    bpy.ops.object.select_all(action='DESELECT')
+    leaf_obj.select_set(True)
+    barrel_obj.select_set(True)
+    bpy.context.view_layer.objects.active = leaf_obj
+    bpy.ops.object.join()
+    
+    # Apply material
+    mat = create_material('Hinge', MATERIAL_COLORS['Hinge'], metallic=0.8, roughness=0.3)
+    if leaf_obj.data.materials:
+        leaf_obj.data.materials[0] = mat
+    else:
+        leaf_obj.data.materials.append(mat)
+    
+    return leaf_obj
+
+def create_hinge_pin():
+    """Create a hinge pin"""
+    pin_diameter = HINGE_PIN_DIAMETER
+    pin_length = HINGE_BARREL_DIAMETER - 2 * PRINT_TOLERANCE
+    
+    bpy.ops.mesh.primitive_cylinder_add(vertices=32, radius=pin_diameter/2, depth=pin_length)
+    pin = bpy.context.object
+    pin.name = "HingePin"
+    mat = create_material('Hinge', MATERIAL_COLORS['Hinge'], metallic=0.8, roughness=0.3)
+    if pin.data.materials:
+        pin.data.materials[0] = mat
+    else:
+        pin.data.materials.append(mat)
+    return pin
+
+def create_roof_with_lip():
+    """Create a detachable roof with a lip for the house"""
+    roof_thickness = 0.3
+    lip_height = 0.1
+    lip_thickness = 0.05
+    
+    # Main roof
+    roof = create_mesh(
+        "Roof",
+        vertices=[
+            Vector((0, 0, HOUSE_HEIGHT - roof_thickness/2)),
+            Vector((HOUSE_WIDTH, 0, HOUSE_HEIGHT - roof_thickness/2)),
+            Vector((HOUSE_WIDTH, HOUSE_DEPTH, HOUSE_HEIGHT - roof_thickness/2)),
+            Vector((0, HOUSE_DEPTH, HOUSE_HEIGHT - roof_thickness/2)),
+            Vector((0, 0, HOUSE_HEIGHT + roof_thickness/2)),
+            Vector((HOUSE_WIDTH, 0, HOUSE_HEIGHT + roof_thickness/2)),
+            Vector((HOUSE_WIDTH, HOUSE_DEPTH, HOUSE_HEIGHT + roof_thickness/2)),
+            Vector((0, HOUSE_DEPTH, HOUSE_HEIGHT + roof_thickness/2)),
+        ],
+        faces=[
+            [0, 1, 2, 3],  # bottom
+            [4, 5, 6, 7],  # top
+            [0, 1, 5, 4],  # front
+            [1, 2, 6, 5],  # right
+            [2, 3, 7, 6],  # back
+            [3, 0, 4, 7],  # left
+        ]
+    )
+    
+    # Apply material
+    mat = create_material('Roof', MATERIAL_COLORS['Roof'])
+    if roof.data.materials:
+        roof.data.materials[0] = mat
+    else:
+        roof.data.materials.append(mat)
+    
+    return roof
+
+def create_interior_wall():
+    """Create an interior partition wall"""
+    wall = create_wall_box(
+        position=(HOUSE_WIDTH/2, HOUSE_DEPTH/2, HOUSE_HEIGHT/2),
+        size=(0.1, HOUSE_DEPTH, HOUSE_HEIGHT/2),
+        material_name='Interior'
+    )
+    return wall
+
 def create_house():
     # List to store all house objects for grouping
     house_objects = []
@@ -301,8 +517,8 @@ def create_house():
     house_objects.append(floor)
     
     # Create main structure (4 walls)
-    wall_height_exterior = HOUSE_HEIGHT - 0.5  # For roof
-    wall_z = wall_height_exterior / 2 + 0.1  # Sitting on floor
+    wall_height_exterior = HOUSE_HEIGHT - 0.5
+    wall_z = wall_height_exterior / 2 + 0.1
     
     # Front wall (facing +y)
     front_wall = create_wall_box(
@@ -336,74 +552,75 @@ def create_house():
     )
     house_objects.append(right_wall)
     
-    # Create folding walls (optional: for demo, create one on left side)
-    folding_wall_left, hinge_left = create_folding_wall('left')
-    house_objects.extend([folding_wall_left, hinge_left])
-    folding_wall_right, hinge_right = create_folding_wall('right')
-    house_objects.extend([folding_wall_right, hinge_right])
+    # Create folding walls with hinges
+    folding_wall_left = create_wall_box(
+        position=(-FOLDING_WALL_WIDTH/2, HOUSE_DEPTH/2, HOUSE_HEIGHT/2),
+        size=(FOLDING_WALL_WIDTH, FOLDING_WALL_HEIGHT, WALL_THICKNESS),
+        material_name='Exterior'
+    )
+    house_objects.append(folding_wall_left)
     
-    # Create modular connectors (front and back)
+    folding_wall_right = create_wall_box(
+        position=(HOUSE_WIDTH + FOLDING_WALL_WIDTH/2, HOUSE_DEPTH/2, HOUSE_HEIGHT/2),
+        size=(FOLDING_WALL_WIDTH, FOLDING_WALL_HEIGHT, WALL_THICKNESS),
+        material_name='Exterior'
+    )
+    house_objects.append(folding_wall_right)
+    
+    # Hinge components for left folding wall
+    fixed_leaf_left = create_hinge_plate('fixed', (-WALL_THICKNESS/2, HOUSE_DEPTH/2, HOUSE_HEIGHT/2), (0, 0, 0))
+    house_objects.append(fixed_leaf_left)
+    moving_leaf_left = create_hinge_plate('moving', (-FOLDING_WALL_WIDTH/2 + FOLDING_WALL_WIDTH/2, HOUSE_DEPTH/2, HOUSE_HEIGHT/2), (0, 0, math.radians(180)))
+    house_objects.append(moving_leaf_left)
+    pin_left = create_hinge_pin()
+    pin_left.location = (0, HOUSE_DEPTH/2, HOUSE_HEIGHT/2)
+    house_objects.append(pin_left)
+    
+    # Hinge components for right folding wall
+    fixed_leaf_right = create_hinge_plate('fixed', (HOUSE_WIDTH + WALL_THICKNESS/2, HOUSE_DEPTH/2, HOUSE_HEIGHT/2), (0, 0, math.radians(180)))
+    house_objects.append(fixed_leaf_right)
+    moving_leaf_right = create_hinge_plate('moving', (HOUSE_WIDTH + FOLDING_WALL_WIDTH/2 - FOLDING_WALL_WIDTH/2, HOUSE_DEPTH/2, HOUSE_HEIGHT/2), (0, 0, 0))
+    house_objects.append(moving_leaf_right)
+    pin_right = create_hinge_pin()
+    pin_right.location = (HOUSE_WIDTH, HOUSE_DEPTH/2, HOUSE_HEIGHT/2)
+    house_objects.append(pin_right)
+    
+    # Modular connectors
     for side in ['front', 'back', 'left', 'right']:
         connector = create_modular_connector(side)
         house_objects.append(connector)
     
-    # Create roof
-    roof_thickness = 0.3
-    roof = create_mesh(
-        "Roof",
-        vertices=[
-            Vector((0, 0, HOUSE_HEIGHT - roof_thickness/2)),
-            Vector((HOUSE_WIDTH, 0, HOUSE_HEIGHT - roof_thickness/2)),
-            Vector((HOUSE_WIDTH, HOUSE_DEPTH, HOUSE_HEIGHT - roof_thickness/2)),
-            Vector((0, HOUSE_DEPTH, HOUSE_HEIGHT - roof_thickness/2)),
-            Vector((0, 0, HOUSE_HEIGHT + roof_thickness/2)),
-            Vector((HOUSE_WIDTH, 0, HOUSE_HEIGHT + roof_thickness/2)),
-            Vector((HOUSE_WIDTH, HOUSE_DEPTH, HOUSE_HEIGHT + roof_thickness/2)),
-            Vector((0, HOUSE_DEPTH, HOUSE_HEIGHT + roof_thickness/2)),
-        ],
-        faces=[
-            [0, 1, 2, 3],  # bottom
-            [4, 5, 6, 7],  # top
-            [0, 1, 5, 4],  # front
-            [1, 2, 6, 5],  # right
-            [2, 3, 7, 6],  # back
-            [3, 0, 4, 7],  # left
-        ]
-    )
+    # Roof
+    roof = create_roof_with_lip()
     house_objects.append(roof)
     
-    # Apply roof material
-    mat = create_material('Roof', MATERIAL_COLORS['Roof'])
-    if roof.data.materials:
-        roof.data.materials[0] = mat
-    else:
-        roof.data.materials.append(mat)
+    # Interior wall
+    interior_wall = create_interior_wall()
+    house_objects.append(interior_wall)
     
-    # Create a collection for the house
+    # Windows and doors
+    front_window = create_window((HOUSE_WIDTH/2, HOUSE_DEPTH - 1, HOUSE_HEIGHT/2), (0, 0, 0))
+    house_objects.append(front_window)
+    front_door = create_door((HOUSE_WIDTH/2, HOUSE_DEPTH - 0.5, HOUSE_HEIGHT/2), (0, 0, 0))
+    house_objects.append(front_door)
+    
+    # Create collection
     house_collection = bpy.data.collections.new(name="FoldableHouse")
     bpy.context.scene.collection.children.link(house_collection)
     
-    # Add all house objects to the collection
+    # Add objects to collection
     for obj in house_objects:
         house_collection.objects.link(obj)
     
     print("Modular, foldable house created successfully!")
-    print("Features:")
     print("- Realistic wall thickness")
-    print("- Folding side walls with hinges")
+    print("- Folding side walls with functional hinges (separate plates and pins)")
     print("- Modular connectors for expansion")
-    print("- Proper roof structure")
-    print("- Grouped for easy selection")
-    
-    print("Modular, foldable house created successfully!")
-    print("Features:")
-    print("- Realistic wall thickness")
-    print("- Folding side walls with hinges")
-    print("- Modular connectors for expansion")
-    print("- Proper roof structure")
+    print("- Detachable roof")
+    print("- Interior partition wall")
+    print("- Windows and doors (separate objects)")
     print("- Grouped for easy selection")
 
-# Run the house creation
 create_house()
 
 # Add lighting
@@ -411,7 +628,6 @@ bpy.ops.object.light_add(type='SUN', radius=1, location=(20, 20, 40))
 light = bpy.context.object
 light.data.energy = 2000
 
-# Add some ambient light
 bpy.ops.object.light_add(type='AREA', radius=5, location=(0, 0, 10))
 area_light = bpy.context.object
 area_light.data.energy = 500
