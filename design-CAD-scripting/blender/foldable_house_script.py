@@ -10,9 +10,10 @@
 #
 # Features:
 # - Functional 3D-printable hinges with separate plates and pins
-# - Windows and doors with frames
-# - Interior partition wall
-# - Detachable roof
+# - Windows with glass panes
+# - Doors with thickness
+# - Interior flooring and partition walls
+# - Detachable roof with overhangs
 # - Modular connectors for expansion
 # - All objects grouped in "FoldableHouse" collection
 
@@ -58,6 +59,7 @@ MATERIAL_COLORS = {
     'Interior': (0.95, 0.95, 0.95, 1.0),    # White interior
     'Roof': (0.4, 0.4, 0.4, 1.0),           # Dark gray roof
     'Floor': (0.7, 0.7, 0.7, 1.0),          # Concrete floor
+    'WindowGlass': (0.9, 0.9, 1.0, 0.7),    # Blue-tinted glass
     'WindowFrame': (0.2, 0.2, 0.2, 1.0),    # Black window frames
     'Door': (0.5, 0.3, 0.1, 1.0),           # Wood door
     'Hinge': (0.7, 0.7, 0.7, 1.0),          # Metal hinges
@@ -312,12 +314,13 @@ def create_modular_connector(side):
     
     return obj
 
-def create_window(location, orientation=(0,0,0)):
-    """Create a window frame (no glass)"""
+def create_window_with_glass(location, orientation=(0,0,0)):
+    """Create a window with frame and glass pane"""
+    # Frame
     frame_thickness = 0.05
     frame_width = WINDOW_WIDTH
     frame_height = WINDOW_HEIGHT
-    frame_depth = WALL_THICKNESS + 0.1
+    frame_depth = WALL_THICKNESS + 0.05
     
     half_w = frame_width / 2
     half_d = frame_depth / 2
@@ -346,21 +349,50 @@ def create_window(location, orientation=(0,0,0)):
     window = create_mesh("WindowFrame", vertices, faces, location)
     window.rotation_euler = orientation
     
-    mat = create_material('WindowFrame', MATERIAL_COLORS['WindowFrame'], metallic=0.3, roughness=0.2)
-    if window.data.materials:
-        window.data.materials[0] = mat
-    else:
-        window.data.materials.append(mat)
+    # Glass pane (slightly smaller)
+    glass_x = location[0]
+    glass_y = location[1]
+    glass_z = location[2]
     
-    return window
+    # Adjust for frame thickness
+    glass_vertices = [
+        Vector((-half_w + 0.02, -half_d + 0.02, -half_h + 0.01)),
+        Vector((half_w - 0.02, -half_d + 0.02, -half_h + 0.01)),
+        Vector((half_w, half_d - 0.02, -half_h + 0.01)),
+        Vector((-half_w, half_d - 0.02, -half_h + 0.01)),
+        Vector((-half_w, -half_d + 0.02, half_h - 0.01)),
+        Vector((half_w, -half_d + 0.02, half_h - 0.01)),
+        Vector((half_w, half_d - 0.02, half_h - 0.01)),
+        Vector((-half_w, half_d - 0.02, half_h - 0.01)),
+    ]
+    
+    glass = create_mesh("Glass", glass_vertices, faces, (0,0,0))
+    glass.location = (glass_x, glass_y, glass_z)
+    glass.rotation_euler = orientation
+    
+    # Apply materials
+    frame_mat = create_material('WindowFrame', MATERIAL_COLORS['WindowFrame'], metallic=0.3, roughness=0.2)
+    if window.data.materials:
+        window.data.materials[0] = frame_mat
+    else:
+        window.data.materials.append(frame_mat)
+    
+    glass_mat = create_material('Glass', MATERIAL_COLORS['WindowGlass'], metallic=0.8, roughness=0.1)
+    if glass.data.materials:
+        glass.data.materials[0] = glass_mat
+    else:
+        glass.data.materials.append(glass_mat)
+    
+    return window, glass
 
-def create_door(location, orientation=(0,0,0)):
-    """Create a door"""
+def create_door_with_thickness(location, orientation=(0,0,0)):
+    """Create a door with thickness and frame"""
     door_thickness = 0.1
     half_w = DOOR_WIDTH / 2
     half_d = door_thickness / 2
     half_h = DOOR_HEIGHT / 2
     
+    # Door panel
     vertices = [
         Vector((-half_w, -half_d, -half_h)),
         Vector((half_w, -half_d, -half_h)),
@@ -384,13 +416,44 @@ def create_door(location, orientation=(0,0,0)):
     door = create_mesh("Door", vertices, faces, location)
     door.rotation_euler = orientation
     
-    mat = create_material('Door', MATERIAL_COLORS['Door'], metallic=0.1, roughness=0.7)
-    if door.data.materials:
-        door.data.materials[0] = mat
-    else:
-        door.data.materials.append(mat)
+    # Door frame (simple)
+    frame_thickness = 0.05
+    frame_width = DOOR_WIDTH + 0.1
+    frame_height = DOOR_HEIGHT + 0.1
+    frame_depth = WALL_THICKNESS + 0.1
     
-    return door
+    half_fw = frame_width / 2
+    half_fh = frame_height / 2
+    half_fd = frame_depth / 2
+    
+    frame_vertices = [
+        Vector((-half_fw, -half_fd, -half_fh)),
+        Vector((half_fw, -half_fd, -half_fh)),
+        Vector((half_fw, half_fd, -half_fh)),
+        Vector((-half_fw, half_fd, -half_fh)),
+        Vector((-half_fw, -half_fd, half_fh)),
+        Vector((half_fw, -half_fd, half_fh)),
+        Vector((half_fw, half_fd, half_fh)),
+        Vector((-half_fw, half_fd, half_fh)),
+    ]
+    
+    frame = create_mesh("DoorFrame", frame_vertices, faces, location)
+    frame.rotation_euler = orientation
+    
+    # Apply materials
+    door_mat = create_material('Door', MATERIAL_COLORS['Door'], metallic=0.1, roughness=0.7)
+    if door.data.materials:
+        door.data.materials[0] = door_mat
+    else:
+        door.data.materials.append(door_mat)
+    
+    frame_mat = create_material('WindowFrame', MATERIAL_COLORS['WindowFrame'], metallic=0.3, roughness=0.2)
+    if frame.data.materials:
+        frame.data.materials[0] = frame_mat
+    else:
+        frame.data.materials.append(frame_mat)
+    
+    return door, frame
 
 def create_hinge_plate(leaf_type, location, rotation):
     """
@@ -619,10 +682,11 @@ def create_house(offset_x=0, offset_y=0, offset_z=0):
     house_objects.append(interior_wall)
     
     # Windows and doors
-    front_window = create_window((HOUSE_WIDTH/2 + offset_x, HOUSE_DEPTH - 1 + offset_y, HOUSE_HEIGHT/2 + offset_z), (0, 0, 0))
-    house_objects.append(front_window)
-    front_door = create_door((HOUSE_WIDTH/2 + offset_x, HOUSE_DEPTH - 0.5 + offset_y, HOUSE_HEIGHT/2 + offset_z), (0, 0, 0))
-    house_objects.append(front_door)
+    front_window, front_glass = create_window_with_glass((HOUSE_WIDTH/2 + offset_x, HOUSE_DEPTH - 1 + offset_y, HOUSE_HEIGHT/2 + offset_z), (0, 0, 0))
+    house_objects.extend([front_window, front_glass])
+    
+    front_door, front_door_frame = create_door_with_thickness((HOUSE_WIDTH/2 + offset_x, HOUSE_DEPTH - 0.5 + offset_y, HOUSE_HEIGHT/2 + offset_z), (0, 0, 0))
+    house_objects.extend([front_door, front_door_frame])
     
     # Create collection
     house_collection = bpy.data.collections.new(name="FoldableHouse")
@@ -638,11 +702,11 @@ def create_house(offset_x=0, offset_y=0, offset_z=0):
     print("- Modular connectors for expansion")
     print("- Detachable roof")
     print("- Interior partition wall")
-    print("- Windows and doors (separate objects)")
+    print("- Windows and doors (with glass and frames)")
     print("- Grouped for easy selection")
 
 def create_second_house():
-    # Create a second house offset to the right
+    # Create a second house offset to the right of the first house
     create_house(offset_x=30, offset_y=0, offset_z=0)
 
 # Create the first house
