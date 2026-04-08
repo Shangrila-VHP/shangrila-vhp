@@ -106,6 +106,8 @@ Large-scale open-source 3D-printers capable of printing with earthen materials.
 
 ### Single Site (1 year)
 
+*Note: This budget section is synced with the [Google Sheets Budget](https://docs.google.com/spreadsheets/d/1UCKKH7VVqoafzyE_3Dc9-L4a1Vtmi-4Hmhda887AsPc/edit?usp=sharing). Please update the Google Sheet first, then port changes here.*
+
 | Category | Capex | Opex | Notes |
 |----------|-------|------|-------|
 | Architectural consultation | $40,000 | - | Made-up value, not confirmed with contact |
@@ -119,7 +121,7 @@ Large-scale open-source 3D-printers capable of printing with earthen materials.
 | Patents (IP) | $100,000 | $25,000 | |
 | Food | - | $103,200 | $200/person/month × 43 people |
 | Salaries (non-Coaches) | $694,388 | - | GP, nurse, mental health practitioner, cook, security, admins |
-| Salaries (Coaches) | $100,000 | - | 1 PD coach per site |
+| Salaries (PD Coaches) | $100,000 | - | Personal Development (PD) Coach - 1 per site |
 | Accounting & legal | $5,000 | $10,000 | |
 | Bank charges | $600 | $500 | |
 | Sales & marketing | $2,000 | - | |
