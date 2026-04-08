@@ -115,6 +115,7 @@ Large-scale open-source 3D-printers capable of printing with earthen materials.
 - **wing person 01**: antigravity (AI Assistant)
 - **wing person 02**: claude (AI Assistant)
 - **wing person 03**: copilot (AI Assistant)
+- **wing person 04**: kilo (kilo-auto/free model)
 
 ---
 
