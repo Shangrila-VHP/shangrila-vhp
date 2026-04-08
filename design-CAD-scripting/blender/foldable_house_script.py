@@ -1,10 +1,8 @@
 # Foldable House Script - v1.1
 # Author: Kilo (with collaborator @genidma)
-# Author: Trinity Large Thinking by Arcee AI 
 # Date: 2026-04-08
 #
 # Related to GitHub Issues:
-# - Issue #83: Prototype: Training: Added 04-01-2026: blender python renders
 # - Issue #38: Initial prototype and training (TinkerCAD)
 # - Issue #50: Hinge design improvements (circular/concave portion for alignment)
 #
@@ -526,13 +524,13 @@ def create_interior_wall():
     )
     return wall
 
-def create_house():
+def create_house(offset_x=0, offset_y=0, offset_z=0):
     # List to store all house objects for grouping
     house_objects = []
     
     # Create floor (foundation)
     floor = create_wall_box(
-        position=(HOUSE_WIDTH/2, HOUSE_DEPTH/2, 0.1),
+        position=(HOUSE_WIDTH/2 + offset_x, HOUSE_DEPTH/2 + offset_y, 0.1 + offset_z),
         size=(HOUSE_WIDTH, HOUSE_DEPTH, 0.2),
         material_name='Floor'
     )
@@ -540,11 +538,11 @@ def create_house():
     
     # Create main structure (4 walls)
     wall_height_exterior = HOUSE_HEIGHT - 0.5
-    wall_z = wall_height_exterior / 2 + 0.1
+    wall_z = wall_height_exterior / 2 + 0.1 + offset_z
     
     # Front wall (facing +y)
     front_wall = create_wall_box(
-        position=(HOUSE_WIDTH/2, HOUSE_DEPTH, wall_z),
+        position=(HOUSE_WIDTH/2 + offset_x, HOUSE_DEPTH + offset_y, wall_z),
         size=(HOUSE_WIDTH, WALL_THICKNESS, wall_height_exterior),
         material_name='Exterior'
     )
@@ -552,7 +550,7 @@ def create_house():
     
     # Back wall (facing -y)
     back_wall = create_wall_box(
-        position=(HOUSE_WIDTH/2, 0, wall_z),
+        position=(HOUSE_WIDTH/2 + offset_x, 0 + offset_y, wall_z),
         size=(HOUSE_WIDTH, WALL_THICKNESS, wall_height_exterior),
         material_name='Exterior'
     )
@@ -560,7 +558,7 @@ def create_house():
     
     # Left wall (facing +x)
     left_wall = create_wall_box(
-        position=(HOUSE_WIDTH, HOUSE_DEPTH/2, wall_z),
+        position=(HOUSE_WIDTH + offset_x, HOUSE_DEPTH/2 + offset_y, wall_z),
         size=(WALL_THICKNESS, HOUSE_DEPTH, wall_height_exterior),
         material_name='Exterior'
     )
@@ -568,7 +566,7 @@ def create_house():
     
     # Right wall (facing -x)
     right_wall = create_wall_box(
-        position=(0, HOUSE_DEPTH/2, wall_z),
+        position=(0 + offset_x, HOUSE_DEPTH/2 + offset_y, wall_z),
         size=(WALL_THICKNESS, HOUSE_DEPTH, wall_height_exterior),
         material_name='Exterior'
     )
@@ -576,35 +574,35 @@ def create_house():
     
     # Create folding walls with hinges
     folding_wall_left = create_wall_box(
-        position=(-FOLDING_WALL_WIDTH/2, HOUSE_DEPTH/2, HOUSE_HEIGHT/2),
+        position=(-FOLDING_WALL_WIDTH/2 + offset_x, HOUSE_DEPTH/2 + offset_y, HOUSE_HEIGHT/2 + offset_z),
         size=(FOLDING_WALL_WIDTH, FOLDING_WALL_HEIGHT, WALL_THICKNESS),
         material_name='Exterior'
     )
     house_objects.append(folding_wall_left)
     
     folding_wall_right = create_wall_box(
-        position=(HOUSE_WIDTH + FOLDING_WALL_WIDTH/2, HOUSE_DEPTH/2, HOUSE_HEIGHT/2),
+        position=(HOUSE_WIDTH + FOLDING_WALL_WIDTH/2 + offset_x, HOUSE_DEPTH/2 + offset_y, HOUSE_HEIGHT/2 + offset_z),
         size=(FOLDING_WALL_WIDTH, FOLDING_WALL_HEIGHT, WALL_THICKNESS),
         material_name='Exterior'
     )
     house_objects.append(folding_wall_right)
     
     # Hinge components for left folding wall
-    fixed_leaf_left = create_hinge_plate('fixed', (-WALL_THICKNESS/2, HOUSE_DEPTH/2, HOUSE_HEIGHT/2), (0, 0, 0))
+    fixed_leaf_left = create_hinge_plate('fixed', (-WALL_THICKNESS/2 + offset_x, HOUSE_DEPTH/2 + offset_y, HOUSE_HEIGHT/2 + offset_z), (0, 0, 0))
     house_objects.append(fixed_leaf_left)
-    moving_leaf_left = create_hinge_plate('moving', (-FOLDING_WALL_WIDTH/2 + FOLDING_WALL_WIDTH/2, HOUSE_DEPTH/2, HOUSE_HEIGHT/2), (0, 0, math.radians(180)))
+    moving_leaf_left = create_hinge_plate('moving', (-FOLDING_WALL_WIDTH/2 + FOLDING_WALL_WIDTH/2 + offset_x, HOUSE_DEPTH/2 + offset_y, HOUSE_HEIGHT/2 + offset_z), (0, 0, math.radians(180)))
     house_objects.append(moving_leaf_left)
     pin_left = create_hinge_pin()
-    pin_left.location = (0, HOUSE_DEPTH/2, HOUSE_HEIGHT/2)
+    pin_left.location = (0 + offset_x, HOUSE_DEPTH/2, HOUSE_HEIGHT/2 + offset_z)
     house_objects.append(pin_left)
     
     # Hinge components for right folding wall
-    fixed_leaf_right = create_hinge_plate('fixed', (HOUSE_WIDTH + WALL_THICKNESS/2, HOUSE_DEPTH/2, HOUSE_HEIGHT/2), (0, 0, math.radians(180)))
+    fixed_leaf_right = create_hinge_plate('fixed', (HOUSE_WIDTH + WALL_THICKNESS/2 + offset_x, HOUSE_DEPTH/2 + offset_y, HOUSE_HEIGHT/2 + offset_z), (0, 0, math.radians(180)))
     house_objects.append(fixed_leaf_right)
-    moving_leaf_right = create_hinge_plate('moving', (HOUSE_WIDTH + FOLDING_WALL_WIDTH/2 - FOLDING_WALL_WIDTH/2, HOUSE_DEPTH/2, HOUSE_HEIGHT/2), (0, 0, 0))
+    moving_leaf_right = create_hinge_plate('moving', (HOUSE_WIDTH + FOLDING_WALL_WIDTH/2 - FOLDING_WALL_WIDTH/2 + offset_x, HOUSE_DEPTH/2 + offset_y, HOUSE_HEIGHT/2 + offset_z), (0, 0, 0))
     house_objects.append(moving_leaf_right)
     pin_right = create_hinge_pin()
-    pin_right.location = (HOUSE_WIDTH, HOUSE_DEPTH/2, HOUSE_HEIGHT/2)
+    pin_right.location = (HOUSE_WIDTH + offset_x, HOUSE_DEPTH/2, HOUSE_HEIGHT/2 + offset_z)
     house_objects.append(pin_right)
     
     # Modular connectors
@@ -621,9 +619,9 @@ def create_house():
     house_objects.append(interior_wall)
     
     # Windows and doors
-    front_window = create_window((HOUSE_WIDTH/2, HOUSE_DEPTH - 1, HOUSE_HEIGHT/2), (0, 0, 0))
+    front_window = create_window((HOUSE_WIDTH/2 + offset_x, HOUSE_DEPTH - 1 + offset_y, HOUSE_HEIGHT/2 + offset_z), (0, 0, 0))
     house_objects.append(front_window)
-    front_door = create_door((HOUSE_WIDTH/2, HOUSE_DEPTH - 0.5, HOUSE_HEIGHT/2), (0, 0, 0))
+    front_door = create_door((HOUSE_WIDTH/2 + offset_x, HOUSE_DEPTH - 0.5 + offset_y, HOUSE_HEIGHT/2 + offset_z), (0, 0, 0))
     house_objects.append(front_door)
     
     # Create collection
@@ -643,7 +641,15 @@ def create_house():
     print("- Windows and doors (separate objects)")
     print("- Grouped for easy selection")
 
+def create_second_house():
+    # Create a second house offset to the right
+    create_house(offset_x=30, offset_y=0, offset_z=0)
+
+# Create the first house
 create_house()
+
+# Create the second house
+create_second_house()
 
 # Add lighting
 bpy.ops.object.light_add(type='SUN', radius=1, location=(20, 20, 40))
