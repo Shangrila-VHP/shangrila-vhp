@@ -1,3 +1,4 @@
 # Local Continue config and secrets
 .continue/
 .continuerc.json
+node_modules/
