@@ -132,12 +132,15 @@ Large-scale open-source 3D-printers capable of printing with earthen materials.
 | Flying lessons (×5) | $110,950 | - | |
 | Cessna purchase | $30,000 | - | |
 | Maintenance & fuel | - | $25,000 | |
+| **TOTAL** | **$7,186,346** | **$190,820** | |
 
 ### Totals (1 site, 1 year)
 | Scenario | Capex | Opex | Combined |
 |----------|-------|------|----------|
 | With land | $7,186,346 | $190,820 | $7,377,166 |
 | Without land (donated) | $1,386,346 | $190,820 | $1,577,166 |
+
+*Without land (donated) = With land ($7,377,166) - Land ($5,800,000) = $1,577,166*
 
 *Note: Opex breakdown in table above shows individual items totaling $190,820. The original Google Sheet shows Total Opex as $6,862,208—please verify which figure is correct.*
 
